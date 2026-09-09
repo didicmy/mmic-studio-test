@@ -39,9 +39,9 @@
   border: 1px solid rgba(201, 120, 69, 0.85);
   border-radius: 4px;
 
-  background: #7A5148;
+  background: #985C4D;
 
-  color: #FFF6EF !important;
+  color: #FFF7F0 !important;
 
   font-size: 10px;
   letter-spacing: 1.2px;
@@ -58,10 +58,10 @@
 
 .mmic-main-links a:hover,
 .mmic-button:hover {
-  background: #C97845;
-  border-color: #D99A70;
+  background: #B87355;
+  border-color: #D29A7A;
 
-  color: #FFF6EF !important;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 4px 9px rgba(89, 64, 57, 0.12);
 
@@ -93,11 +93,11 @@
   min-height: 30px;
   padding: 0 12px;
 
-  border: 1px solid #D9B09C;
+  border: 1px solid #D5A18B;
   border-radius: 6px;
 
-  background: #FFF6EF;
-  color: #76584F !important;
+  background: #FFF7F0;
+  color: #76554B !important;
 
   box-shadow: 0 2px 5px rgba(89, 64, 57, 0.05);
 
@@ -126,8 +126,8 @@
 
   border-radius: 50%;
 
-  background: #7A5148;
-  color: #D99A70;
+  background: #985C4D;
+  color: #D29A7A;
 
   font-size: 9px;
 
@@ -138,10 +138,10 @@
 }
 
 .mmic-index-tool:hover {
-  border-color: #C97845;
+  border-color: #B87355;
 
-  background: #7A5148;
-  color: #FFF6EF !important;
+  background: #985C4D;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 4px 9px rgba(89, 64, 57, 0.14);
 
@@ -149,8 +149,8 @@
 }
 
 .mmic-index-tool:hover .mmic-index-tool-icon {
-  background: #C97845;
-  color: #FFF6EF;
+  background: #B87355;
+  color: #FFF7F0;
 
   transform: rotate(5deg);
 }
@@ -169,11 +169,11 @@
   min-height: 30px;
   padding: 0 12px;
 
-  border: 1px solid #D9B09C !important;
+  border: 1px solid #D5A18B !important;
   border-radius: 6px;
 
-  background: #FFF6EF !important;
-  color: #76584F !important;
+  background: #FFF7F0 !important;
+  color: #76554B !important;
 
   box-shadow: 0 2px 5px rgba(89, 64, 57, 0.05);
 
@@ -188,10 +188,10 @@
 }
 
 #mmic-delete-cookies:hover {
-  border-color: #C97845 !important;
+  border-color: #B87355 !important;
 
-  background: #7A5148 !important;
-  color: #FFF6EF !important;
+  background: #985C4D !important;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 4px 9px rgba(89, 64, 57, 0.14);
 
@@ -219,11 +219,11 @@
   min-height: 32px !important;
   padding: 0 13px !important;
 
-  border: 1px solid #C97845 !important;
+  border: 1px solid #B87355 !important;
   border-radius: 6px !important;
 
-  background: #7A5148 !important;
-  color: #FFF6EF !important;
+  background: #985C4D !important;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 3px 8px rgba(89, 64, 57, 0.12) !important;
 
@@ -257,8 +257,8 @@
 
   border-radius: 50% !important;
 
-  background: #C97845 !important;
-  color: #FFF6EF !important;
+  background: #B87355 !important;
+  color: #FFF7F0 !important;
 
   font-size: 12px !important;
   font-weight: 400 !important;
@@ -268,10 +268,10 @@
 .mmic-new-topic-button:hover,
 .mmic-viewforum-actions a:hover,
 .lsuj_newpost a:hover {
-  border-color: #7A5148 !important;
+  border-color: #985C4D !important;
 
-  background: #C97845 !important;
-  color: #FFF6EF !important;
+  background: #B87355 !important;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 5px 12px rgba(89, 64, 57, 0.17) !important;
 
@@ -281,7 +281,7 @@
 .mmic-new-topic-button:hover::before,
 .mmic-viewforum-actions a:hover::before,
 .lsuj_newpost a:hover::before {
-  background: #7A5148 !important;
+  background: #985C4D !important;
 }
 
 
@@ -298,11 +298,11 @@
   height: 24px !important;
   padding: 0 !important;
 
-  border: 1px solid #D9B09C !important;
+  border: 1px solid #D5A18B !important;
   border-radius: 50% !important;
 
-  background: #F3E0D5 !important;
-  color: #C97845 !important;
+  background: #F2DED3 !important;
+  color: #B87355 !important;
 
   font-size: 0 !important;
   text-decoration: none !important;
@@ -322,10 +322,10 @@
 }
 
 .mmic-topics-backtop:hover {
-  border-color: #C97845 !important;
+  border-color: #B87355 !important;
 
-  background: #7A5148 !important;
-  color: #FFF6EF !important;
+  background: #985C4D !important;
+  color: #FFF7F0 !important;
 
   transform: translateY(-2px) !important;
 }
@@ -375,11 +375,11 @@
   min-height: 32px !important;
   padding: 0 13px !important;
 
-  border: 1px solid #C97845 !important;
+  border: 1px solid #B87355 !important;
   border-radius: 6px !important;
 
-  background: #7A5148 !important;
-  color: #FFF6EF !important;
+  background: #985C4D !important;
+  color: #FFF7F0 !important;
 
   box-shadow: 0 3px 8px rgba(89, 64, 57, 0.12) !important;
 
@@ -401,17 +401,17 @@
 
   border-radius: 50% !important;
 
-  background: #C97845 !important;
-  color: #FFF6EF !important;
+  background: #B87355 !important;
+  color: #FFF7F0 !important;
 
   font-size: 12px !important;
   line-height: 1 !important;
 }
 
 .mmic-new-topic-button:hover {
-  border-color: #7A5148 !important;
+  border-color: #985C4D !important;
 
-  background: #C97845 !important;
+  background: #B87355 !important;
 
   transform: translateY(-2px) !important;
 }
@@ -433,11 +433,11 @@
   min-height: 27px !important;
   padding: 0 10px !important;
 
-  border: 1px solid #D9B09C !important;
+  border: 1px solid #D5A18B !important;
   border-radius: 6px !important;
 
-  background: #F3E0D5 !important;
-  color: #76584F !important;
+  background: #F2DED3 !important;
+  color: #76554B !important;
 
   font-size: 7px !important;
   font-weight: 700 !important;
@@ -465,16 +465,16 @@
 }
 
 .mmic-viewforum-option:hover {
-  border-color: #C97845 !important;
+  border-color: #B87355 !important;
 
-  background: #7A5148 !important;
-  color: #FFF6EF !important;
+  background: #985C4D !important;
+  color: #FFF7F0 !important;
 
   transform: translateY(-1px) !important;
 }
 
 .mmic-viewforum-option:hover a {
-  color: #FFF6EF !important;
+  color: #FFF7F0 !important;
 }
 
 .mmic-new-topic-button::before {
@@ -546,11 +546,11 @@ html body .mmic-forum-bottom-actions a {
   background:
     linear-gradient(
       180deg,
-      #FFF6EF 0%,
-      #F3E0D5 100%
+      #FFF7F0 0%,
+      #F2DED3 100%
     ) !important;
 
-  color: #594039 !important;
+  color: #6B463C !important;
 
   font-size: 7px !important;
   font-weight: 700 !important;
@@ -588,7 +588,7 @@ html body .mmic-forum-bottom-actions a::before {
 
   border-radius: 50% !important;
 
-  background-color: #7A5148 !important;
+  background-color: #985C4D !important;
 
   background-repeat: no-repeat !important;
   background-position: center !important;
