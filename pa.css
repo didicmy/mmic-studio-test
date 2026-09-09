@@ -23,13 +23,13 @@
    ========================================================= */
 
 .mmic-pa {
-  --navy: #7A5148;
-  --paper: #FFF6EF;
-  --cream: #F3E0D5;
-  --copper: #C97845;
-  --border: #D9B09C;
-  --text: #594039;
-  --muted: #8E6B60;
+  --navy: #985C4D;
+  --paper: #FFF7F0;
+  --cream: #F2DED3;
+  --copper: #B87355;
+  --border: #D5A18B;
+  --text: #6B463C;
+  --muted: #927064;
 
   box-sizing: border-box;
   width: 100%;
@@ -178,7 +178,7 @@ background-image:
   min-height: 31px;
   border-radius: 3px;
 
-  background: #B9785F;
+  background: #B87355;
   color: var(--paper);
 
   font-size: 10px;
@@ -446,7 +446,7 @@ background-image:
 }
 
 .mmic-icon-drawing.mmic-inline-svg path {
-  fill: #FFF6EF;
+  fill: #FFF7F0;
 }
 
 
@@ -469,10 +469,10 @@ background-image:
   margin: 13px 12px 4px;
   padding: 12px 14px;
 
-  border: 1px solid #D9C5B7;
+  border: 1px solid #D8B9A8;
   border-radius: 8px;
 
-  background: #F6ECE4;
+  background: #F5E7DE;
   box-shadow: 0 5px 14px rgba(89, 64, 57, 0.08);
 
   animation: mmicPartnersOpen 0.22s ease;
@@ -485,7 +485,7 @@ background-image:
 .mmic-partners-heading {
   margin-bottom: 9px;
 
-  color: #B9785F;
+  color: #B87355;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -506,11 +506,11 @@ background-image:
 
   padding: 5px 9px;
 
-  border: 1px solid #D9C5B7;
+  border: 1px solid #D8B9A8;
   border-radius: 12px;
 
-  background: #FFF8F1;
-  color: #76584F !important;
+  background: #FFF9F4;
+  color: #76554B !important;
 
   font-size: 8px;
   font-weight: 700;
@@ -529,19 +529,19 @@ background-image:
 .mmic-partners-list a::before {
   content: "◇";
   margin-right: 5px;
-  color: #C97845;
+  color: #B87355;
   font-size: 9px;
 }
 
 .mmic-partners-list a:hover {
-  border-color: #C97845;
-  background: #7A5148;
-  color: #FFF6EF !important;
+  border-color: #B87355;
+  background: #985C4D;
+  color: #FFF7F0 !important;
   transform: translateY(-1px);
 }
 
 .mmic-partners-list a:hover::before {
-  color: #FFF6EF;
+  color: #FFF7F0;
 }
 
 .mmic-partners-all {
@@ -550,7 +550,7 @@ background-image:
   width: max-content;
   margin: 11px auto 0;
 
-  color: #B9785F !important;
+  color: #B87355 !important;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -559,11 +559,11 @@ background-image:
 }
 
 .mmic-partners-all:hover {
-  color: #7A5148 !important;
+  color: #985C4D !important;
 }
 
 .mmic-partners-toggle.is-open {
-  color: #C97845 !important;
+  color: #B87355 !important;
 }
 
 .mmic-partners-toggle.is-open .mmic-icon {
