@@ -23,13 +23,13 @@
    ========================================================= */
 
 .mmic-pa {
-  --navy: #7F5855;
-  --paper: #FFF8F4;
-  --cream: #F8E9DF;
-  --copper: #D58D7A;
-  --border: #E7C2B5;
-  --text: #513D3B;
-  --muted: #92736D;
+  --navy: #7A5148;
+  --paper: #FFF6EF;
+  --cream: #F3E0D5;
+  --copper: #C97845;
+  --border: #D9B09C;
+  --text: #594039;
+  --muted: #8E6B60;
 
   box-sizing: border-box;
   width: 100%;
@@ -63,7 +63,7 @@
     linear-gradient(
     rgba(105, 73, 70, 0.42),
     rgba(105, 73, 70, 0.42)
-    ),
+  ),
     url("https://i28.servimg.com/u/f28/15/72/31/14/bienve10.png");
 
   background-position: center;
@@ -176,8 +176,8 @@
   min-height: 31px;
   border-radius: 3px;
 
-  background: #B97869;
-  color: #FFF8F4;
+  background: #B9785F;
+  color: var(--paper);
 
   font-size: 10px;
 }
@@ -444,7 +444,7 @@
 }
 
 .mmic-icon-drawing.mmic-inline-svg path {
-  fill: #fbf8f3;
+  fill: #FFF6EF;
 }
 
 
@@ -467,11 +467,11 @@
   margin: 13px 12px 4px;
   padding: 12px 14px;
 
-  border: 1px solid #ddcfc1;
+  border: 1px solid #D9C5B7;
   border-radius: 8px;
 
-  background: #f8f3ed;
-  box-shadow: 0 5px 14px rgba(12, 24, 39, 0.08);
+  background: #F6ECE4;
+  box-shadow: 0 5px 14px rgba(89, 64, 57, 0.08);
 
   animation: mmicPartnersOpen 0.22s ease;
 }
@@ -483,7 +483,7 @@
 .mmic-partners-heading {
   margin-bottom: 9px;
 
-  color: #B97869;
+  color: #B9785F;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -504,11 +504,11 @@
 
   padding: 5px 9px;
 
-  border: 1px solid #ded2c6;
+  border: 1px solid #D9C5B7;
   border-radius: 12px;
 
-  background: #fffaf4;
-  color: #6f625a !important;
+  background: #FFF8F1;
+  color: #76584F !important;
 
   font-size: 8px;
   font-weight: 700;
@@ -527,19 +527,19 @@
 .mmic-partners-list a::before {
   content: "◇";
   margin-right: 5px;
-  color: #D58D7A;
+  color: #C97845;
   font-size: 9px;
 }
 
 .mmic-partners-list a:hover {
-  border-color: #D58D7A;
-  background: #102438;
-  color: #fbf8f3 !important;
+  border-color: #C97845;
+  background: #7A5148;
+  color: #FFF6EF !important;
   transform: translateY(-1px);
 }
 
 .mmic-partners-list a:hover::before {
-  color: #FFF4ED;
+  color: #FFF6EF;
 }
 
 .mmic-partners-all {
@@ -548,7 +548,7 @@
   width: max-content;
   margin: 11px auto 0;
 
-  color: #B97869  !important;
+  color: #B9785F !important;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -557,11 +557,11 @@
 }
 
 .mmic-partners-all:hover {
-  color: #7F5855  !important;
+  color: #7A5148 !important;
 }
 
 .mmic-partners-toggle.is-open {
-  color: #D58D7A  !important;
+  color: #C97845 !important;
 }
 
 .mmic-partners-toggle.is-open .mmic-icon {
@@ -599,6 +599,8 @@
     font-size: 7.5px;
   }
 }
+
+
 /* =========================================================
    MÉTÉO — BLOC STAFF
    ========================================================= */
