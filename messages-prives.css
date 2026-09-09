@@ -1,0 +1,4163 @@
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — VERSION NETTOYÉE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 26px auto 40px;
+
+    color: #102438;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-pm-page * {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+html body .mmic-pm-hero {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 130px;
+
+    margin-bottom: 18px;
+    padding: 24px 30px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(216,176,140,.65);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102438 0%,
+            #0d2135 100%
+        );
+
+    color: #fffaf4;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(16,36,56,.10),
+        inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+
+html body .mmic-pm-hero-kicker {
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 6px;
+
+    color: #e4b184;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-hero-title {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+
+html body .mmic-pm-hero-text {
+    position: relative;
+    z-index: 2;
+
+    max-width: 620px;
+
+    margin: 8px auto 0;
+
+    color: rgba(255,250,244,.78);
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 8px;
+
+    line-height: 1.6;
+}
+
+
+html body .mmic-pm-hero-word {
+    position: absolute;
+
+    right: 25px;
+    bottom: -12px;
+
+    color: rgba(255,255,255,.014);
+
+    font-family: Georgia, serif;
+    font-size: 58px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   BARRE DOSSIERS + STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-toolbar {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        270px;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+
+    padding: 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 4px 13px rgba(16,36,56,.05);
+}
+
+
+/* ---------------------------------------------------------
+   DOSSIERS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folders {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+}
+
+
+html body .mmic-pm-folder {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 7px 10px;
+
+    border: 1px solid #e5d5c6;
+    border-radius: 7px;
+
+    background: #fbf6f0;
+
+    transition:
+        transform .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease;
+}
+
+
+html body .mmic-pm-folder:hover {
+    transform: translateY(-1px);
+
+    border-color: #d8b08c;
+
+    box-shadow:
+        0 4px 9px rgba(16,36,56,.08);
+}
+
+
+html body .mmic-pm-folder-original {
+    display: none !important;
+}
+
+
+html body .mmic-pm-folder-link {
+    min-width: 0;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .45px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-folder-link a {
+    color: #102438 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   ICÔNES DOSSIERS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folder-icon {
+    display: inline-flex;
+
+    flex: 0 0 26px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 50%;
+
+    background: #102438;
+}
+
+
+html body .mmic-pm-folder-icon::before {
+    content: "";
+
+    width: 13px;
+    height: 13px;
+
+    background: #e4b184;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* Réception */
+
+html body .mmic-pm-folder-icon--inbox::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Zm1-2 7 4.4L19 6H5Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Zm1-2 7 4.4L19 6H5Z'/%3E%3C/svg%3E");
+}
+
+
+/* Envoyés */
+
+html body .mmic-pm-folder-icon--sent::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m2 3 20 9-20 9 4-8 9-1-9-1-4-8Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m2 3 20 9-20 9 4-8 9-1-9-1-4-8Z'/%3E%3C/svg%3E");
+}
+
+
+/* Boîte d'envoi */
+
+html body .mmic-pm-folder-icon--outbox::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 3h14a2 2 0 0 1 2 2v14H3V5a2 2 0 0 1 2-2Zm7 3-4 4h3v4h2v-4h3l-4-4Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 3h14a2 2 0 0 1 2 2v14H3V5a2 2 0 0 1 2-2Zm7 3-4 4h3v4h2v-4h3l-4-4Z'/%3E%3C/svg%3E");
+}
+
+
+/* Archives */
+
+html body .mmic-pm-folder-icon--archive::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 4h18v4H3V4Zm2 6h14v10H5V10Zm4 2v2h6v-2H9Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 4h18v4H3V4Zm2 6h14v10H5V10Zm4 2v2h6v-2H9Z'/%3E%3C/svg%3E");
+}
+
+
+/* ---------------------------------------------------------
+   STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 7px 10px;
+
+    border-left: 1px solid #ead9ca;
+}
+
+
+html body .mmic-pm-storage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+html body .mmic-pm-storage-label {
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-storage-status {
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-storage-track {
+    position: relative;
+
+    width: 100%;
+    height: 7px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #eadfd5;
+}
+
+
+html body .mmic-pm-storage-progress {
+    display: block;
+
+    min-width: 4px;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #c78d68;
+}
+
+
+html body .mmic-pm-storage-scale {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5px;
+
+    color: #99887b;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS DU HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-pm-actions {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+html body .mmic-pm-new-original {
+    display: none !important;
+}
+
+
+html body .mmic-pm-new-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 34px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4 !important;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-pm-new-icon {
+    width: 13px;
+    height: 13px;
+
+    background: #e4b184;
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* filtre */
+
+html body .mmic-pm-filter {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 7px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-filter select {
+    height: 32px;
+
+    min-width: 155px;
+
+    padding: 0 8px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 6px;
+
+    background: #fffdf9;
+    color: #102438;
+
+    font-size: 7px;
+
+    outline: none;
+}
+
+
+html body .mmic-pm-filter-button {
+    height: 32px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------
+   LISTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+html body .mmic-pm-list-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        150px
+        145px
+        55px;
+
+    gap: 10px;
+
+    padding: 0 18px 5px 64px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-list-heading--check {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message {
+    display: grid;
+
+    grid-template-columns:
+        46px
+        minmax(0, 1fr)
+        150px
+        145px
+        55px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 72px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fffaf4 0%,
+            #fffdf9 100%
+        );
+
+    box-shadow:
+        0 3px 9px rgba(16,36,56,.045);
+
+    transition:
+        transform .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease;
+}
+
+
+html body .mmic-pm-message:hover {
+    transform: translateY(-1px);
+
+    border-color: #d8b08c;
+
+    box-shadow:
+        0 5px 13px rgba(16,36,56,.075);
+}
+
+
+/* statut */
+
+html body .mmic-pm-message-status {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+html body .mmic-pm-original-folder,
+html body .mmic-pm-original-icon {
+    display: none !important;
+}
+
+/* sujet */
+
+html body .mmic-pm-message-main {
+    min-width: 0;
+}
+
+
+html body .mmic-pm-message-kicker,
+html body .mmic-pm-meta-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-message-title {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    text-decoration: none !important;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+html body .mmic-pm-message-title:hover {
+    color: #b97a56 !important;
+}
+
+
+/* expéditeur / date */
+
+html body .mmic-pm-message-from,
+html body .mmic-pm-message-date > span:last-child {
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   CHECKBOX CUSTOM
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message-check {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+html body .mmic-pm-message-check input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+html body .mmic-pm-message-check span {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 5px;
+
+    background: #fffdf9;
+}
+
+
+html body .mmic-pm-message-check input:checked + span {
+    background: #102438;
+}
+
+
+html body .mmic-pm-message-check input:checked + span::after {
+    content: "✓";
+
+    color: #e4b184;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   VIDE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-empty {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 35px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background: #fffaf4;
+
+    color: #756a61;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 8px;
+}
+
+
+html body .mmic-pm-empty strong {
+    color: #102438;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS DE SÉLECTION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-selection {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 14px;
+
+    padding: 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background: #fffaf4;
+}
+
+
+html body .mmic-pm-selection-links {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-selection-links a {
+    color: #b97a56 !important;
+
+    font-weight: 700;
+
+    text-decoration: none !important;
+}
+
+
+html body .mmic-pm-selection-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-action-button {
+    min-height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #fffaf4;
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .15s ease,
+        background .15s ease,
+        color .15s ease;
+}
+
+
+html body .mmic-pm-action-button:hover {
+    transform: translateY(-1px);
+
+    background: #102438;
+    color: #fffaf4;
+}
+
+
+html body .mmic-pm-action-button--danger:hover {
+    background: #7d4545;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER / PAGINATION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 12px;
+
+    color: #756a61;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-pagination a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 24px;
+    height: 24px;
+
+    margin-left: 3px;
+
+    padding: 0 6px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 5px;
+
+    background: #fffaf4;
+
+    color: #102438 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   JUMPBOX
+   --------------------------------------------------------- */
+
+html body .mmic-pm-jumpbox {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    html body .mmic-pm-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-storage {
+        border-left: 0;
+        border-top: 1px solid #ead9ca;
+    }
+
+    html body .mmic-pm-message {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            44px;
+    }
+
+    html body .mmic-pm-message-user,
+    html body .mmic-pm-message-date {
+        grid-column: 2;
+
+        margin-top: 3px;
+    }
+
+    html body .mmic-pm-message-check {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+    }
+
+    html body .mmic-pm-list-header {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    html body .mmic-pm-folders {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    html body .mmic-pm-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-filter {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-filter select {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   MESSAGES PRIVÉS — FINITIONS
+   ========================================================= */
+
+/* Sujet au survol */
+
+html body .mmic-pm-message-title {
+    transition:
+        color .16s ease,
+        letter-spacing .16s ease !important;
+}
+
+html body .mmic-pm-message-title:hover {
+    color: #b97a56 !important;
+    letter-spacing: .15px !important;
+}
+
+
+/* =========================================================
+   MESSAGES PRIVÉS — ENVELOPPES LU / NON LU
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BASE COMMUNE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-status-icon {
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 7px !important;
+
+    background: #102438 !important;
+
+    box-shadow:
+        0 3px 6px rgba(16,36,56,.12) !important;
+
+    overflow: visible !important;
+}
+
+
+html body .mmic-pm-status-icon::before {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 15px !important;
+    height: 15px !important;
+
+    background: #e4b184 !important;
+
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+}
+
+
+/* ---------------------------------------------------------
+   NON LU — ENVELOPPE FERMÉE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::before {
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
+
+    background: #f0c79f !important;
+}
+
+
+/* ---------------------------------------------------------
+   LU — ENVELOPPE OUVERTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon::before {
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3.5 9.5 12 3l8.5 6.5V20H3.5V9.5Zm2 1.1V18h13v-7.4L12 15.8 5.5 10.6Zm.8-1.5L12 13.7l5.7-4.6L12 4.8 6.3 9.1Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3.5 9.5 12 3l8.5 6.5V20H3.5V9.5Zm2 1.1V18h13v-7.4L12 15.8 5.5 10.6Zm.8-1.5L12 13.7l5.7-4.6L12 4.8 6.3 9.1Z'/%3E%3C/svg%3E") !important;
+
+    background: #d8b08c !important;
+}
+/* Sujet lu légèrement plus doux */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-message-title {
+    font-weight: 400 !important;
+}
+
+
+/* Icône lue plus discrète */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon {
+    opacity: .82 !important;
+
+    box-shadow:
+        0 3px 6px rgba(16,36,56,.09) !important;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER — LES DEUX ÉTATS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 6px 14px rgba(16,36,56,.09) !important;
+}
+
+
+/* Le sujet prend la teinte cuivre */
+
+html body .mmic-pm-message:hover
+.mmic-pm-message-title {
+    color: #b97a56 !important;
+}
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — LECTURE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CONTENEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 26px auto 40px;
+
+    color: #102438;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-pm-read * {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-card {
+    display: grid;
+
+    grid-template-columns: 190px minmax(0, 1fr);
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #fbf5ed 0%,
+            #fffdf9 34%,
+            #fffaf4 100%
+        );
+
+    box-shadow:
+        0 7px 20px rgba(16,36,56,.07);
+}
+
+
+/* ---------------------------------------------------------
+   COLONNE AUTEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 0;
+
+    padding: 16px 14px;
+
+    border-right: 1px solid #ead8c8;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7eee4 0%,
+            #fffaf4 100%
+        );
+
+    text-align: center;
+}
+
+
+/* Avatar */
+
+html body .mmic-pm-read-avatar {
+    position: relative;
+
+    width: 150px;
+    height: 210px;
+
+    margin-bottom: 13px;
+
+    overflow: hidden;
+
+    border: 1px solid #d8b08c;
+    border-radius: 8px;
+
+    background: #102438;
+
+    box-shadow:
+        0 5px 13px rgba(16,36,56,.13);
+}
+
+
+html body .mmic-pm-read-avatar img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+/* Petite étiquette */
+
+html body .mmic-pm-read-author-kicker {
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+
+/* Nom */
+
+html body .mmic-pm-read-author-name {
+    width: 100%;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+
+    line-height: 1.2;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   CONTACTS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-contact {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    width: 100%;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-contact-item:empty {
+    display: none !important;
+}
+
+/* =========================================================
+   LECTURE MP — CONTACTS SOUS L'AVATAR
+   ========================================================= */
+
+html body .mmic-pm-read-contact {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    width: 100% !important;
+
+    margin-top: 16px !important;
+    padding-top: 14px !important;
+
+    border-top: 1px solid #ead8c8 !important;
+}
+
+html body .mmic-pm-contact-item {
+    display: flex !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+}
+
+
+html body .mmic-pm-contact-item a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    width: 96px !important;
+    height: 30px !important;
+
+    padding: 0 8px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6.5px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 2px 4px rgba(16,36,56,.05) !important;
+}
+
+html body .mmic-pm-contact-item a:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+
+    box-shadow:
+        0 4px 8px rgba(16,36,56,.12) !important;
+       flex: 0 0 12px !important;
+
+    width: 12px !important;
+    height: 12px !important;
+}
+
+
+/* ---------------------------------------------------------
+   ON CACHE LES VIEILLES IMAGES FORUMACTIF
+   --------------------------------------------------------- */
+
+html body .mmic-pm-contact-item img {
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   ICÔNE COMMUNE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-contact-item a::before {
+    content: "" !important;
+
+    flex: 0 0 14px !important;
+
+    display: block !important;
+
+    width: 14px !important;
+    height: 14px !important;
+
+    background: #c78d68 !important;
+
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+
+    transition: background .16s ease !important;
+}
+
+html body .mmic-pm-contact-item a:hover::before {
+    background: #e4b184 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PROFIL
+   --------------------------------------------------------- */
+
+html body .mmic-pm-contact-profile a::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z'/%3E%3C/svg%3E") !important;
+}
+
+html body .mmic-pm-contact-profile a::after {
+    content: "Profil" !important;
+}
+
+
+/* ---------------------------------------------------------
+   E-MAIL
+   --------------------------------------------------------- */
+
+html body .mmic-pm-contact-email a::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
+}
+
+html body .mmic-pm-contact-email a::after {
+    content: "E-mail" !important;
+}
+
+
+/* ---------------------------------------------------------
+   SITE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-contact-www a::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-3.1a15 15 0 0 0-1.4-3.4A8.1 8.1 0 0 1 18.9 8ZM12 4c.9 1.1 1.6 2.4 2 4h-4c.4-1.6 1.1-2.9 2-4ZM4.3 14a8.8 8.8 0 0 1 0-4h3.4a16 16 0 0 0 0 4H4.3Zm.8 2h3.1a15 15 0 0 0 1.4 3.4A8.1 8.1 0 0 1 5.1 16ZM8.2 8H5.1a8.1 8.1 0 0 1 4.5-3.4A15 15 0 0 0 8.2 8ZM12 20c-.9-1.1-1.6-2.4-2-4h4c-.4 1.6-1.1 2.9-2 4Zm2.5-6h-5a14 14 0 0 1 0-4h5a14 14 0 0 1 0 4Zm-.1 5.4a15 15 0 0 0 1.4-3.4h3.1a8.1 8.1 0 0 1-4.5 3.4ZM16.3 14a16 16 0 0 0 0-4h3.4a8.8 8.8 0 0 1 0 4h-3.4Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-3.1a15 15 0 0 0-1.4-3.4A8.1 8.1 0 0 1 18.9 8ZM12 4c.9 1.1 1.6 2.4 2 4h-4c.4-1.6 1.1-2.9 2-4ZM4.3 14a8.8 8.8 0 0 1 0-4h3.4a16 16 0 0 0 0 4H4.3Zm.8 2h3.1a15 15 0 0 0 1.4 3.4A8.1 8.1 0 0 1 5.1 16ZM8.2 8H5.1a8.1 8.1 0 0 1 4.5-3.4A15 15 0 0 0 8.2 8ZM12 20c-.9-1.1-1.6-2.4-2-4h4c-.4 1.6-1.1 2.9-2 4Zm2.5-6h-5a14 14 0 0 1 0-4h5a14 14 0 0 1 0 4Zm-.1 5.4a15 15 0 0 0 1.4-3.4h3.1a8.1 8.1 0 0 1-4.5 3.4ZM16.3 14a16 16 0 0 0 0-4h3.4a8.8 8.8 0 0 1 0 4h-3.4Z'/%3E%3C/svg%3E") !important;
+}
+
+html body .mmic-pm-contact-www a::after {
+    content: "Site" !important;
+}
+
+/* ---------------------------------------------------------
+   CONTENU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-content {
+    min-width: 0;
+
+    padding: 18px 20px 16px;
+}
+
+
+/* ---------------------------------------------------------
+   EN-TÊTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 18px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-read-heading {
+    min-width: 0;
+}
+
+
+html body .mmic-pm-read-kicker {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-read-title {
+    margin: 0;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+
+/* ---------------------------------------------------------
+   CITATION / ÉDITION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-top-actions {
+    display: flex;
+
+    flex: 0 0 auto;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-read-native-action:empty {
+    display: none !important;
+}
+
+
+html body .mmic-pm-read-native-action a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 70px !important;
+    height: 30px !important;
+
+    padding: 0 10px !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease !important;
+}
+
+
+html body .mmic-pm-read-native-action a:hover {
+    transform: translateY(-1px) !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/*
+ * On conserve les liens natifs Forumactif,
+ * mais on cache leurs anciennes images.
+ */
+
+html body .mmic-pm-read-native-action img {
+    display: none !important;
+}
+
+
+/* Labels personnalisés */
+
+html body .mmic-pm-read-native-action--quote a::after {
+    content: "Citer";
+}
+
+
+html body .mmic-pm-read-native-action--edit a::after {
+    content: "Éditer";
+}
+
+
+html body .mmic-pm-read-native-action--reply a::after {
+    content: "Répondre";
+}
+
+
+/* ---------------------------------------------------------
+   MÉTADONNÉES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-meta {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 8px;
+
+    margin: 14px 0 18px;
+}
+
+
+html body .mmic-pm-read-meta-item {
+    min-width: 0;
+
+    padding: 8px 10px;
+
+    border: 1px solid #ead8c8;
+    border-radius: 6px;
+
+    background: #fbf6f0;
+}
+
+
+html body .mmic-pm-read-meta-item > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-read-meta-item > strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   CORPS DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-message {
+    min-height: 170px;
+
+    padding: 18px 4px 24px;
+
+    color: #292e33;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+
+    line-height: 1.75;
+
+    text-align: left;
+}
+
+
+html body .mmic-pm-read-message p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+html body .mmic-pm-read-message img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------
+   PIED DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #ead8c8;
+}
+
+
+/* Répondre */
+
+html body .mmic-pm-read-reply
+.mmic-pm-read-native-action a {
+    min-width: 100px !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SAUVEGARDER / SUPPRIMER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-management {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-read-button {
+    height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #fffaf4;
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease;
+}
+
+
+html body .mmic-pm-read-button:hover {
+    transform: translateY(-1px);
+
+    background: #102438;
+    color: #fffaf4;
+}
+
+
+html body .mmic-pm-read-button--delete:hover {
+    background: #7c4545;
+}
+
+
+/* =========================================================
+   HISTORIQUE
+   ========================================================= */
+
+html body .mmic-pm-review {
+    margin-top: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 5px 14px rgba(16,36,56,.05);
+}
+
+
+html body .mmic-pm-review-header {
+    position: relative;
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #d8b08c;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102438 0%,
+            #0d2135 100%
+        );
+
+    text-align: center;
+}
+
+
+html body .mmic-pm-review-kicker {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #e4b184;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-review-header h2 {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+html body .mmic-pm-review-content {
+    padding: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 750px) {
+
+    html body .mmic-pm-read-card {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-read-author {
+        border-right: 0;
+        border-bottom: 1px solid #ead8c8;
+    }
+
+    html body .mmic-pm-read-avatar {
+        width: 110px;
+        height: 150px;
+    }
+
+    html body .mmic-pm-read-meta {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-read-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-read-management {
+        justify-content: flex-start;
+    }
+
+}
+/* =========================================================
+   LECTURE MP — NAVIGATION
+   ========================================================= */
+
+html body .mmic-pm-read-navigation {
+    margin-bottom: 14px !important;
+}
+
+html body .mmic-pm-read-navigation .mmic-pm-toolbar {
+    margin-bottom: 0 !important;
+}
+/* =========================================================
+   LECTURE MP — RACCOURCIS DANS LA NAVIGATION
+   ========================================================= */
+
+html body .mmic-pm-read-navigation .mmic-pm-toolbar {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
+}
+
+html body .mmic-pm-read-shortcuts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 5px;
+
+    padding-left: 14px;
+
+    border-left: 1px solid #ead9ca;
+}
+
+html body .mmic-pm-read-shortcuts-kicker {
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+html body .mmic-pm-read-shortcuts-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+html body .mmic-pm-read-shortcut {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #fffaf4;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .55px;
+
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease;
+}
+
+html body .mmic-pm-read-shortcut:hover {
+    transform: translateY(-1px);
+
+    background: #102438;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-shortcut--primary {
+    background: #102438;
+    color: #fffaf4 !important;
+}
+
+/* icônes */
+
+html body .mmic-pm-read-shortcut-icon {
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    background: #c78d68;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* retour */
+
+html body .mmic-pm-read-shortcut-icon--back {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E");
+}
+
+/* nouveau message */
+
+html body .mmic-pm-read-shortcut-icon--new {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+}
+/* =========================================================
+   LECTURE MP — BOUTONS DE GESTION
+   ========================================================= */
+
+html body .mmic-pm-read-management {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 7px !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    display: inline-flex !important;
+
+    width: auto !important;
+    min-width: 120px !important;
+    height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+    line-height: 30px !important;
+
+    text-align: center !important;
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.07) !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease,
+        border-color .16s ease !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button--delete {
+    min-width: 115px !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button--delete:hover {
+    border-color: #8e5959 !important;
+
+    background: #7c4545 !important;
+    color: #fffaf4 !important;
+}
+/* =========================================================
+   LECTURE MP — ANTI CACHE-CACHE DES BOUTONS
+   ========================================================= */
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 7px !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button {
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    position: static !important;
+
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    float: none !important;
+
+    width: auto !important;
+    min-width: 125px !important;
+    max-width: none !important;
+
+    height: 32px !important;
+    min-height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    overflow: visible !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+    line-height: 30px !important;
+
+    text-align: center !important;
+    text-indent: 0 !important;
+    text-transform: uppercase !important;
+
+    white-space: nowrap !important;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.08) !important;
+
+    cursor: pointer !important;
+
+    pointer-events: auto !important;
+}
+
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button:hover {
+
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* suppression */
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button--delete:hover {
+
+    border-color: #915858 !important;
+
+    background: #7c4545 !important;
+    color: #fffaf4 !important;
+}
+/* =========================================================
+   MESSAGES PRIVÉS — HISTORIQUE
+   ========================================================= */
+
+html body .mmic-pm-history {
+    width: 100%;
+
+    color: #102438;
+}
+
+
+/* ---------------------------------------------------------
+   LISTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-item {
+    display: grid;
+
+    grid-template-columns: 150px minmax(0, 1fr);
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #fbf5ed 0%,
+            #fffdf9 38%,
+            #fffaf4 100%
+        );
+
+    box-shadow:
+        0 4px 11px rgba(16,36,56,.05);
+}
+
+
+/* ---------------------------------------------------------
+   AUTEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 12px 10px;
+
+    border-right: 1px solid #ead8c8;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7eee4 0%,
+            #fffaf4 100%
+        );
+
+    text-align: center;
+}
+
+
+html body .mmic-pm-history-avatar {
+    width: 110px;
+    height: 145px;
+
+    margin-bottom: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #d8b08c;
+    border-radius: 7px;
+
+    background: #102438;
+
+    box-shadow:
+        0 4px 10px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-pm-history-avatar img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+html body .mmic-pm-history-author-kicker {
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-history-author-name {
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+
+    line-height: 1.2;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-content {
+    min-width: 0;
+
+    padding: 13px 15px;
+}
+
+
+/* ---------------------------------------------------------
+   MÉTADONNÉES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-meta {
+    display: grid;
+
+    grid-template-columns: 170px minmax(0, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-history-meta-item {
+    min-width: 0;
+
+    padding: 7px 9px;
+
+    border: 1px solid #ead8c8;
+    border-radius: 6px;
+
+    background: #fbf6f0;
+}
+
+
+html body .mmic-pm-history-meta-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-history-meta-item strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-message {
+    min-height: 110px;
+
+    padding: 4px 2px 8px;
+
+    color: #34383c;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+
+    line-height: 1.65;
+
+    text-align: left;
+}
+
+
+html body .mmic-pm-history-message p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+html body .mmic-pm-history-message img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------
+   PAGINATION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-pagination {
+    margin-top: 10px;
+
+    text-align: right;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-history-pagination a {
+    color: #b97a56 !important;
+
+    text-decoration: none !important;
+}
+
+
+html body .mmic-pm-history-pagination a:hover {
+    color: #102438 !important;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    html body .mmic-pm-history-item {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-history-author {
+        border-right: 0;
+        border-bottom: 1px solid #ead8c8;
+    }
+
+    html body .mmic-pm-history-avatar {
+        width: 90px;
+        height: 120px;
+    }
+
+    html body .mmic-pm-history-meta {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   MEET ME IN CHICAGO
+   COMPOSITION D'UN MESSAGE PRIVÉ — VERSION NETTOYÉE
+   ========================================================= */
+
+html body .mmic-pm-compose-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+    margin: 26px auto 40px;
+    color: #102438;
+    box-sizing: border-box;
+}
+
+html body .mmic-pm-compose-page * {
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+   NAVIGATION DES MESSAGES PRIVÉS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 10px;
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+    background: #fffaf4;
+    box-shadow: 0 4px 10px rgba(16,36,56,.04);
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folders {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(125px, 1fr));
+    flex: 1 1 auto;
+    gap: 7px;
+    min-width: 0;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 7px 10px;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link {
+    display: block;
+    min-width: 0;
+    color: #102438;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6.5px;
+    font-weight: 700;
+    letter-spacing: .45px;
+    text-transform: uppercase;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link a {
+    color: #102438 !important;
+    text-decoration: none !important;
+}
+
+html body .mmic-pm-compose-toolbar-side {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    padding-left: 12px;
+    border-left: 1px solid #ead8c8;
+}
+
+html body .mmic-pm-compose-toolbar-kicker {
+    color: #b97a56;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+html body .mmic-pm-compose-return {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 92px;
+    height: 34px;
+    padding: 0 13px;
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+    background: #102438 !important;
+    color: #fffaf4 !important;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 3px 7px rgba(16,36,56,.08);
+    transition: transform .16s ease, background .16s ease;
+}
+
+html body .mmic-pm-compose-return:hover {
+    transform: translateY(-1px);
+    background: #173149 !important;
+}
+
+html body .mmic-pm-compose-return-icon {
+    width: 12px;
+    height: 12px;
+    background: #e4b184 !important;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Petit fil d'Ariane natif */
+html body .mmic-pm-compose-page .mmic-pm-compose-form > table:first-of-type {
+    display: none;
+}
+
+/* ---------------------------------------------------------
+   CARTE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-card {
+    width: 100% !important;
+    margin: 0 !important;
+    overflow: hidden;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 9px;
+    background: linear-gradient(110deg, #fbf5ed 0%, #fffdf9 45%, #fffaf4 100%) !important;
+    border-spacing: 0 !important;
+    box-shadow: 0 5px 14px rgba(16,36,56,.05);
+}
+
+html body .mmic-pm-compose-card > tbody > tr:first-child > th {
+    position: relative;
+    height: auto !important;
+    padding: 22px 20px 18px !important;
+    border: 0 !important;
+    border-bottom: 1px solid #ead8c8 !important;
+    background: #102438 !important;
+    color: #fffaf4 !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 20px !important;
+    font-weight: normal !important;
+    line-height: 1.15 !important;
+    text-align: center;
+}
+
+html body .mmic-pm-compose-card > tbody > tr:first-child > th::before {
+    content: "Correspondance privée";
+    display: block;
+    margin-bottom: 6px;
+    color: #e4b184;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   LIGNES DU FORMULAIRE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-card > tbody > tr:not(:first-child) {
+    border-bottom: 1px solid #f0e3d7;
+}
+
+html body .mmic-pm-compose-card td.row1,
+html body .mmic-pm-compose-card td.row2 {
+    border: 0 !important;
+    background: transparent !important;
+}
+
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child {
+    width: 205px !important;
+    padding: 14px 18px !important;
+    vertical-align: middle !important;
+}
+
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child .gen,
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child .genmed {
+    color: #b97a56 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:nth-child(2) {
+    width: auto !important;
+    padding: 9px 24px 9px 8px !important;
+}
+
+/* ---------------------------------------------------------
+   CHAMPS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page input.post,
+html body .mmic-pm-compose-page select {
+    height: 34px !important;
+    padding: 0 10px !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+    background: #fffdf9 !important;
+    color: #102438 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 9px !important;
+    outline: none !important;
+    transition: border-color .16s ease, box-shadow .16s ease;
+}
+
+html body .mmic-pm-compose-page input.post:focus,
+html body .mmic-pm-compose-page select:focus {
+    border-color: #c78d68 !important;
+    box-shadow: 0 0 0 2px rgba(185,122,86,.09) !important;
+}
+
+html body .mmic-pm-compose-page input[name="username[]"],
+html body .mmic-pm-compose-page input[name="username"],
+html body .mmic-pm-compose-page input[name="subject"] {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+html body .mmic-pm-compose-page #find_user {
+    appearance: none;
+    height: 34px;
+    margin-top: 7px;
+    margin-left: 0;
+    padding: 0 14px;
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+    background: #102438;
+    color: #fffaf4;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+html body .mmic-pm-compose-page #add_username {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 5px !important;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* =========================================================
+   SMILEYS — DERNIER AJUSTEMENT
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies {
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+
+    padding: 12px !important;
+
+    vertical-align: top !important;
+    text-align: center !important;
+
+    border-right: 1px solid #ead8c8 !important;
+
+    background: #fbf5ed !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies #smileyContainer {
+    display: block !important;
+
+    width: 165px !important;
+    max-width: 165px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies #smileyContainer iframe {
+    display: block !important;
+
+    width: 165px !important;
+    min-width: 165px !important;
+    max-width: 165px !important;
+
+    height: 380px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+}
+
+html body .mmic-pm-compose-page .mmic-pm-compose-editor {
+    width: auto !important;
+    padding: 12px !important;
+    vertical-align: top !important;
+    background: transparent !important;
+}
+
+html body .mmic-pm-compose-page #text_editor_textarea {
+    width: 100% !important;
+    min-height: 320px !important;
+    padding: 12px !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 7px !important;
+    background: #fffdf9 !important;
+    color: #102438 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 10px !important;
+    line-height: 1.6 !important;
+}
+
+/* SCEditor */
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 360px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 8px !important;
+    background: #fffdf9 !important;
+    box-shadow: 0 4px 10px rgba(16,36,56,.04) !important;
+}
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-editor .sceditor-toolbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-height: 46px !important;
+
+    padding: 7px 8px !important;
+    gap: 5px !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid #ead8c8 !important;
+
+    background: #f5ece2 !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-editor .sceditor-group {
+    display: inline-flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+
+    float: none !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+   min-height: 26px !important;
+padding: 2px 5px !important;
+
+    gap: 1px !important;
+
+    border: 1px solid #e3d2c2 !important;
+    border-radius: 5px !important;
+
+    background: #fffaf4 !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+
+    flex: 0 0 auto !important;
+
+    box-sizing: border-box !important;
+   justify-content: center !important;
+
+}
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-editor .sceditor-button {
+    display: inline-block !important;
+
+    flex: 0 0 auto !important;
+
+    width: auto !important;
+    min-width: 22px !important;
+    max-width: none !important;
+
+height: 20px !important;
+min-height: 20px !important;
+max-height: 20px !important;
+
+    margin: 0 2px !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+}
+html body .mmic-pm-compose-page
+.mmic-pm-compose-editor .sceditor-button div {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-repeat: no-repeat !important;
+}
+
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container iframe,
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container textarea,
+html body .mmic-pm-compose-page .mmic-pm-compose-editor #text_editor_textarea {
+    width: 100% !important;
+    min-height: 320px !important;
+    box-sizing: border-box !important;
+    background: #fffdf9 !important;
+}
+
+/* ---------------------------------------------------------
+   ACTIONS PRÉVISUALISATION / ENVOYER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions {
+    width: 100% !important;
+    margin-top: 10px !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 8px !important;
+    background: #fffaf4 !important;
+    border-spacing: 0 !important;
+}
+
+html body .mmic-pm-compose-actions td {
+    padding: 14px !important;
+    border: 0 !important;
+    background: transparent !important;
+    text-align: center !important;
+}
+
+html body .mmic-pm-compose-actions input[type="submit"] {
+    appearance: none !important;
+    min-width: 125px !important;
+    height: 34px !important;
+    margin: 0 6px !important;
+    padding: 0 15px !important;
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+    background: #fffaf4 !important;
+    color: #102438 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 2px 5px rgba(16,36,56,.05) !important;
+    cursor: pointer !important;
+    transition: transform .16s ease, background .16s ease, color .16s ease, border-color .16s ease !important;
+}
+
+html body .mmic-pm-compose-actions input[type="submit"]:hover {
+    transform: translateY(-1px) !important;
+    border-color: #c78d68 !important;
+    background: #f5e9dc !important;
+    color: #102438 !important;
+}
+
+/* ---------------------------------------------------------
+   OPTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #optionsitems,
+html body .mmic-pm-compose-page #optionsitems_show {
+    margin-top: 12px;
+}
+
+html body .mmic-pm-compose-page #optionsitems > table,
+html body .mmic-pm-compose-page #optionsitems_show > table {
+    width: 100% !important;
+    overflow: hidden;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 8px !important;
+    background: #fffaf4 !important;
+    border-spacing: 0 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
+    padding: 11px !important;
+    border: 0 !important;
+    border-bottom: 1px solid #ead8c8 !important;
+    background: #102438 !important;
+    color: #fffaf4 !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems_show td {
+    padding: 10px 14px !important;
+    border: 0 !important;
+    background: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems_show input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #102438;
+    cursor: pointer;
+}
+
+html body .mmic-pm-compose-page #optionsitems_show .gen,
+html body .mmic-pm-compose-page #optionsitems_show .gensmall {
+    color: #102438 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 8px !important;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   HISTORIQUE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page + .mmic-pm-history,
+html body .mmic-pm-compose-page .mmic-pm-history {
+    margin-top: 14px;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 850px) {
+    html body .mmic-pm-compose-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    html body .mmic-pm-compose-toolbar .mmic-pm-folders {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    html body .mmic-pm-compose-toolbar-side {
+        align-items: stretch;
+        padding: 10px 0 0;
+        border-left: 0;
+        border-top: 1px solid #ead8c8;
+    }
+
+    html body .mmic-pm-compose-return {
+        width: 100%;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
+        width: 150px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
+        padding: 10px 6px !important;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer,
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+        width: 135px !important;
+        min-width: 135px !important;
+        max-width: 135px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child,
+    html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:nth-child(2) {
+        display: block !important;
+        width: 100% !important;
+        padding: 8px 14px !important;
+    }
+
+    html body .mmic-pm-compose-page #parent_editor_simple,
+    html body .mmic-pm-compose-page #parent_editor_simple > td {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-editor {
+        padding: 12px !important;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
+        padding: 12px !important;
+        border-right: 0 !important;
+        border-top: 1px solid #ead8c8 !important;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer,
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+        width: 150px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
+    }
+}
+/* ----------------------------------------------------
+   PREVISUALISATION MP
+---------------------------------------------------- */
+
+html body .mmic-pm-preview{
+
+    margin:0 0 18px;
+
+    border:1px solid #dfcdbc;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#fffaf4;
+
+    box-shadow:0 4px 10px rgba(16,36,56,.05);
+
+}
+
+html body .mmic-pm-preview-header{
+
+    background:#13263d;
+
+    padding:14px;
+
+    text-align:center;
+
+}
+
+html body .mmic-pm-preview-kicker{
+
+    font-size:9px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:#c99b74;
+
+    margin-bottom:4px;
+
+}
+
+html body .mmic-pm-preview-header h2{
+
+    color:#fff;
+font-size: 20px;
+    font-weight:700;
+    line-height:1.2;
+    margin:0;
+
+}
+
+html body .mmic-pm-preview-body{
+
+    padding:18px;
+
+}
+
+.mmic-pm-preview-meta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px 30px;
+    margin-bottom:16px;
+}
+.mmic-pm-preview-label{
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    color:#b88d68;
+    min-width:60px;
+}
+
+.mmic-pm-preview-value{
+    font-size:14px;
+    font-weight:600;
+    color:#13263d;
+}
+
+.mmic-pm-preview-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+html body .mmic-preview-item span{
+
+    display:block;
+
+    text-transform:uppercase;
+
+    font-size:10px;
+
+    letter-spacing:.12em;
+
+    color:#b98b66;
+
+    margin-bottom:4px;
+
+}
+
+html body .mmic-preview-item strong{
+
+    display:block;
+
+    color:#13263d;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.mmic-pm-preview-message{
+
+    padding:18px 20px;
+
+    background:#fffdfa;
+
+    border:1px solid #ead8c8;
+
+    border-radius:8px;
+
+    line-height:1.7;
+
+}
+
+html body .mmic-pm-preview-message .postbody{
+
+    margin:0;
+
+    color:#404040;
+
+    line-height:1.7;
+
+}
+/* =========================================================
+   MMIC — PAGE INFORMATION / CONFIRMATION
+   Palette été
+   ========================================================= */
+
+.mmic-message-page {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background: #fffaf4;
+    box-shadow: 0 6px 18px rgba(121, 78, 67, .07);
+}
+
+/* Bandeau */
+
+.mmic-message-header {
+    padding: 17px 20px 15px;
+
+    background: #b98278 !important;
+    border-bottom: 1px solid #d2a27e;
+
+    text-align: center;
+}
+
+.mmic-message-kicker {
+    margin-bottom: 5px;
+
+    color: #f2c79f !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.mmic-message-header h2 {
+    margin: 0;
+
+    color: #fffaf4 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+/* Corps */
+
+.mmic-message-body {
+    padding: 22px;
+
+    background: #fffaf4;
+}
+
+.mmic-message-content {
+    padding: 18px 20px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 7px;
+
+    background: #fffdf9;
+
+    color: #6f5148;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Liens générés par Forumactif dans MESSAGE_TEXT */
+
+.mmic-message-content a {
+    color: #b77868 !important;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: color .2s ease;
+}
+
+.mmic-message-content a:hover {
+    color: #8f5f55 !important;
+    text-decoration: underline;
+}
+
+/* Bouton retour */
+
+.mmic-message-actions {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 18px;
+}
+
+.mmic-message-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 30px;
+    padding: 0 18px;
+
+    border: 1px solid #b98278;
+    border-radius: 5px;
+
+    background: #b98278 !important;
+    color: #fffaf4 !important;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.mmic-message-button:hover {
+    background: #fffaf4 !important;
+    color: #b77868 !important;
+    border-color: #d2a27e;
+}
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — PALETTE ÉTÉ 2026
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   GRAND BANDEAU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-hero {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    box-shadow:
+        0 8px 20px rgba(166,111,103,.10),
+        inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+html body .mmic-pm-hero-kicker {
+    color: #f0c5a5 !important;
+}
+
+html body .mmic-pm-hero-title {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-hero-text {
+    color: rgba(255,250,244,.82) !important;
+}
+
+html body .mmic-pm-hero-word {
+    color: rgba(255,255,255,.035) !important;
+}
+
+
+/* ---------------------------------------------------------
+   DOSSIERS — ICÔNES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folder-icon {
+    border-color: #d8a17e !important;
+    background: #b6837b !important;
+}
+
+html body .mmic-pm-folder-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-folder-link a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-folder:hover {
+    border-color: #c98b78 !important;
+
+    box-shadow:
+        0 4px 9px rgba(166,111,103,.08) !important;
+}
+
+
+/* ---------------------------------------------------------
+   STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-storage-label {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-storage-status {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-storage-progress {
+    background: #b6837b !important;
+}
+
+
+/* ---------------------------------------------------------
+   NOUVEAU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-new-button {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(166,111,103,.12) !important;
+}
+
+html body .mmic-pm-new-button:hover {
+    background: #a66f67 !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-new-icon {
+    background: #fff4ea !important;
+}
+
+
+/* ---------------------------------------------------------
+   FILTRE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-filter {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-filter select {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-filter-button {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-filter-button:hover {
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRES / LISTE DES MESSAGES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-list-header,
+html body .mmic-pm-message-kicker,
+html body .mmic-pm-meta-label {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-message-title {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-message-title:hover,
+html body .mmic-pm-message:hover .mmic-pm-message-title {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-message-from,
+html body .mmic-pm-message-date > span:last-child {
+    color: #75473f !important;
+}
+
+
+/* ---------------------------------------------------------
+   ENVELOPPES LU / NON LU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-status-icon {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+
+    box-shadow:
+        0 3px 6px rgba(166,111,103,.12) !important;
+}
+
+html body .mmic-pm-status-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon::before {
+    background: #efd0b8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CASES À COCHER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message-check input:checked + span {
+    background: #b6837b !important;
+}
+
+html body .mmic-pm-message-check input:checked + span::after {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTONS DE SÉLECTION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-selection-links a {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-action-button {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-action-button:hover {
+    border-color: #c98b78 !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   LECTURE D'UN MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-pm-read {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-avatar {
+    background: #b6837b !important;
+    border-color: #d8a17e !important;
+}
+
+html body .mmic-pm-read-author-kicker,
+html body .mmic-pm-read-kicker {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-read-author-name,
+html body .mmic-pm-read-title {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-native-action a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-native-action a:hover {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-reply
+.mmic-pm-read-native-action a {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-button {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-button:hover {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   HISTORIQUE D'UN MP
+   --------------------------------------------------------- */
+
+html body .mmic-pm-review-header {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-bottom-color: #d8a17e !important;
+}
+
+html body .mmic-pm-review-kicker {
+    color: #f0c5a5 !important;
+}
+
+html body .mmic-pm-review-header h2 {
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   COMPOSITION D'UN MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-pm-compose-page {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link,
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-compose-return,
+html body .mmic-pm-compose-page #find_user {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-return:hover,
+html body .mmic-pm-compose-page #find_user:hover {
+    background: #a66f67 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page
+#optionsitems_show input[type="checkbox"] {
+    accent-color: #b6837b !important;
+}
+/* =========================================================
+   MEET ME IN CHICAGO
+   MP — COMPOSITION + PRÉVISUALISATION
+   PALETTE ÉTÉ 2026
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   GRAND BANDEAU — ENVOYER UN NOUVEAU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .thHead,
+html body .mmic-pm-compose-page th.thHead,
+html body .mmic-pm-compose-page table.forumline > tbody > tr:first-child > th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+    border-bottom-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+
+/* tout ce qui se trouve dans le bandeau */
+
+html body .mmic-pm-compose-page .thHead *,
+html body .mmic-pm-compose-page th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* petit texte "CORRESPONDANCE PRIVÉE" */
+
+html body .mmic-pm-compose-page .thHead::before,
+html body .mmic-pm-compose-page th.thHead::before {
+    color: #f0c5a5 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRE PRINCIPAL PERSONNALISÉ
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-header,
+html body .mmic-pm-compose-title,
+html body .mmic-pm-compose-head {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-header *,
+html body .mmic-pm-compose-title *,
+html body .mmic-pm-compose-head * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CHAMPS / LABELS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
+> td:first-child .gen,
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
+> td:first-child .genmed {
+    color: #b46f61 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TROUVER UN NOM D'UTILISATEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #find_user {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page #find_user:hover {
+    border-color: #c98b78 !important;
+
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION DU HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-return {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-return:hover {
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTONS ENVOYER / PRÉVISUALISER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions input[type="submit"] {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-actions input[type="submit"]:hover {
+    border-color: #c98b78 !important;
+
+    background: #a66f67 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   PRÉVISUALISATION DU MESSAGE PRIVÉ
+   ========================================================= */
+
+/*
+   Forumactif réutilise parfois une table native au-dessus
+   du formulaire quand on prévisualise.
+*/
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type .thHead,
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type th.thHead {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type .thHead *,
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   APERÇU PERSONNALISÉ SI CLASSES MMIC
+   --------------------------------------------------------- */
+
+html body .mmic-pm-preview-header,
+html body .mmic-pm-preview-head,
+html body .mmic-pm-preview-title {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-preview-header *,
+html body .mmic-pm-preview-head *,
+html body .mmic-pm-preview-title * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   APERÇU — PETITS LABELS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .mmic-pm-preview-kicker,
+html body .mmic-pm-compose-page .mmic-pm-preview-label {
+    color: #b46f61 !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems th *,
+html body .mmic-pm-compose-page #optionsitems_show th * {
+    color: #fffaf4 !important;
+}
+/* =========================================================
+   MP — DERNIERS AJUSTEMENTS
+   Nouveau message + page Informations
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BOUTON "NOUVEAU MESSAGE" SUR LA PAGE DE LECTURE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-page a[href*="mode=post"],
+html body .mmic-pm-read-page .mmic-pm-new-message,
+html body .mmic-pm-read-page .mmic-pm-nav-new {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+
+    box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
+}
+
+html body .mmic-pm-read-page a[href*="mode=post"] *,
+html body .mmic-pm-read-page .mmic-pm-new-message *,
+html body .mmic-pm-read-page .mmic-pm-nav-new * {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-page a[href*="mode=post"]:hover,
+html body .mmic-pm-read-page .mmic-pm-new-message:hover,
+html body .mmic-pm-read-page .mmic-pm-nav-new:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   MP — PAGE INFORMATION APRÈS ENVOI
+   ========================================================= */
+
+body.mmic-pm-info-page table.forumline {
+    width: 100% !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+
+    background: #fffaf4 !important;
+
+    box-shadow: 0 5px 16px rgba(166,111,103,.06) !important;
+}
+
+
+/* BANDEAU */
+
+body.mmic-pm-info-page table.forumline .thHead,
+body.mmic-pm-info-page table.forumline th.thHead {
+    height: auto !important;
+
+    padding: 15px 20px !important;
+
+    border: 0 !important;
+    border-bottom: 2px solid #d8a17e !important;
+
+    background: #b6837b !important;
+    background-image: none !important;
+
+    color: #fffaf4 !important;
+
+    text-align: center !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+body.mmic-pm-info-page table.forumline .thHead *,
+body.mmic-pm-info-page table.forumline th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* PETIT "INFORMATION" */
+
+body.mmic-pm-info-page table.forumline .thHead::before,
+body.mmic-pm-info-page table.forumline th.thHead::before {
+    content: "INFORMATION";
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #f2c5a3 !important;
+
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+
+/* CONTENU */
+
+body.mmic-pm-info-page table.forumline td.row1,
+body.mmic-pm-info-page table.forumline td.row2,
+body.mmic-pm-info-page table.forumline td.row3 {
+    padding: 22px !important;
+
+    border: 0 !important;
+
+    background: #fffaf4 !important;
+
+    color: #6f4b43 !important;
+}
+
+
+/* LIENS */
+
+body.mmic-pm-info-page table.forumline a {
+    color: #b46f61 !important;
+
+    text-decoration: underline !important;
+
+    transition: color .2s ease;
+}
+
+body.mmic-pm-info-page table.forumline a:hover {
+    color: #8f5c55 !important;
+}
+
+
+/* BOUTON RETOUR */
+
+body.mmic-pm-info-page .mainoption,
+body.mmic-pm-info-page input[type="submit"] {
+    padding: 9px 20px !important;
+
+    border: 1px solid #d8a17e !important;
+    border-radius: 5px !important;
+
+    background: #b6837b !important;
+    background-image: none !important;
+
+    color: #fffaf4 !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+
+    box-shadow: none !important;
+
+    cursor: pointer !important;
+}
+
+body.mmic-pm-info-page .mainoption:hover,
+body.mmic-pm-info-page input[type="submit"]:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
+}
+/* =========================================================
+   MP — BOUTON NOUVEAU MESSAGE / LECTURE
+   ========================================================= */
+
+html body .mmic-pm-read-shortcut--primary {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border: 1px solid #d8a17e !important;
+
+    color: #fffaf4 !important;
+
+    box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
+}
+
+html body .mmic-pm-read-shortcut--primary * {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-shortcut--primary:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
+}

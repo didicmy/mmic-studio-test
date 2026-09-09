@@ -1,0 +1,220 @@
+/* =========================================
+   FICHE DE bottin avatar — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
+.boentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.boname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.bogroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.bogtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.bobackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.bocontenu {
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: auto;
+}
+
+.boh2 {
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.botexte {
+    color: #633F38;
+    font-size: 12px;
+}
+
+.bocredits {
+    font-size: 11px;
+    color: #A96F68;
+}
+.bosection {
+    margin: 22px 0 0;
+}
+
+.bosection:first-child {
+    margin-top: 0;
+}
+
+.botitre2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.botitre2::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 1px;
+    margin: 6px auto 0;
+
+    background: #D8A08C;
+}
+
+.botexte2 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 0.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+.botexte3 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+.mmic-bottin-liste {
+    width: fit-content;
+    min-width: 260px;
+    margin: 12px auto 20px;
+}
+
+.mmic-bottin-entree {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    min-height: 5px;
+    margin: 0;
+   font-family: "Betania Patmos", cursive;
+  font-weight: 400;
+  font-style: normal;
+    line-height: 1.15;
+}
+
+.mmic-bottin-entree a {
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.mmic-bottin-symbole {
+    font-size: 8px;
+}
+
+.mmic-bottin-pris {
+       margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   color: #9B5F59;
+}
+.mmic-bottin-reserve {    
+   margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   color: #D19A72;
+}
+.mmic-bottin-libre {
+    margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   color: #8FA397;
+}
+.bolegende {
+    width: fit-content;
+    margin: 0 auto 28px;
+    font-family: 'Lato', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.65;
+    color: #633F38;
+}
+
+.bolegende div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bolegende-symbole-pris {
+    font-size: 14px;
+    color: #9B5F59;
+   font-family: 'Lato', sans-serif;
+}
+
+.bolegende-symbole-reserve {
+    font-size: 14px;
+    color: #D19A72;
+   font-family: 'Lato', sans-serif;
+}
+
+.bolegende-symbole-libre {
+    font-size: 14px;
+    color: #8FA397;
+   font-family: 'Lato', sans-serif;
+   
+}
+.mmic-bottin-avatar {
+    color: #633F38;
+    font-weight: 600;
+}
+
+.mmic-bottin-separateur {
+    color: #D8A08C;
+    margin: 0 5px;
+}
+.mmic-bottin-symbole {
+    font-size: 11px;
+    margin-right: 7px;
+}
+/* ------- Fin bottins------- */

@@ -1,0 +1,223 @@
+/* =========================================
+   Fiches diverses — MEET ME IN CHICAGO
+   ========================================= */
+/*============= Partie intégrante du suqelette de la fiche
+=================================*/
+
+/* -------- En-tête -------- */
+
+.diversentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.diversname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.diversgroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.diversgtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.diversbackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.diverscontenu {
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: auto;
+}
+
+.diversh2 {
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.diverstexte {
+    color: #633F38;
+    font-size: 12px;
+}
+
+.diverscredits {
+    font-size: 11px;
+    color: #A96F68;
+}
+.diverssection {
+    margin: 28px 0 0;
+}
+
+.diverssection:first-child {
+    margin-top: 0;
+}
+
+.diverstitre {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.diverstitre::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: 7px auto 0;
+
+    background: #D8A08C;
+}
+
+.diverstexte2 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+
+/* ------- Fin du squelette ------- */
+
+/* DATE — FICHE ANNONCES */
+.annoncedate {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #A96F68;
+    margin: 0 0 20px 0;
+}
+
+.annoncedate::before {
+    content: "— ";
+    color: #D8A08C;
+}
+/* Absence */
+
+.absenceligne {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #633F38;
+    line-height: 1.4;
+   text-align:center;
+}
+
+.absencenom {
+    color: #A96F68;
+    font-weight: 600;
+   text-align:center;
+}
+/* BOUTONS STAFF — FICHE DE VALIDATION */
+
+.staffvalidation {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.staffvalidation a {
+    display: inline-block;
+    min-width: 90px;
+    padding: 7px 12px;
+    background: #BC887D;
+    color: #FFF9F4 !important;
+    font-family: 'Unica One', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+.staffvalidation a:hover {
+    background: #A96F68;
+    color: #FFF9F4 !important;
+}
+/* IMAGES — FICHE DE VALIDATION */
+
+.validationimages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 22px;
+}
+
+.validationimages img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #FFF9F4;
+    box-shadow: 0 2px 5px rgba(99, 63, 56, 0.18);
+}
+/* Rp libre */
+.rplibreligne {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #633F38;
+    line-height: 0.65;
+}
+
+.rplibrenom {
+    color: #A96F68;
+    font-weight: 600;
+}
+/* associations et clubs */
+
+.assoligne {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #633F38;
+    line-height: 1.4;
+   text-align:center;
+}
+
+.assonom {
+    color: #A96F68;
+    font-weight: 600;
+}

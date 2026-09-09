@@ -1,0 +1,5669 @@
+/* =========================================================
+   PROFIL UTILISATEUR — MEET ME IN CHICAGO — VERSION NETTOYÉE
+   ========================================================= */
+
+html body .mmic-profile-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 24px auto 40px;
+
+    color: #514a44;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+html body .mmic-profile-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 0 0 14px;
+    padding: 10px 14px;
+
+    border: 1px solid rgba(216, 176, 140, 0.42);
+    border-radius: 8px;
+
+    background: #fbf8f3;
+
+    box-shadow: 0 3px 10px rgba(16, 36, 56, 0.04);
+
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+html body .mmic-profile-breadcrumb a {
+    color: #102438 !important;
+
+    font-weight: 700;
+    text-decoration: none;
+}
+
+html body .mmic-profile-breadcrumb a:hover {
+    color: #b97a56 !important;
+}
+
+html body .mmic-profile-breadcrumb span {
+    color: #d8b08c;
+
+    font-size: 13px;
+}
+
+html body .mmic-profile-breadcrumb strong {
+    color: #746a61;
+
+    font-weight: 600;
+}
+
+/* =========================================================
+   EN-TÊTE
+   ========================================================= */
+
+html body .mmic-profile-hero {
+    position: relative;
+
+    margin-bottom: 18px;
+
+    overflow: visible;
+
+    border: 1px solid rgba(216, 176, 140, 0.65);
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b1c2d 0%,
+            #17344e 52%,
+            #0b1c2d 100%
+        );
+
+    box-shadow:
+        0 8px 22px rgba(10, 26, 42, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+html body .mmic-profile-hero::after {
+    content: "";
+
+    position: absolute;
+    right: 18px;
+    bottom: -1px;
+    left: 18px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #b97a56 18%,
+            #d8b08c 50%,
+            #b97a56 82%,
+            transparent
+        );
+}
+
+html body .mmic-profile-hero-city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+    min-height: 32px;
+    padding: 5px 16px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.24);
+
+    color: #d8b08c;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-hero-city span {
+    width: 42px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #b97a56
+        );
+}
+
+html body .mmic-profile-hero-city span:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            #b97a56,
+            transparent
+        );
+}
+
+html body .mmic-profile-hero-content {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 24px;
+
+    min-height: 170px;
+
+    padding: 26px 28px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   AVATAR LOSANGE DU PROFIL
+   ========================================================= */
+
+html body .mmic-profile-hero-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 130px;
+}
+
+html body .mmic-profile-avatar-diamond {
+    position: relative;
+
+    width: 108px;
+    height: 108px;
+
+    padding: 5px;
+
+    border: 2px solid #d8b08c;
+    border-radius: 7px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 12px 27px rgba(3, 16, 29, 0.44),
+        0 0 0 3px #b97a56,
+        inset 0 0 0 2px #102438;
+
+    transform: rotate(45deg);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-avatar-diamond:hover {
+    transform:
+        rotate(45deg)
+        scale(1.08);
+
+    box-shadow:
+        0 16px 35px rgba(3, 16, 29, 0.53),
+        0 0 0 4px #b97a56,
+        inset 0 0 0 2px #102438;
+}
+
+html body .mmic-profile-avatar-image {
+    position: absolute;
+    inset: -20%;
+
+    transform: rotate(-45deg);
+}
+
+html body .mmic-profile-avatar-image img {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* =========================================================
+   IDENTITÉ
+   ========================================================= */
+
+html body .mmic-profile-identity {
+    min-width: 0;
+}
+
+html body .mmic-profile-eyebrow {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d8b08c;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-username {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(27px, 4vw, 44px);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+html body .mmic-profile-rank {
+    margin-top: 7px;
+
+    color: #d8b08c;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-status-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+
+    margin-top: 18px;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: rgba(255, 250, 244, 0.79);
+
+    font-size: 9px;
+}
+
+html body .mmic-profile-status-dot {
+    width: 7px;
+    height: 7px;
+
+    border: 2px solid #d8b08c;
+    border-radius: 50%;
+
+    background: #b97a56;
+
+    box-shadow: 0 0 0 3px rgba(216, 176, 140, 0.14);
+}
+
+html body .mmic-profile-last-visit strong {
+    color: #d8b08c;
+
+    font-size: 7px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   ACTIONS DU PROFIL
+   ========================================================= */
+
+html body .mmic-profile-hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+
+    min-width: 130px;
+}
+
+html body .mmic-profile-follow,
+html body .mmic-profile-private-message a,
+html body .mmic-profile-private-message img {
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-follow {
+    min-height: 36px;
+    padding: 8px 14px;
+
+    border: 1px solid rgba(216, 176, 140, 0.66);
+    border-radius: 6px;
+
+    background: rgba(255, 250, 244, 0.06);
+    color: #fffaf4;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        transform 0.22s ease;
+}
+
+html body .mmic-profile-follow:hover {
+    background: #d8b08c;
+    color: #102438;
+
+    transform: translateY(-2px);
+}
+
+html body .mmic-profile-private-message {
+    text-align: center;
+}
+
+html body .mmic-profile-private-message a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 36px;
+    padding: 8px 14px;
+
+    border: 1px solid rgba(216, 176, 140, 0.66);
+    border-radius: 6px;
+
+    background: #b97a56;
+    color: #fffaf4 !important;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   STRUCTURE PRINCIPALE
+   ========================================================= */
+
+html body .mmic-profile-layout {
+    display: grid;
+    grid-template-columns: minmax(245px, 0.34fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+}
+
+html body .mmic-profile-sidebar,
+html body .mmic-profile-main {
+    display: grid;
+    gap: 16px;
+}
+
+html body .mmic-profile-card {
+    border: 1px solid rgba(216, 176, 140, 0.48);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #f8f2eb 100%
+        );
+
+    box-shadow:
+        0 5px 15px rgba(16, 36, 56, 0.055),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TITRES DE CARTES
+   ========================================================= */
+
+html body .mmic-profile-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 17px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d2134,
+            #17344e
+        );
+}
+
+html body .mmic-profile-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 31px;
+    height: 31px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 50%;
+
+    color: #d8b08c;
+
+    font-size: 11px;
+}
+
+html body .mmic-profile-heading-small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #d8b08c;
+
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-card-heading h2 {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* =========================================================
+   COLONNE GAUCHE
+   ========================================================= */
+
+html body .mmic-profile-sidebar-avatar {
+    padding: 18px 18px 10px;
+
+    text-align: center;
+}
+
+html body .mmic-profile-sidebar-avatar img {
+    display: block;
+
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 390px !important;
+
+    margin: auto;
+
+    border: 1px solid #d8b08c;
+    border-radius: 8px;
+
+    box-shadow:
+        0 7px 17px rgba(16, 36, 56, 0.14),
+        0 0 0 4px #fffaf4;
+}
+
+html body .mmic-profile-sidebar-rank,
+html body .mmic-profile-sidebar-line,
+html body .mmic-profile-groups,
+html body .mmic-profile-administration {
+    margin: 0 17px;
+    padding: 12px 0;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.32);
+}
+
+html body .mmic-profile-sidebar-rank,
+html body .mmic-profile-sidebar-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+html body .mmic-profile-sidebar-rank span,
+html body .mmic-profile-sidebar-line span,
+html body .mmic-profile-sidebar-label {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-sidebar-rank strong,
+html body .mmic-profile-sidebar-line strong {
+    color: #102438;
+
+    font-size: 9px;
+    text-align: right;
+}
+
+html body .mmic-profile-group-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 9px;
+}
+
+html body .mmic-profile-group-list a {
+    padding: 6px 9px;
+
+    border: 1px solid rgba(216, 176, 140, 0.44);
+    border-radius: 5px;
+
+    background: #fffaf4;
+    color: #102438 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-admin-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: 9px;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+html body .mmic-profile-contact-list {
+    display: grid;
+    gap: 8px;
+
+    padding: 15px;
+}
+
+html body .mmic-profile-contact-item {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+
+    min-height: 38px;
+    padding: 8px 10px;
+
+    border: 1px solid rgba(216, 176, 140, 0.32);
+    border-radius: 6px;
+
+    background: rgba(255, 250, 244, 0.74);
+}
+
+html body .mmic-profile-contact-label {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-contact-content {
+    min-width: 0;
+
+    color: #102438;
+
+    font-size: 9px;
+}
+
+html body .mmic-profile-contact-content img {
+    max-width: 100%;
+}
+
+html body .mmic-profile-admin-comment {
+    margin: 0 15px 15px;
+    padding: 12px;
+
+    border-left: 3px solid #b97a56;
+
+    background: rgba(216, 176, 140, 0.11);
+}
+
+html body .mmic-profile-admin-comment-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    margin-bottom: 8px;
+}
+
+html body .mmic-profile-admin-comment-title strong {
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+}
+
+html body .mmic-profile-admin-comment-title span {
+    color: #b97a56;
+
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   TITRES DES GRANDES SECTIONS
+   ========================================================= */
+
+html body .mmic-profile-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    padding: 19px 21px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.36);
+}
+
+html body .mmic-profile-section-title > div:first-child > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-section-title h2 {
+    margin: 0;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+html body .mmic-profile-section-decoration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #b97a56;
+}
+
+html body .mmic-profile-section-decoration span {
+    width: 30px;
+    height: 1px;
+
+    background: #d8b08c;
+}
+
+/* =========================================================
+   DERNIÈRE VISITE
+   ========================================================= */
+
+html body .mmic-profile-visit-highlight {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin: 16px 20px 0;
+    padding: 12px 14px;
+
+    border: 1px solid rgba(216, 176, 140, 0.36);
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(216, 176, 140, 0.13),
+            rgba(255, 250, 244, 0.5)
+        );
+}
+
+html body .mmic-profile-visit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #102438;
+    color: #d8b08c;
+
+    font-size: 14px;
+}
+
+html body .mmic-profile-visit-highlight div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+html body .mmic-profile-visit-highlight div span {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-visit-highlight div strong {
+    color: #102438;
+
+    font-size: 9px;
+}
+
+/* =========================================================
+   CHAMPS DU PROFIL
+   ========================================================= */
+
+html body .mmic-profile-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+
+    padding: 18px 20px 21px;
+}
+
+html body .mmic-profile-field {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: minmax(95px, 0.42fr) minmax(0, 1fr);
+    align-items: start;
+
+    min-height: 49px;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 7px;
+
+    background: rgba(255, 250, 244, 0.74);
+
+    overflow: visible;
+}
+
+html body .mmic-profile-field-label {
+    min-height: 100%;
+    padding: 11px;
+
+    border-right: 1px solid rgba(216, 176, 140, 0.3);
+
+    background: rgba(216, 176, 140, 0.09);
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-field-value {
+    min-width: 0;
+    padding: 11px 12px;
+
+    color: #514a44;
+
+    font-size: 9px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-field-content {
+    overflow-wrap: anywhere;
+}
+
+html body .mmic-profile-post-statistics {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 8px;
+    padding-top: 7px;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.28);
+
+    color: #8b7d71;
+
+    font-size: 7px;
+}
+
+html body .mmic-profile-post-links {
+    margin-top: 8px;
+}
+
+html body .mmic-profile-post-links > a {
+    color: #b97a56 !important;
+
+    font-size: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+html body .mmic-profile-post-links > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 7px;
+}
+
+html body .mmic-profile-post-links > div a {
+    padding: 5px 8px;
+
+    border: 1px solid rgba(216, 176, 140, 0.38);
+    border-radius: 4px;
+
+    color: #102438 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   ÉDITION AJAX
+   ========================================================= */
+
+html body .mmic-profile-page .ajax-profil_parent {
+    position: relative;
+}
+
+html body .mmic-profile-page .ajax-profil_edit {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+
+    border: 1px solid rgba(216, 176, 140, 0.48);
+    border-radius: 5px;
+
+    background: #102438;
+
+    cursor: pointer;
+}
+
+html body .mmic-profile-page .ajax-profil_edit img,
+html body .mmic-profile-page .ajax-profil_valid {
+    max-width: 14px;
+    max-height: 14px;
+
+    cursor: pointer;
+}
+
+html body .mmic-profile-page .field_editable input,
+html body .mmic-profile-page .field_editable select,
+html body .mmic-profile-page .field_editable textarea {
+    max-width: 100%;
+
+    padding: 7px 9px;
+
+    border: 1px solid rgba(216, 176, 140, 0.48);
+    border-radius: 5px;
+
+    background: #fffdf9;
+    color: #514a44;
+
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-page .form-error {
+    margin-top: 6px;
+
+    color: #a14343;
+
+    font-size: 8px;
+}
+
+/* =========================================================
+   RÉCOMPENSES
+   ========================================================= */
+
+html body .mmic-profile-awards {
+    margin-top: 0;
+}
+
+html body .mmic-profile-awards-list {
+    padding: 18px 20px 22px;
+}
+
+html body .mmic-profile-awards-list .awards_block_simple {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    min-height: 70px;
+}
+
+html body .mmic-profile-awards-list img {
+    max-width: 60px;
+    max-height: 60px;
+
+    padding: 5px;
+
+    border: 1px solid rgba(216, 176, 140, 0.45);
+    border-radius: 7px;
+
+    background: #fffaf4;
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+html body .mmic-profile-awards-list img:hover {
+    transform:
+        translateY(-4px)
+        scale(1.05);
+
+    box-shadow: 0 8px 16px rgba(16, 36, 56, 0.14);
+}
+
+/* =========================================================
+   FEUILLE RPG
+   ========================================================= */
+
+html body .mmic-profile-rpg {
+    margin-top: 17px;
+}
+
+html body .mmic-profile-rpg-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px 23px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0c1d2f,
+            #17344e
+        );
+}
+
+html body .mmic-profile-rpg-header > div:first-child > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #d8b08c;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-rpg-header h2 {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+html body .mmic-profile-rpg-city {
+    color: rgba(255, 250, 244, 0.08);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 5vw, 56px);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-rpg-layout {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.38fr) minmax(0, 1fr);
+    gap: 18px;
+
+    padding: 21px;
+}
+
+html body .mmic-profile-rpg-left,
+html body .mmic-profile-rpg-right {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+}
+
+html body .mmic-profile-rpg-image {
+    text-align: center;
+}
+
+html body .mmic-profile-rpg-image img {
+    max-width: 100%;
+
+    border: 1px solid #d8b08c;
+    border-radius: 8px;
+
+    box-shadow: 0 6px 16px rgba(16, 36, 56, 0.12);
+}
+
+html body .mmic-profile-rpg-fields,
+html body .mmic-profile-rpg-right {
+    display: grid;
+    gap: 9px;
+}
+
+html body .mmic-profile-rpg-field {
+    display: grid;
+    grid-template-columns: minmax(100px, 0.34fr) minmax(0, 1fr);
+    gap: 12px;
+
+    padding: 11px 13px;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 6px;
+
+    background: rgba(255, 250, 244, 0.76);
+}
+
+html body .mmic-profile-rpg-field span {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-rpg-field strong {
+    min-width: 0;
+
+    color: #514a44;
+
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+html body .mmic-profile-rpg-administration {
+    padding: 13px 20px;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.34);
+
+    text-align: center;
+}
+
+/* =========================================================
+   ANCIENS BOUTONS ET IMAGES FORUMACTIF
+   ========================================================= */
+
+html body .mmic-profile-page a img {
+    vertical-align: middle;
+}
+
+html body .mmic-profile-page .mmic-profile-contact-content a,
+html body .mmic-profile-page .mmic-profile-admin-links a,
+html body .mmic-profile-page .mmic-profile-rpg-administration a {
+    color: #102438 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    html body .mmic-profile-hero-content {
+        grid-template-columns: 130px minmax(0, 1fr);
+    }
+
+    html body .mmic-profile-hero-actions {
+        grid-column: 1 / -1;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    html body .mmic-profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-sidebar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+
+    html body .mmic-profile-page {
+        width: calc(100% - 12px);
+        margin-top: 12px;
+    }
+
+    html body .mmic-profile-hero-content {
+        display: flex;
+        flex-direction: column;
+
+        padding: 26px 17px;
+
+        text-align: center;
+    }
+
+    html body .mmic-profile-identity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html body .mmic-profile-status-line {
+        justify-content: center;
+    }
+
+    html body .mmic-profile-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-fields {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-rpg-layout {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-contact-item,
+    html body .mmic-profile-field,
+    html body .mmic-profile-rpg-field {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-field-label {
+        border-right: 0;
+        border-bottom: 1px solid rgba(216, 176, 140, 0.3);
+    }
+
+    html body .mmic-profile-section-decoration,
+    html body .mmic-profile-rpg-city {
+        display: none;
+    }
+}
+/* =========================================================
+   CARTE DE VISITE — PROFIL COMPACT
+   ========================================================= */
+
+html body .mmic-profile-business-card {
+    display: grid;
+    grid-template-columns: 255px minmax(0, 1fr);
+
+    margin-top: 16px;
+
+    border: 1px solid rgba(216, 176, 140, 0.52);
+    border-radius: 11px;
+
+    background: #fffdf9;
+
+    box-shadow:
+        0 8px 22px rgba(16, 36, 56, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   PARTIE GAUCHE
+   ========================================================= */
+
+html body .mmic-profile-business-left {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 22px 18px;
+
+    border-right: 1px solid rgba(216, 176, 140, 0.34);
+
+    background:
+        linear-gradient(
+            180deg,
+            #f6eee6 0%,
+            #fbf8f3 55%,
+            #f3e9df 100%
+        );
+
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-business-left::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 18px;
+    left: 18px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #b97a56,
+            #d8b08c,
+            #b97a56,
+            transparent
+        );
+}
+
+/* Avatar principal de la carte */
+
+html body .mmic-profile-business-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 270px;
+
+    margin: 4px auto 18px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 9px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 8px 18px rgba(16, 36, 56, 0.14),
+        0 0 0 4px rgba(255, 250, 244, 0.95);
+
+    overflow: hidden;
+}
+
+html body .mmic-profile-business-avatar img {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: cover !important;
+    object-position: center top !important;
+
+    transition: transform 0.35s ease;
+}
+
+html body .mmic-profile-business-avatar:hover img {
+    transform: scale(1.05);
+}
+
+/* Nom sous l’avatar */
+
+html body .mmic-profile-business-name {
+    text-align: center;
+}
+
+html body .mmic-profile-business-name span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-business-name strong {
+    display: block;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+html body .mmic-profile-business-name small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #8a786a;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+/* Présence */
+
+html body .mmic-profile-business-presence {
+    margin-top: 17px;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.34);
+}
+
+html body .mmic-profile-business-presence-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.28);
+}
+
+html body .mmic-profile-business-presence-line span,
+html body .mmic-profile-business-groups > span {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-business-presence-line strong {
+    color: #102438;
+
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: right;
+}
+
+/* Groupes */
+
+html body .mmic-profile-business-groups {
+    padding: 11px 0;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.28);
+}
+
+html body .mmic-profile-business-groups > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 8px;
+}
+
+html body .mmic-profile-business-groups a {
+    padding: 5px 8px;
+
+    border: 1px solid rgba(216, 176, 140, 0.45);
+    border-radius: 5px;
+
+    background: #fffaf4;
+    color: #102438 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Actions */
+
+html body .mmic-profile-business-actions {
+    display: grid;
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+html body .mmic-profile-business-actions .mmic-profile-follow,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 35px;
+
+    margin: 0;
+    padding: 8px 11px;
+
+    border: 1px solid rgba(216, 176, 140, 0.58);
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        transform 0.22s ease;
+}
+
+html body .mmic-profile-business-actions .mmic-profile-follow:hover,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a:hover {
+    background: #d8b08c;
+    color: #102438 !important;
+
+    transform: translateY(-2px);
+}
+
+html body .mmic-profile-business-admin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: 14px;
+}
+
+/* =========================================================
+   PARTIE DROITE
+   ========================================================= */
+
+html body .mmic-profile-business-right {
+    min-width: 0;
+
+    padding: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #fbf7f1 100%
+        );
+}
+
+/* En-tête de la carte */
+
+html body .mmic-profile-business-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    min-height: 82px;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.36);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(216, 176, 140, 0.09),
+            transparent
+        );
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-business-header > div:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+html body .mmic-profile-business-header > div:first-child > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-profile-business-header h2 {
+    margin: 0;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+html body .mmic-profile-business-mark {
+    position: absolute;
+    right: 20px;
+
+    color: rgba(16, 36, 56, 0.055);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    pointer-events: none;
+}
+
+/* =========================================================
+   INFORMATIONS EN GRILLE
+   ========================================================= */
+
+html body .mmic-profile-business-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    gap: 9px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+}
+
+html body .mmic-profile-business-fields .mmic-profile-field {
+    display: grid;
+    grid-template-columns: minmax(100px, 0.42fr) minmax(0, 1fr);
+    align-items: stretch;
+
+    min-height: 47px;
+    margin: 0;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 7px;
+
+    background: rgba(255, 250, 244, 0.76);
+
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-label {
+    display: flex;
+    align-items: center;
+
+    min-height: 100%;
+    padding: 10px;
+
+    border-right: 1px solid rgba(216, 176, 140, 0.3);
+
+    background: rgba(216, 176, 140, 0.1);
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+}
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-value {
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+    padding: 10px 12px;
+
+    color: #514a44;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-content {
+    width: 100%;
+
+    overflow-wrap: anywhere;
+}
+
+/* Champ occupant toute la largeur lorsqu’il contient beaucoup de texte */
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field.mmic-profile-field-wide {
+    grid-column: 1 / -1;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+html body .mmic-profile-business-contact {
+    padding: 0 20px 20px;
+}
+
+html body .mmic-profile-business-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    margin: 1px 0 13px;
+}
+
+html body .mmic-profile-business-subtitle span {
+    width: 42px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d8b08c
+        );
+}
+
+html body .mmic-profile-business-subtitle span:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            #d8b08c,
+            transparent
+        );
+}
+
+html body .mmic-profile-business-subtitle strong {
+    color: #b97a56;
+
+    font-size: 7px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-list {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    padding: 0;
+}
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: auto;
+    min-height: 35px;
+    padding: 7px 10px;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 6px;
+
+    background: #fffaf4;
+}
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-label {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-content {
+    color: #102438;
+
+    font-size: 8px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    html body .mmic-profile-business-card {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+    html body .mmic-profile-business-avatar {
+        width: 155px;
+        height: 235px;
+    }
+
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html body .mmic-profile-business-card {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-business-left {
+        border-right: 0;
+        border-bottom: 1px solid rgba(216, 176, 140, 0.34);
+    }
+
+    html body .mmic-profile-business-avatar {
+        width: 170px;
+        height: 255px;
+    }
+
+    html body .mmic-profile-business-header {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    html body .mmic-profile-business-mark {
+        display: none;
+    }
+
+    html body .mmic-profile-business-fields {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    html body
+    .mmic-profile-business-fields
+    .mmic-profile-field {
+        grid-template-columns: 1fr;
+    }
+
+    html body
+    .mmic-profile-business-fields
+    .mmic-profile-field-label {
+        border-right: 0;
+        border-bottom: 1px solid rgba(216, 176, 140, 0.3);
+    }
+}
+/* =========================================================
+   SÉCURISATION DE LA CARTE DE VISITE
+   ========================================================= */
+
+html body .mmic-profile-business-card,
+html body .mmic-profile-business-right,
+html body .mmic-profile-business-fields,
+html body .mmic-profile-field,
+html body .mmic-profile-field-value,
+html body .mmic-profile-field-content {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-field-content,
+html body .mmic-profile-field-content * {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+html body .mmic-profile-field-content img {
+    height: auto !important;
+}
+
+html body .mmic-profile-business-fields {
+    align-items: stretch !important;
+}
+
+html body .mmic-profile-business-fields:empty,
+html body .mmic-profile-business-contact:has(
+    .mmic-profile-contact-list:empty
+) {
+    display: none !important;
+}
+/* =========================================================
+   CORRECTION FINALE — CHAMPS DE LA CARTE
+   ========================================================= */
+
+html body .mmic-profile-business-card {
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: stretch !important;
+}
+
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+html body .mmic-profile-business-fields {
+    display: grid !important;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    align-content: start !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 18px 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field {
+    position: relative !important;
+    float: none !important;
+    clear: none !important;
+
+    display: grid !important;
+    grid-template-columns:
+        minmax(105px, 0.42fr)
+        minmax(0, 1fr) !important;
+
+    grid-column: auto !important;
+
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 48px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-wide {
+    grid-column: 1 / -1 !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-label,
+html body .mmic-profile-business-fields
+.mmic-profile-field-value,
+html body .mmic-profile-business-fields
+.mmic-profile-field-content,
+html body .mmic-profile-business-fields
+.field_uneditable,
+html body .mmic-profile-business-fields
+.field_editable {
+    position: static !important;
+    float: none !important;
+    clear: none !important;
+
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-label {
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 10px 11px !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-value {
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 10px 12px !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-content {
+    width: 100% !important;
+
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+/*
+ * Sécurité supplémentaire :
+ * même avant le passage du JavaScript,
+ * le champ Messages ne doit plus former un bloc immense.
+ */
+html body .mmic-profile-business-fields
+.mmic-profile-field {
+    max-height: none !important;
+}
+
+/* Coordonnées */
+
+html body .mmic-profile-business-contact
+.mmic-profile-contact-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+
+    width: 100% !important;
+}
+
+html body .mmic-profile-business-contact
+.mmic-profile-contact-item {
+    float: none !important;
+    clear: none !important;
+
+    width: auto !important;
+    height: auto !important;
+    min-height: 35px !important;
+
+    margin: 0 !important;
+}
+
+/* Tablettes */
+
+@media (max-width: 800px) {
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr !important;
+    }
+
+    html body .mmic-profile-business-fields
+    .mmic-profile-field-wide {
+        grid-column: auto !important;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 600px) {
+    html body .mmic-profile-business-fields
+    .mmic-profile-field {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* =========================================================
+   PROFIL — BOUTONS DE CONTACT MODERNES
+   ========================================================= */
+
+html body .mmic-profile-contact-list {
+    display: grid !important;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+}
+
+html body .mmic-profile-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+
+    min-width: 0 !important;
+    min-height: 42px !important;
+
+    padding: 8px 10px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.42) !important;
+    border-radius: 7px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #f8f2eb 100%
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.8),
+        0 2px 5px rgba(16, 36, 56, 0.035) !important;
+
+    transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease !important;
+}
+
+html body .mmic-profile-contact-item:hover {
+    transform: translateY(-2px) !important;
+
+    border-color: rgba(185, 122, 86, 0.75) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 5px 12px rgba(16, 36, 56, 0.09) !important;
+}
+
+/* Libellé */
+
+html body .mmic-profile-contact-label {
+    flex: 1 1 auto !important;
+
+    color: #b06f4b !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    letter-spacing: 1.15px !important;
+    text-transform: uppercase !important;
+}
+
+/* Zone du lien */
+
+html body .mmic-profile-contact-content {
+    flex: 0 0 auto !important;
+}
+
+html body .mmic-profile-contact-content a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 28px !important;
+    height: 28px !important;
+
+    padding: 0 !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.62) !important;
+    border-radius: 50% !important;
+
+    background: #10283e !important;
+    color: #f4cfad !important;
+
+    text-decoration: none !important;
+
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease !important;
+}
+
+html body .mmic-profile-contact-content a:hover {
+    transform: scale(1.08) !important;
+    background: #183b58 !important;
+}
+
+/* On masque les anciens gifs Forumactif */
+
+html body .mmic-profile-contact-content a img {
+    display: none !important;
+}
+
+/* Icône générique */
+
+html body .mmic-profile-contact-content a::before {
+    content: "↗";
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+}
+/* Message privé */
+
+html body .mmic-profile-contact-content
+a[href*="privmsg"]::before {
+    content: "✉";
+}
+
+/* Courriel */
+
+html body .mmic-profile-contact-content
+a[href^="mailto:"]::before {
+    content: "@";
+}
+
+/* Site Internet */
+
+html body .mmic-profile-contact-content
+a[href^="http"]::before {
+    content: "⌂";
+}
+html body .mmic-profile-business-contact {
+    margin-top: 18px !important;
+    padding: 10px 18px 24px !important;
+}
+
+html body .mmic-profile-business-subtitle {
+    margin-bottom: 10px !important;
+}
+
+html body .mmic-profile-business-subtitle strong {
+    font-size: 8px !important;
+    letter-spacing: 1.7px !important;
+}
+
+/* =========================================================
+   PROFIL — FINITIONS PROPRES ET UNIQUES
+   Ce bloc remplace les anciens correctifs répétés du header.
+   ========================================================= */
+
+/* En-tête compact */
+html body .mmic-profile-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+}
+
+html body .mmic-profile-hero-city {
+    min-height: 0 !important;
+    padding: 4px 20px 3px !important;
+
+    font-size: 8px !important;
+    letter-spacing: 3px !important;
+}
+
+html body .mmic-profile-hero-city span {
+    width: 38px !important;
+}
+
+/*
+ * Deux colonnes seulement :
+ * avatar à gauche et identité sur toute la largeur restante.
+ */
+html body .mmic-profile-hero-content {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns: 96px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    width: 100% !important;
+    height: 90px !important;
+    min-height: 0 !important;
+
+    padding: 7px 24px 8px 14px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* L’ancienne colonne d’actions du header ne sert plus ici. */
+html body .mmic-profile-hero-actions {
+    display: none !important;
+}
+
+/* =========================================================
+   AVATAR DU HEADER
+   ========================================================= */
+
+html body .mmic-profile-hero-avatar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 96px !important;
+    min-width: 96px !important;
+    height: 88px !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+}
+
+html body .mmic-profile-avatar-diamond {
+    position: relative !important;
+
+    width: 72px !important;
+    height: 72px !important;
+
+    margin: 0 !important;
+    padding: 4px !important;
+
+    border: 2px solid #b97a56 !important;
+    border-radius: 7px !important;
+
+    background: #f8f2eb !important;
+
+    transform: rotate(45deg) !important;
+    transform-origin: center center !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+
+    box-shadow:
+        0 4px 12px rgba(12, 29, 47, 0.24),
+        inset 0 0 0 2px rgba(216, 176, 140, 0.35) !important;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease !important;
+}
+
+html body .mmic-profile-avatar-diamond:hover {
+    transform: rotate(45deg) scale(1.06) !important;
+
+    box-shadow:
+        0 8px 18px rgba(12, 29, 47, 0.34),
+        inset 0 0 0 2px rgba(216, 176, 140, 0.45) !important;
+}
+
+html body .mmic-profile-avatar-image {
+    position: absolute !important;
+
+    inset: 4px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    overflow: hidden !important;
+    transform: none !important;
+}
+
+html body .mmic-profile-avatar-image img {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+
+    display: block !important;
+
+    width: 102px !important;
+    height: 102px !important;
+    min-width: 102px !important;
+    min-height: 102px !important;
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-45deg) !important;
+
+    transform-origin: center center !important;
+}
+
+/* =========================================================
+   IDENTITÉ ET DERNIÈRE VISITE
+   ========================================================= */
+
+html body .mmic-profile-identity {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+}
+
+/* Le pseudo reste près de l’avatar. */
+html body .mmic-profile-eyebrow {
+    margin: 0 0 3px !important;
+
+    font-size: 7px !important;
+    line-height: 1 !important;
+    letter-spacing: 2.3px !important;
+}
+
+html body .mmic-profile-username {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 31px !important;
+    line-height: 1 !important;
+}
+
+/* On retire le second nom correspondant au rang. */
+html body .mmic-profile-hero .mmic-profile-rank {
+    display: none !important;
+}
+
+/*
+ * Le statut reste sous le pseudo.
+ * La dernière visite est poussée vers le coin droit.
+ */
+html body .mmic-profile-status-line {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+
+    width: 100% !important;
+    margin: 7px 0 0 !important;
+
+    line-height: 1 !important;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+
+    margin: 0 !important;
+
+    white-space: nowrap !important;
+}
+
+html body .mmic-profile-status {
+    flex: 0 0 auto !important;
+}
+
+/* C’est cette règle qui envoie la date complètement à droite. */
+html body .mmic-profile-last-visit {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+
+    text-align: right !important;
+}
+
+html body .mmic-profile-last-visit strong {
+    margin: 0 5px 0 0 !important;
+}
+
+/* =========================================================
+   CARTE DE VISITE — EN-TÊTE ET FILIGRANE
+   ========================================================= */
+
+html body .mmic-profile-business-header {
+    min-height: 0 !important;
+    padding: 15px 18px !important;
+}
+
+html body .mmic-profile-business-header > div:first-child > span {
+    font-size: 8px !important;
+    letter-spacing: 2px !important;
+}
+
+html body .mmic-profile-business-header h2 {
+    margin: 3px 0 0 !important;
+
+    font-size: 23px !important;
+    line-height: 1.15 !important;
+}
+
+html body .mmic-profile-business-mark {
+    right: 20px !important;
+
+    font-size: 32px !important;
+    letter-spacing: 3px !important;
+
+    opacity: 0.045 !important;
+    transform: none !important;
+
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   RESPONSIVE DU HEADER
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    html body .mmic-profile-hero-content {
+        grid-template-columns: 92px minmax(0, 1fr) !important;
+        gap: 12px !important;
+
+        padding: 12px 16px 14px !important;
+    }
+
+    html body .mmic-profile-hero-avatar {
+        width: 92px !important;
+        min-width: 92px !important;
+    }
+
+    html body .mmic-profile-status-line {
+        flex-wrap: wrap !important;
+        gap: 8px 14px !important;
+    }
+
+    html body .mmic-profile-last-visit {
+        margin-left: 0 !important;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html body .mmic-profile-hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+
+        text-align: center !important;
+    }
+
+    html body .mmic-profile-identity {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    html body .mmic-profile-status-line {
+        justify-content: center !important;
+    }
+}
+/* =========================================================
+   PROFIL — BOUTONS DE CONTACT
+   ========================================================= */
+
+html body .mmic-profile-business-contact {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 10px !important;
+
+    margin-top:-8px !important;
+}
+
+/* Chaque bouton */
+html body .mmic-profile-business-contact > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    min-width: 125px !important;
+    height: 42px !important;
+
+    padding: 0 9px 0 12px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.55) !important;
+    border-radius: 7px !important;
+
+    background: linear-gradient(
+        180deg,
+        #fffdf9 0%,
+        #f8f2eb 100%
+    ) !important;
+
+    box-shadow:
+        0 3px 8px rgba(12, 29, 47, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Libellés */
+html body .mmic-profile-business-contact > div > span,
+html body .mmic-profile-business-contact > div {
+    color: #b36f4c !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Lien rond */
+html body .mmic-profile-business-contact a {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 28px !important;
+    width: 28px !important;
+    height: 28px !important;
+
+    margin-left: 10px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.75) !important;
+    border-radius: 50% !important;
+
+    background: #0d263b !important;
+    color: #f2c79d !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 2px 5px rgba(12, 29, 47, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+
+    overflow: hidden !important;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+/* On cache les vieux gifs Forumactif */
+html body .mmic-profile-business-contact a img {
+    display: none !important;
+}
+
+/* Icône commune */
+html body .mmic-profile-business-contact a::before {
+    display: block !important;
+
+    color: #f2c79d !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
+
+/* Message privé */
+.mmic-profile-business-contact a[href*="privmsg"]::before{
+    content:"✉";
+}
+
+/* Email */
+.mmic-profile-business-contact a[href^="mailto"]::before{
+    content:"@";
+    font-weight:700;
+}
+
+/* Site web */
+.mmic-profile-business-contact a[href*="http"]::before{
+    content:"⌂";
+}
+
+/* Survol */
+html body .mmic-profile-business-contact a:hover {
+    background: #173b58 !important;
+
+    transform: translateY(-2px) scale(1.06) !important;
+
+    box-shadow:
+        0 5px 10px rgba(12, 29, 47, 0.25),
+        0 0 0 2px rgba(216, 176, 140, 0.18) !important;
+}
+
+/* Bouton sans lien disponible */
+html body .mmic-profile-business-contact > div:not(:has(a)) {
+    opacity: 0.55 !important;
+}
+/* =========================================================
+   PROFIL — ALIGNEMENT DES COORDONNÉES ET SUPPRESSION
+   DU CADRE EXTÉRIEUR EN TROP
+   ========================================================= */
+
+/* Partie droite de la carte */
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    padding: 0 !important;
+}
+
+/* Zone des champs */
+html body .mmic-profile-business-fields {
+    flex: 0 0 auto !important;
+}
+
+/* Bloc complet des coordonnées */
+html body .mmic-profile-business-contact {
+    position: static !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+
+    margin-top: 250px !important;
+    padding: 0 16px !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Titre "Coordonnées et liens" */
+html body .mmic-profile-business-contact-title {
+    position: static !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+}
+
+/* Conteneur des trois boutons */
+html body .mmic-profile-business-contact-links {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+
+    width: 100% !important;
+    gap: 12px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Suppression du grand cadre horizontal en trop */
+html body .mmic-profile-business-contact-links > div {
+    margin: 0 !important;
+}
+
+/* Sécurité si le cadre extérieur vient directement
+   du premier enfant générique */
+html body .mmic-profile-business-contact > div:not(
+    .mmic-profile-business-contact-title
+):not(
+    .mmic-profile-business-contact-links
+) {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+/* Correction générale du cadre extérieur */
+html body .mmic-profile-business-contact {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* Les boutons eux-mêmes gardent leur cadre individuel */
+html body .mmic-profile-business-contact > div > div {
+    border: 1px solid rgba(216, 176, 140, 0.55) !important;
+    border-radius: 7px !important;
+    background: linear-gradient(
+        180deg,
+        #fffdf9 0%,
+        #f8f2eb 100%
+    ) !important;
+}
+/* =========================================================
+   PROFIL — EDITION
+   ========================================================= */
+
+html body .mmic-profile-edit-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+    margin: 30px auto 40px;
+    color: #102438;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+   TABLE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .mmic-profile-edit-table {
+    width: 100% !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background: #fffaf4 !important;
+    border-spacing: 0 !important;
+    box-shadow: 0 5px 14px rgba(16,36,56,.05);
+}
+
+/* ---------------------------------------------------------
+   BANDEAUX DE SECTION
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .thHead,
+html body .mmic-profile-edit-page .thSides {
+    background: #13263d !important;
+    color: #fff !important;
+
+    border: 0 !important;
+    border-top: 1px solid #d2a27e !important;
+    border-bottom: 1px solid #d2a27e !important;
+
+    padding: 13px 18px !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    text-align: center !important;
+    letter-spacing: .01em !important;
+
+    height: auto !important;
+}
+
+/* petite ligne décorative implicite */
+html body .mmic-profile-edit-page .thHead::before,
+html body .mmic-profile-edit-page .thSides::before {
+    content: "PROFIL";
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+
+    color: #c99b74;
+}
+
+/* ---------------------------------------------------------
+   LIGNES / CELLULES
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page td.row1,
+html body .mmic-profile-edit-page td.row2 {
+    background: #fffaf4 !important;
+    border: 0 !important;
+    border-bottom: 1px solid #f0e4d8 !important;
+    padding: 9px 14px !important;
+    vertical-align: middle !important;
+}
+
+/* colonne des intitulés */
+html body .mmic-profile-edit-page td.row1 {
+    width: 36%;
+    color: #13263d !important;
+}
+
+/* colonne des champs */
+html body .mmic-profile-edit-page td.row2 {
+    color: #303030 !important;
+}
+
+/* ---------------------------------------------------------
+   TYPOGRAPHIE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .gen,
+html body .mmic-profile-edit-page .genmed {
+    font-size: 13px !important;
+    color: #13263d !important;
+}
+
+html body .mmic-profile-edit-page .gensmall {
+    font-size: 11px !important;
+    color: #7b7168 !important;
+    line-height: 1.45 !important;
+}
+
+/* ---------------------------------------------------------
+   INPUTS / SELECTS / TEXTAREA
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page input[type="text"],
+html body .mmic-profile-edit-page input[type="password"],
+html body .mmic-profile-edit-page input[type="file"],
+html body .mmic-profile-edit-page select,
+html body .mmic-profile-edit-page textarea {
+    max-width: 100%;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    color: #13263d !important;
+
+    padding: 6px 8px !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-edit-page textarea {
+    min-height: 90px;
+}
+
+/* ---------------------------------------------------------
+   LIENS
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page a {
+    color: #9d6f4f;
+}
+
+html body .mmic-profile-edit-page a:hover {
+    color: #13263d;
+}
+
+/* ---------------------------------------------------------
+   BOUTONS BAS DE PAGE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .catBottom {
+    background: #fffaf4 !important;
+    border: 0 !important;
+
+    padding: 18px !important;
+
+    text-align: center !important;
+}
+
+html body .mmic-profile-edit-page .mainoption,
+html body .mmic-profile-edit-page .liteoption {
+    min-width: 115px;
+
+    padding: 9px 16px !important;
+
+    border: 1px solid #d2a27e !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+
+    color: #13263d !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+
+    cursor: pointer;
+}
+
+html body .mmic-profile-edit-page .mainoption {
+    background: #13263d !important;
+    color: #fff !important;
+}
+
+html body .mmic-profile-edit-page .mainoption:hover {
+    background: #1d3553 !important;
+}
+
+html body .mmic-profile-edit-page .liteoption:hover {
+    background: #f5ece2 !important;
+}
+/* ==========================================================
+   EXPORT DE DONNÉES
+========================================================== */
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"]{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:8px 14px;
+    margin:0 auto 12px;
+
+    background:#16283d;
+    color:#fff !important;
+
+    border:1px solid #d8b38d;
+    border-radius:5px;
+
+    text-decoration:none !important;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+
+    font-size:11px;
+    font-weight:700;
+    line-height:1;
+
+    transition:.25s ease;
+}
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover{
+    background:#d8b38d;
+    color:#16283d !important;
+}
+/* Bloc Export de données */
+
+html body .mmic-profile-edit-page td.row2{
+    vertical-align:top;
+}
+
+html body .mmic-profile-edit-page td.row2 a[href*="rgpd.php"]{
+    display:flex;
+    width:max-content;
+}
+
+html body .mmic-profile-edit-page td.row2 a[href*="rgpd.php"] + br{
+    display:none;
+}
+
+html body .mmic-profile-edit-page td.row2 span.gen{
+    display:block;
+    margin-top:10px;
+    line-height:1.5;
+    color:#6f6b66;
+}
+/*==================================================
+=            CARTE EXPORT DES DONNÉES              =
+==================================================*/
+
+/* La ligne contenant le texte et le bouton */
+html body .mmic-profile-edit-page tr:has(a[href*="rgpd.php"]) td{
+    border:0 !important;
+    background:transparent !important;
+    padding:0 !important;
+}
+
+/* Carte */
+html body .mmic-profile-edit-page a[href*="rgpd.php"]{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:9px 18px;
+
+    background:#16283d;
+    color:#fff !important;
+
+    border:1px solid #d8b38d;
+    border-radius:6px;
+
+    text-decoration:none !important;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+    transition:.25s;
+}
+
+/* Le conteneur qui englobe texte + bouton */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]){
+    text-align:center !important;
+    padding:26px 20px !important;
+}
+
+/* Texte explicatif */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]) span.gen{
+    display:block;
+    max-width:520px;
+    margin:18px auto 0;
+
+    font-size:13px;
+    line-height:1.7;
+    color:#5d5d5d;
+}
+
+/* Petit espace sous le bouton */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]) a{
+    margin:18px auto 12px;
+}
+/* ==========================================================
+   PROFIL — ONGLET AVATAR
+========================================================== */
+
+html body .mmic-profile-edit-page .mmic-avatar-current{
+    width:100%;
+    box-sizing:border-box;
+
+    text-align:center;
+
+    padding:10px 10px 10px 70px;
+}
+
+/* Titre "Image actuelle" */
+html body .mmic-profile-edit-page
+.mmic-avatar-current > .gensmall:first-child{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#9b7b5b !important;
+
+    font-size:11px !important;
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+/* Avatar */
+html body .mmic-profile-edit-page
+.mmic-avatar-current > img{
+    display:block;
+
+    margin:0 auto 10px !important;
+}
+
+/* Ligne suppression */
+html body .mmic-profile-edit-page
+.mmic-avatar-delete{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:6px;
+
+    margin-top:6px;
+}
+
+html body .mmic-profile-edit-page
+.mmic-avatar-delete input{
+    margin:0 !important;
+}
+
+html body .mmic-profile-edit-page
+.mmic-avatar-delete .gensmall{
+    margin:0 !important;
+
+    color:#746b64 !important;
+
+    font-size:11px !important;
+    text-transform:none !important;
+    letter-spacing:0 !important;
+}
+/* ==========================================================
+   PROFIL — AMIS ET IGNORÉS
+========================================================== */
+
+body.mmic-profile-friendsfoes #page-body {
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   BLOCS FORUMACTIF
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline {
+    width:100% !important;
+
+    margin:0 0 14px !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden;
+}
+
+/* ----------------------------------------------------------
+   BANDEAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th {
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-top:1px solid #d2a27e !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:17px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+/* Petit kicker */
+body.mmic-profile-friendsfoes #page-body table.forumline th::before {
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline td {
+    padding:7px 12px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    vertical-align:middle !important;
+}
+
+/* dernière ligne */
+body.mmic-profile-friendsfoes #page-body table.forumline tr:last-child td {
+    border-bottom:0 !important;
+}
+
+/* ----------------------------------------------------------
+   TEXTE
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body .gen,
+body.mmic-profile-friendsfoes #page-body .genmed {
+    color:#13263d !important;
+    font-size:12px !important;
+}
+
+body.mmic-profile-friendsfoes #page-body .gensmall {
+    color:#756b63 !important;
+
+    font-size:11px !important;
+    line-height:1.45 !important;
+}
+
+/* ----------------------------------------------------------
+   CHAMPS
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body input[type="text"],
+body.mmic-profile-friendsfoes #page-body input.post {
+    min-height:27px;
+
+    padding:5px 8px !important;
+
+    box-sizing:border-box;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:5px !important;
+
+    background:#fffdf9 !important;
+    color:#13263d !important;
+}
+
+body.mmic-profile-friendsfoes #page-body input[type="text"]:focus,
+body.mmic-profile-friendsfoes #page-body input.post:focus {
+    outline:none !important;
+
+    border-color:#c99b74 !important;
+
+    box-shadow:0 0 0 2px rgba(201,155,116,.12) !important;
+}
+
+/* ----------------------------------------------------------
+   BOUTONS AJOUTER
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body input.liteoption,
+body.mmic-profile-friendsfoes #page-body input.mainoption {
+    min-height:27px;
+
+    padding:6px 13px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.07em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input.liteoption:hover,
+body.mmic-profile-friendsfoes #page-body input.mainoption:hover {
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+/* ----------------------------------------------------------
+   PETITS ESPACES ENTRE LES BLOCS
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline + br {
+    line-height:5px !important;
+}
+/* ==========================================================
+   PROFIL — MEMBRES SUIVIS
+========================================================== */
+
+/* ----------------------------------------------------------
+   CONTENEUR PRINCIPAL
+---------------------------------------------------------- */
+
+body.mmic-profile-followers #page-body {
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   TABLE / BLOC PRINCIPAL
+---------------------------------------------------------- */
+
+body.mmic-profile-followers #page-body table.forumline {
+    width:100% !important;
+
+    margin:0 auto 18px !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+/* ----------------------------------------------------------
+   BANDEAU "MEMBRES SUIVIS"
+---------------------------------------------------------- */
+
+body.mmic-profile-followers #page-body table.forumline th,
+body.mmic-profile-followers #page-body table.forumline .thHead,
+body.mmic-profile-followers #page-body table.forumline .thSides,
+body.mmic-profile-followers #page-body table.forumline .catHead {
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-top:1px solid #d2a27e !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background: linear-gradient(
+    90deg,
+    #8F5D58 0%,
+    #A96F68 50%,
+    #8F5D58 100%
+) !important;
+
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:17px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+/* Petit kicker */
+body.mmic-profile-followers #page-body table.forumline th::before,
+body.mmic-profile-followers #page-body table.forumline .thHead::before,
+body.mmic-profile-followers #page-body table.forumline .thSides::before,
+body.mmic-profile-followers #page-body table.forumline .catHead::before {
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-followers #page-body table.forumline td {
+    padding:12px 16px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    vertical-align:middle !important;
+}
+
+body.mmic-profile-followers #page-body table.forumline tr:last-child td {
+    border-bottom:0 !important;
+}
+
+/* ----------------------------------------------------------
+   MESSAGE "AUCUN MEMBRE SUIVI"
+---------------------------------------------------------- */
+
+body.mmic-profile-followers #page-body .gen,
+body.mmic-profile-followers #page-body .genmed,
+body.mmic-profile-followers #page-body .gensmall {
+    color:#13263d !important;
+}
+
+body.mmic-profile-followers #page-body table.forumline td:only-child {
+    text-align:center !important;
+
+    padding:22px 18px !important;
+
+    font-size:12px !important;
+
+    color:#817267 !important;
+}
+
+/* ----------------------------------------------------------
+   CARTES DES MEMBRES SUIVIS
+   Utilisé lorsqu'il y aura des membres
+---------------------------------------------------------- */
+
+body.mmic-profile-followers .followers_block {
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+
+    gap:14px !important;
+
+    padding:18px !important;
+}
+
+/* Carte membre */
+body.mmic-profile-followers .follower-card {
+    display:flex !important;
+    align-items:center !important;
+
+    width:calc(50% - 12px);
+    min-width:240px;
+
+    box-sizing:border-box;
+
+    padding:12px !important;
+
+    border:1px solid #ead8c8 !important;
+    border-radius:7px !important;
+
+    background:#fffdf9 !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-followers .follower-card:hover {
+    border-color:#d2a27e !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.06);
+}
+
+/* Avatar */
+body.mmic-profile-followers .follower-card img {
+    width:55px !important;
+    height:55px !important;
+
+    object-fit:cover !important;
+
+    border-radius:6px !important;
+
+    margin-right:12px !important;
+}
+
+/* Informations */
+body.mmic-profile-followers .follower-card .details {
+    flex:1;
+}
+
+body.mmic-profile-followers .follower-card .details p {
+    margin:0 0 8px !important;
+
+    color:#13263d !important;
+
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* ----------------------------------------------------------
+   BOUTON SUIVRE / NE PLUS SUIVRE
+---------------------------------------------------------- */
+
+body.mmic-profile-followers .followBtn {
+    padding: 7px 12px !important;
+
+    border: 1px solid #D58D7A !important;
+    border-radius: 5px !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    letter-spacing: .6px !important;
+    text-transform: uppercase !important;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+body.mmic-profile-followers .followBtn:hover {
+    background: #8F5D58 !important;
+    border-color: #F0B29E !important;
+
+    box-shadow:
+        0 4px 9px rgba(117, 67, 63, .14) !important;
+
+    color: #FFF8F4 !important;
+}
+/* ==========================================================
+   PROFIL — MEMBRES SUIVIS
+   Ajustements cartes
+========================================================== */
+
+body.mmic-profile-followers .follower-card {
+    align-items:center !important;
+
+    padding:14px 16px !important;
+
+    min-height:82px;
+
+    gap:14px !important;
+}
+
+body.mmic-profile-followers .follower-card img {
+    width:52px !important;
+    height:52px !important;
+
+    margin:0 !important;
+
+    object-fit:cover !important;
+    border-radius:6px !important;
+}
+
+body.mmic-profile-followers .follower-card .details {
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+
+    gap:8px !important;
+}
+
+/* Pseudo */
+body.mmic-profile-followers .follower-card .details p {
+    margin:0 !important;
+
+    line-height:1.1 !important;
+}
+
+/* Bouton */
+body.mmic-profile-followers .follower-card .followBtn {
+    margin:0 !important;
+}
+/* ==========================================================
+   PROFIL — NOTIFICATIONS
+   On garde la structure Forumactif, on l'habille façon MMIC
+========================================================== */
+
+body.mmic-profile-notifications #page-body{
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   TABLEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:16px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+/* ----------------------------------------------------------
+   BANDEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead{
+    height:auto !important;
+
+    padding:10px 14px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:15px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+/* Petit kicker MMIC */
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+body.mmic-profile-notifications #page-body .catHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ----------------------------------------------------------
+   SOUS-EN-TÊTES DU TABLEAU
+   "Types de notifications / Par email / Push..."
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .cat,
+body.mmic-profile-notifications #page-body .catBottom,
+body.mmic-profile-notifications #page-body td.cat,
+body.mmic-profile-notifications #page-body td.catBottom{
+    background:#f5ece2 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+    border-bottom:1px solid #dfcdbc !important;
+
+    padding:8px 10px !important;
+
+    font-size:10px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.05em !important;
+    text-transform:uppercase !important;
+}
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body td.row1,
+body.mmic-profile-notifications #page-body td.row2,
+body.mmic-profile-notifications #page-body table.forumline td{
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    padding:6px 10px !important;
+
+    vertical-align:middle !important;
+}
+
+/* alternance légère, sans faire tableau Excel */
+body.mmic-profile-notifications #page-body tr:nth-child(even) td.row1,
+body.mmic-profile-notifications #page-body tr:nth-child(even) td.row2{
+    background:#fffdf9 !important;
+}
+
+/* ----------------------------------------------------------
+   TYPOGRAPHIE
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .gen,
+body.mmic-profile-notifications #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-profile-notifications #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+    line-height:1.4 !important;
+}
+
+/* ----------------------------------------------------------
+   CASES À COCHER
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body input[type="checkbox"]{
+    width:14px;
+    height:14px;
+
+    accent-color:#13263d;
+
+    cursor:pointer;
+}
+
+/* ----------------------------------------------------------
+   BOUTONS
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption,
+body.mmic-profile-notifications #page-body .liteoption{
+    min-height:27px;
+
+    padding:6px 13px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.07em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-notifications #page-body .mainoption:hover,
+body.mmic-profile-notifications #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+/* ----------------------------------------------------------
+   LIENS "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body a{
+    color:#9d6f4f;
+}
+
+body.mmic-profile-notifications #page-body a:hover{
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   BLOC "0 NOTIFICATION"
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .catBottom,
+body.mmic-profile-notifications #page-body td.catBottom{
+    text-align:center !important;
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE LÉGER
+---------------------------------------------------------- */
+
+@media (max-width:750px){
+
+    body.mmic-profile-notifications #page-body table.forumline{
+        font-size:10px !important;
+    }
+
+    body.mmic-profile-notifications #page-body th,
+    body.mmic-profile-notifications #page-body td{
+        padding-left:6px !important;
+        padding-right:6px !important;
+    }
+}
+/* ==========================================================
+   PROFIL — SUJETS SURVEILLÉS + FAVORIS
+   Classe commune : mmic-profile-topic-list
+========================================================== */
+
+body.mmic-profile-topic-list #page-body{
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   TABLEAU PRINCIPAL
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:14px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+/* ----------------------------------------------------------
+   GRAND BANDEAU
+   "1 sujet surveillé" / "0 favori"
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body .catHead,
+body.mmic-profile-topic-list #page-body .thHead{
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:16px !important;
+    font-weight:600 !important;
+}
+
+/* Petit kicker */
+
+body.mmic-profile-topic-list #page-body .catHead::before,
+body.mmic-profile-topic-list #page-body .thHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ----------------------------------------------------------
+   EN-TÊTES DES COLONNES
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body th{
+    height:auto !important;
+
+    padding:8px 7px !important;
+
+    border:0 !important;
+    border-right:1px solid rgba(255,255,255,.12) !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:12px !important;
+    font-weight:600 !important;
+}
+
+body.mmic-profile-topic-list #page-body th:last-child{
+    border-right:0 !important;
+}
+
+/* ----------------------------------------------------------
+   LIGNES DES SUJETS / FAVORIS
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body td.row1,
+body.mmic-profile-topic-list #page-body td.row2,
+body.mmic-profile-topic-list #page-body table.forumline td{
+    padding:8px 9px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    background:#fffaf4 !important;
+    color:#13263d !important;
+
+    vertical-align:middle !important;
+}
+
+body.mmic-profile-topic-list #page-body tr:last-child td{
+    border-bottom:0 !important;
+}
+
+/* alternance très légère */
+
+body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row1,
+body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row2{
+    background:#fffdf9 !important;
+}
+
+/* ----------------------------------------------------------
+   LIENS
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body a{
+    color:#9d6f4f;
+}
+
+body.mmic-profile-topic-list #page-body a:hover{
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   TYPOGRAPHIE
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body .gen,
+body.mmic-profile-topic-list #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-profile-topic-list #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+    line-height:1.4 !important;
+}
+
+/* ----------------------------------------------------------
+   CHECKBOX
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body input[type="checkbox"]{
+    width:14px;
+    height:14px;
+
+    accent-color:#13263d;
+
+    cursor:pointer;
+}
+
+/* ----------------------------------------------------------
+   BOUTONS
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body input[type="submit"],
+body.mmic-profile-topic-list #page-body .mainoption,
+body.mmic-profile-topic-list #page-body .liteoption{
+    padding:7px 14px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.06em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-topic-list #page-body input[type="submit"]:hover,
+body.mmic-profile-topic-list #page-body .mainoption:hover,
+body.mmic-profile-topic-list #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+/* ----------------------------------------------------------
+   BAS DE TABLEAU / PAGINATION
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body .catBottom{
+    background:#f5ece2 !important;
+
+    border:0 !important;
+    border-top:1px solid #dfcdbc !important;
+
+    padding:8px 10px !important;
+
+    color:#13263d !important;
+}
+
+/* ----------------------------------------------------------
+   "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body .gensmall a{
+    font-weight:600;
+}
+
+/* ----------------------------------------------------------
+   "SAUTER VERS"
+---------------------------------------------------------- */
+
+body.mmic-profile-topic-list #page-body select{
+    border:1px solid #dfcdbc !important;
+    border-radius:5px !important;
+
+    background:#fffdf9 !important;
+    color:#13263d !important;
+
+    padding:5px 7px !important;
+}
+/* ==========================================================
+   PROFIL — SIGNATURE
+========================================================== */
+
+body.mmic-profile-signature #page-body{
+    color:#13263d;
+}
+
+/* ----------------------------------------------------------
+   TABLEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:16px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+/* ----------------------------------------------------------
+   BANDEAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body th,
+body.mmic-profile-signature #page-body .thHead,
+body.mmic-profile-signature #page-body .thSides,
+body.mmic-profile-signature #page-body .catHead{
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:17px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+/* Petit kicker */
+body.mmic-profile-signature #page-body th::before,
+body.mmic-profile-signature #page-body .thHead::before,
+body.mmic-profile-signature #page-body .thSides::before,
+body.mmic-profile-signature #page-body .catHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body td.row1,
+body.mmic-profile-signature #page-body td.row2,
+body.mmic-profile-signature #page-body table.forumline td{
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+
+    padding:10px 12px !important;
+}
+
+/* ----------------------------------------------------------
+   TEXTE "SIGNATURE :"
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body .gen,
+body.mmic-profile-signature #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-profile-signature #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+}
+
+/* ----------------------------------------------------------
+   ÉDITEUR
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body .sceditor-container{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:7px !important;
+
+    background:#fffdf9 !important;
+
+    overflow:hidden !important;
+
+    box-shadow:0 4px 10px rgba(16,36,56,.04);
+}
+
+/* ----------------------------------------------------------
+   SCEDITOR — BARRE D'OUTILS PLUS COMPACTE
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body .sceditor-toolbar{
+    display:flex !important;
+    flex-wrap:wrap !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    gap:2px !important;
+
+    padding:6px 8px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #dfcdbc !important;
+
+    background:#f5ece2 !important;
+
+    box-sizing:border-box !important;
+}
+
+/* Groupes de boutons */
+body.mmic-profile-signature #page-body .sceditor-group{
+    display:inline-flex !important;
+
+    flex-wrap:nowrap !important;
+    align-items:center !important;
+
+    float:none !important;
+
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+
+    min-height:24px !important;
+
+    margin:2px !important;
+    padding:2px 3px !important;
+
+    border:1px solid #e3d2c2 !important;
+    border-radius:5px !important;
+
+    background:#fffaf4 !important;
+
+    white-space:nowrap !important;
+}
+
+/* Boutons */
+body.mmic-profile-signature #page-body .sceditor-button{
+    display:flex !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    flex:0 0 20px !important;
+
+    width:20px !important;
+    height:20px !important;
+
+    min-width:20px !important;
+    min-height:20px !important;
+
+    margin:0 1px !important;
+    padding:0 !important;
+}
+
+/* Icône interne */
+body.mmic-profile-signature #page-body .sceditor-button div{
+    width:18px !important;
+    height:18px !important;
+
+    margin:0 !important;
+
+    background-size:auto !important;
+}
+/* zone texte */
+body.mmic-profile-signature #page-body .sceditor-container iframe,
+body.mmic-profile-signature #page-body .sceditor-container textarea{
+    width:100% !important;
+
+    min-height:220px !important;
+
+    box-sizing:border-box !important;
+
+    background:#fffdf9 !important;
+}
+
+/* ----------------------------------------------------------
+   SMILEYS
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body #smiley-box,
+body.mmic-profile-signature #page-body .smile-status-box{
+    background:#fffaf4 !important;
+
+    border-right:1px solid #dfcdbc !important;
+
+    padding:10px !important;
+
+    box-sizing:border-box !important;
+}
+
+/* ----------------------------------------------------------
+   BOUTONS BAS
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body input[type="submit"],
+body.mmic-profile-signature #page-body .mainoption,
+body.mmic-profile-signature #page-body .liteoption{
+    padding:7px 14px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.06em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-signature #page-body input[type="submit"]:hover,
+body.mmic-profile-signature #page-body .mainoption:hover,
+body.mmic-profile-signature #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+/* ----------------------------------------------------------
+   ONGLET SIGNATURE ACTIF
+---------------------------------------------------------- */
+
+body.mmic-profile-signature .mmic-signature-tab{
+    color:#13263d !important;
+    font-weight:700 !important;
+}
+body.mmic-profile-signature .mmic-signature-tab,
+.mmic-signature-tab-active{
+    color:#13263d !important;
+    font-weight:700 !important;
+}
+/* =========================================================
+   PROFIL — CONTACTS DISCRETS SOUS SUIVRE
+   ========================================================= */
+
+html body .mmic-profile-business-left
+.mmic-profile-business-contact {
+    width: 100% !important;
+
+    margin: 10px 0 0 !important;
+    padding: 10px 0 4px !important;
+
+    border: 0 !important;
+    border-top: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+    background: transparent !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Petit titre */
+
+html body .mmic-profile-business-left
+.mmic-profile-business-subtitle {
+    margin: 0 0 8px !important;
+    gap: 7px !important;
+}
+
+html body .mmic-profile-business-left
+.mmic-profile-business-subtitle span {
+    width: 14px !important;
+}
+
+html body .mmic-profile-business-left
+.mmic-profile-business-subtitle strong {
+    font-size: 5px !important;
+    letter-spacing: 0.12em !important;
+}
+
+
+/* Liste compacte */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+
+    gap: 5px !important;
+    padding: 0 !important;
+}
+
+
+/* Chaque contact */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 29px !important;
+
+    margin: 0 !important;
+    padding: 4px 6px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.28) !important;
+    border-radius: 5px !important;
+
+    background: rgba(255, 250, 244, 0.48) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Libellé discret */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-label {
+    font-size: 5px !important;
+    letter-spacing: 0.08em !important;
+}
+
+
+/* Petit bouton rond */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-content a {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+
+    padding: 0 !important;
+}
+
+
+/* La colonne gauche et la carte doivent grandir avec les contacts */
+
+html body .mmic-profile-business-left {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+html body .mmic-profile-business-card {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   PROFIL — RESTAURATION DE LA LARGEUR DES CHAMPS
+   ========================================================= */
+
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-width: 0 !important;
+    width: auto !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding: 0 !important;
+}
+
+html body .mmic-profile-business-header {
+    width: auto !important;
+}
+
+html body .mmic-profile-business-fields {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 18px 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 800px) {
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =========================================================
+   PROFIL — CORRECTION LISTE DE CONTACTS VARIABLE
+   Empêche le 3e contact (et les suivants) de déborder.
+   ========================================================= */
+
+html body .mmic-profile-business-left
+.mmic-profile-business-contact > .mmic-profile-contact-list {
+    height: auto !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+
+    padding: 0 !important;
+}
+
+html body .mmic-profile-business-left
+.mmic-profile-business-contact > .mmic-profile-business-subtitle {
+    height: auto !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+}
+
+/* La colonne gauche doit calculer sa hauteur à partir de tous les contacts. */
+html body .mmic-profile-business-left
+.mmic-profile-business-contact {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+/* =========================================================
+   MEET ME IN CHICAGO — PROFIL / ÉDITION
+   HARMONISATION NOUVELLE PALETTE
+   À COLLER TOUT EN BAS DU CSS PROFIL
+   ========================================================= */
+
+
+/* =========================================================
+   CONTENEUR GÉNÉRAL
+   ========================================================= */
+
+html body .mmic-profile-edit-page {
+    color: #75433F;
+}
+
+
+/* =========================================================
+   TABLEAU PRINCIPAL
+   ========================================================= */
+
+html body .mmic-profile-edit-page .mmic-profile-edit-table,
+html body .mmic-profile-edit-page table.forumline {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 5px 14px rgba(117, 67, 63, .06) !important;
+}
+
+
+/* =========================================================
+   GRANDS BANDEAUX
+   "ENREGISTREMENT", "PROFIL PERSONNALISÉ", ETC.
+   ========================================================= */
+
+html body .mmic-profile-edit-page .thHead,
+html body .mmic-profile-edit-page .thSides,
+html body .mmic-profile-edit-page th.thHead,
+html body .mmic-profile-edit-page th.thSides {
+    border: 0 !important;
+
+    border-top: 1px solid #E3AD9A !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* contenu des bandeaux */
+
+html body .mmic-profile-edit-page .thHead *,
+html body .mmic-profile-edit-page .thSides *,
+html body .mmic-profile-edit-page th.thHead *,
+html body .mmic-profile-edit-page th.thSides * {
+    color: #FFF8F4 !important;
+}
+
+
+/* petit "PROFIL" au-dessus du titre */
+
+html body .mmic-profile-edit-page .thHead::before,
+html body .mmic-profile-edit-page .thSides::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
+
+html body .mmic-profile-edit-page td.row1,
+html body .mmic-profile-edit-page td.row2,
+html body .mmic-profile-edit-page td.row3 {
+    border-bottom-color: #F0DDD4 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #7F6761 !important;
+}
+
+
+/* intitulés */
+
+html body .mmic-profile-edit-page td.row1 {
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   TEXTES
+   ========================================================= */
+
+html body .mmic-profile-edit-page .gen,
+html body .mmic-profile-edit-page .genmed {
+    color: #75433F !important;
+}
+
+
+html body .mmic-profile-edit-page .gensmall {
+    color: #9A817A !important;
+}
+
+
+/* =========================================================
+   CHAMPS
+   ========================================================= */
+
+html body .mmic-profile-edit-page input[type="text"],
+html body .mmic-profile-edit-page input[type="password"],
+html body .mmic-profile-edit-page input[type="email"],
+html body .mmic-profile-edit-page input[type="number"],
+html body .mmic-profile-edit-page input[type="file"],
+html body .mmic-profile-edit-page select,
+html body .mmic-profile-edit-page textarea {
+    border: 1px solid #E7C2B5 !important;
+
+    background: #FFFAF7 !important;
+
+    color: #75433F !important;
+
+    box-shadow: none !important;
+}
+
+
+html body .mmic-profile-edit-page input[type="text"]:focus,
+html body .mmic-profile-edit-page input[type="password"]:focus,
+html body .mmic-profile-edit-page input[type="email"]:focus,
+html body .mmic-profile-edit-page input[type="number"]:focus,
+html body .mmic-profile-edit-page select:focus,
+html body .mmic-profile-edit-page textarea:focus {
+    outline: none !important;
+
+    border-color: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 2px rgba(213, 141, 122, .12) !important;
+}
+
+
+/* radios / checkbox */
+
+html body .mmic-profile-edit-page input[type="radio"],
+html body .mmic-profile-edit-page input[type="checkbox"] {
+    accent-color: #A96F68;
+}
+
+
+/* =========================================================
+   LIENS
+   ========================================================= */
+
+html body .mmic-profile-edit-page a {
+    color: #A76452;
+}
+
+
+html body .mmic-profile-edit-page a:hover {
+    color: #75433F;
+}
+
+
+/* =========================================================
+   BOUTONS BAS DE PAGE
+   ========================================================= */
+
+html body .mmic-profile-edit-page .mainoption,
+html body .mmic-profile-edit-page input.mainoption {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(117, 67, 63, .10) !important;
+}
+
+
+html body .mmic-profile-edit-page .mainoption:hover,
+html body .mmic-profile-edit-page input.mainoption:hover {
+    border-color: #F0B29E !important;
+
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+html body .mmic-profile-edit-page .liteoption,
+html body .mmic-profile-edit-page input.liteoption {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #75433F !important;
+}
+
+
+html body .mmic-profile-edit-page .liteoption:hover,
+html body .mmic-profile-edit-page input.liteoption:hover {
+    border-color: #D58D7A !important;
+
+    background: #F8EDE7 !important;
+
+    color: #A76452 !important;
+}
+
+
+/* zone contenant les boutons */
+
+html body .mmic-profile-edit-page .catBottom {
+    background: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   EXPORT DES DONNÉES
+   ========================================================= */
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"] {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover {
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   AUTRES ONGLETS DU PROFIL
+   NOTIFICATIONS / AMIS / SUIVIS / SUJETS / FAVORIS / SIGNATURE
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead,
+
+body.mmic-profile-friendsfoes #page-body th,
+body.mmic-profile-friendsfoes #page-body .thHead,
+body.mmic-profile-friendsfoes #page-body .thSides,
+body.mmic-profile-friendsfoes #page-body .catHead,
+
+body.mmic-profile-followers #page-body th,
+body.mmic-profile-followers #page-body .thHead,
+body.mmic-profile-followers #page-body .thSides,
+body.mmic-profile-followers #page-body .catHead,
+
+body.mmic-profile-topic-list #page-body th,
+body.mmic-profile-topic-list #page-body .thHead,
+body.mmic-profile-topic-list #page-body .thSides,
+body.mmic-profile-topic-list #page-body .catHead,
+
+body.mmic-profile-signature #page-body th,
+body.mmic-profile-signature #page-body .thHead,
+body.mmic-profile-signature #page-body .thSides,
+body.mmic-profile-signature #page-body .catHead {
+    border-color: #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* kicker "PROFIL" */
+
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+body.mmic-profile-notifications #page-body .catHead::before,
+
+body.mmic-profile-friendsfoes #page-body th::before,
+body.mmic-profile-friendsfoes #page-body .thHead::before,
+body.mmic-profile-friendsfoes #page-body .thSides::before,
+body.mmic-profile-friendsfoes #page-body .catHead::before,
+
+body.mmic-profile-followers #page-body th::before,
+body.mmic-profile-followers #page-body .thHead::before,
+body.mmic-profile-followers #page-body .thSides::before,
+body.mmic-profile-followers #page-body .catHead::before,
+
+body.mmic-profile-topic-list #page-body th::before,
+body.mmic-profile-topic-list #page-body .thHead::before,
+body.mmic-profile-topic-list #page-body .thSides::before,
+body.mmic-profile-topic-list #page-body .catHead::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   BOUTONS DES AUTRES ONGLETS
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption,
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body .mainoption,
+
+body.mmic-profile-followers #page-body input[type="submit"],
+body.mmic-profile-followers #page-body .mainoption,
+
+body.mmic-profile-topic-list #page-body input[type="submit"],
+body.mmic-profile-topic-list #page-body .mainoption,
+
+body.mmic-profile-signature #page-body input[type="submit"],
+body.mmic-profile-signature #page-body .mainoption {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-followers #page-body input[type="submit"]:hover,
+body.mmic-profile-topic-list #page-body input[type="submit"]:hover,
+body.mmic-profile-signature #page-body input[type="submit"]:hover {
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   CHECKBOX DES PAGES ANNEXES
+   ========================================================= */
+
+body.mmic-profile-notifications input[type="checkbox"],
+body.mmic-profile-topic-list input[type="checkbox"],
+body.mmic-profile-friendsfoes input[type="checkbox"] {
+    accent-color: #A96F68 !important;
+}
+/* =========================================================
+   MEET ME IN CHICAGO — AMIS & IGNORÉS
+   HARMONISATION PALETTE
+   ========================================================= */
+
+
+/* =========================================================
+   BANDEAUX
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead {
+    height: auto !important;
+
+    border: 0 !important;
+    border-top: 1px solid #E3AD9A !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* tout le contenu du bandeau */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides *,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* petit "PROFIL" */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   TABLEAUX / BLOCS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body table.forumline {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 4px 12px rgba(117, 67, 63, .05) !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body table.forumline td {
+    border-color: #F0DDD4 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   TEXTES
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body .gen,
+body.mmic-profile-friendsfoes #page-body .genmed {
+    color: #75433F !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body .gensmall {
+    color: #9A817A !important;
+}
+
+
+/* =========================================================
+   CHAMP "AJOUTER UN AMI / IGNORÉ"
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body input[type="text"],
+body.mmic-profile-friendsfoes #page-body input.post {
+    border: 1px solid #E7C2B5 !important;
+    border-radius: 5px !important;
+
+    background: #FFFAF7 !important;
+
+    color: #75433F !important;
+
+    box-shadow: none !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body input[type="text"]:focus,
+body.mmic-profile-friendsfoes #page-body input.post:focus {
+    outline: none !important;
+
+    border-color: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 2px rgba(213, 141, 122, .12) !important;
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body input.mainoption,
+body.mmic-profile-friendsfoes #page-body input.liteoption {
+    border: 1px solid #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(117, 67, 63, .10) !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input.mainoption:hover,
+body.mmic-profile-friendsfoes #page-body input.liteoption:hover {
+    border-color: #F0B29E !important;
+
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   LIENS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body a {
+    color: #A76452 !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body a:hover {
+    color: #75433F !important;
+}
+/* =========================================================
+   CORRECTIF — BANDEAUX PROFIL DISPARUS
+   AMIS & IGNORÉS + SIGNATURE
+   ========================================================= */
+
+
+/* ---------- AMIS & IGNORÉS ---------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body table.forumline th *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides *,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* ---------- SIGNATURE ---------- */
+
+body.mmic-profile-signature #page-body table.forumline th,
+body.mmic-profile-signature #page-body table.forumline .thHead,
+body.mmic-profile-signature #page-body table.forumline .thSides,
+body.mmic-profile-signature #page-body table.forumline .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-signature #page-body table.forumline th *,
+body.mmic-profile-signature #page-body table.forumline .thHead *,
+body.mmic-profile-signature #page-body table.forumline .thSides *,
+body.mmic-profile-signature #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
+/* =========================================================
+   CORRECTIF FINAL — BANDEAUX PROFIL
+   MEMBRES SUIVIS / NOTIFICATIONS / SUJETS / FAVORIS
+   ========================================================= */
+
+
+/* =========================================================
+   MEMBRES SUIVIS
+   ========================================================= */
+
+body.mmic-profile-followers #page-body th,
+body.mmic-profile-followers #page-body .thHead,
+body.mmic-profile-followers #page-body .thSides,
+body.mmic-profile-followers #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-followers #page-body th *,
+body.mmic-profile-followers #page-body .thHead *,
+body.mmic-profile-followers #page-body .thSides *,
+body.mmic-profile-followers #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* bouton "ne plus suivre" */
+
+body.mmic-profile-followers #page-body input[type="submit"],
+body.mmic-profile-followers #page-body .mainoption,
+body.mmic-profile-followers #page-body .liteoption {
+    background: #A96F68 !important;
+    border-color: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-followers #page-body input[type="submit"]:hover,
+body.mmic-profile-followers #page-body .mainoption:hover,
+body.mmic-profile-followers #page-body .liteoption:hover {
+    background: #8F5D58 !important;
+    border-color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   NOTIFICATIONS
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-notifications #page-body th *,
+body.mmic-profile-notifications #page-body .thHead *,
+body.mmic-profile-notifications #page-body .thSides *,
+body.mmic-profile-notifications #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* bouton enregistrer */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption {
+    background: #A96F68 !important;
+    border-color: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-notifications #page-body .mainoption:hover {
+    background: #8F5D58 !important;
+}
+
+
+/* =========================================================
+   SUJETS SURVEILLÉS
+   ========================================================= */
+
+body.mmic-profile-topic-list #page-body th,
+body.mmic-profile-topic-list #page-body .thHead,
+body.mmic-profile-topic-list #page-body .thSides,
+body.mmic-profile-topic-list #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-topic-list #page-body th *,
+body.mmic-profile-topic-list #page-body .thHead *,
+body.mmic-profile-topic-list #page-body .thSides *,
+body.mmic-profile-topic-list #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   FAVORIS
+   ========================================================= */
+
+body.mmic-profile-favourites #page-body th,
+body.mmic-profile-favourites #page-body .thHead,
+body.mmic-profile-favourites #page-body .thSides,
+body.mmic-profile-favourites #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-favourites #page-body th *,
+body.mmic-profile-favourites #page-body .thHead *,
+body.mmic-profile-favourites #page-body .thSides *,
+body.mmic-profile-favourites #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   PETIT KICKER "PROFIL"
+   ========================================================= */
+
+body.mmic-profile-followers #page-body th::before,
+body.mmic-profile-followers #page-body .thHead::before,
+body.mmic-profile-followers #page-body .thSides::before,
+
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+
+body.mmic-profile-topic-list #page-body th::before,
+body.mmic-profile-topic-list #page-body .thHead::before,
+body.mmic-profile-topic-list #page-body .thSides::before,
+
+body.mmic-profile-favourites #page-body th::before,
+body.mmic-profile-favourites #page-body .thHead::before,
+body.mmic-profile-favourites #page-body .thSides::before {
+    color: #F0B29E !important;
+}
+/* =========================================================
+   MEMBRES SUIVIS — CORRECTIF BANDEAU RÉCALCITRANT
+   ========================================================= */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead {
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* texte du bandeau */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead > div {
+    background: transparent !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* petit PROFIL */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead::before {
+    color: #F0B29E !important;
+}
+/* =========================================================
+   MEET ME IN CHICAGO
+   PROFIL MEMBRE — ÉRADICATION FINALE DU BLEU 😂
+   ========================================================= */
+
+
+/* =========================================================
+   GRAND HEADER DU PROFIL
+   ========================================================= */
+
+html body .mmic-profile-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #8F5D58 0%,
+            #A96F68 52%,
+            #8F5D58 100%
+        ) !important;
+
+    border-color: #E3AD9A !important;
+
+    box-shadow:
+        0 8px 22px rgba(117, 67, 63, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* petite ligne décorative sous le header */
+
+html body .mmic-profile-hero::after {
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #D58D7A 18%,
+            #E3AD9A 50%,
+            #D58D7A 82%,
+            transparent
+        ) !important;
+}
+
+
+/* =========================================================
+   TEXTES DU HEADER
+   ========================================================= */
+
+html body .mmic-profile-hero-city,
+html body .mmic-profile-eyebrow,
+html body .mmic-profile-rank,
+html body .mmic-profile-last-visit strong {
+    color: #F2C79D !important;
+}
+
+html body .mmic-profile-username {
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    color: rgba(255, 248, 244, 0.88) !important;
+}
+
+html body .mmic-profile-status-dot {
+    border-color: #F2C79D !important;
+    background: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 3px rgba(242, 199, 157, 0.16) !important;
+}
+
+
+/* =========================================================
+   AVATAR LOSANGE DU HEADER
+   ========================================================= */
+
+html body .mmic-profile-avatar-diamond {
+    border-color: #F2C79D !important;
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 12px 27px rgba(117, 67, 63, 0.30),
+        0 0 0 3px #D58D7A,
+        inset 0 0 0 2px #8F5D58 !important;
+}
+
+html body .mmic-profile-avatar-diamond:hover {
+    box-shadow:
+        0 16px 35px rgba(117, 67, 63, 0.36),
+        0 0 0 4px #D58D7A,
+        inset 0 0 0 2px #8F5D58 !important;
+}
+
+
+/* =========================================================
+   BOUTON SUIVRE
+   ========================================================= */
+
+html body .mmic-profile-follow,
+html body .mmic-profile-business-actions .mmic-profile-follow {
+    background: #8F5D58 !important;
+    border-color: #E3AD9A !important;
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-follow:hover,
+html body .mmic-profile-business-actions .mmic-profile-follow:hover {
+    background: #D58D7A !important;
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   BOUTON MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-profile-private-message a,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a {
+    background: #A96F68 !important;
+    border-color: #E3AD9A !important;
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-private-message a:hover,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a:hover {
+    background: #D58D7A !important;
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   PETITS BOUTONS RONDS DE CONTACT
+   MP / EMAIL / SITE
+   ========================================================= */
+
+html body .mmic-profile-contact-content a,
+html body .mmic-profile-business-contact a {
+    background: #8F5D58 !important;
+    border-color: #E3AD9A !important;
+    color: #F2C79D !important;
+
+    box-shadow:
+        0 2px 5px rgba(117, 67, 63, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+html body .mmic-profile-contact-content a:hover,
+html body .mmic-profile-business-contact a:hover {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 5px 10px rgba(117, 67, 63, 0.22),
+        0 0 0 2px rgba(227, 173, 154, 0.20) !important;
+}
+
+html body .mmic-profile-contact-content a::before,
+html body .mmic-profile-business-contact a::before {
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   TEXTES QUI UTILISAIENT ENCORE LE BLEU
+   ========================================================= */
+
+html body .mmic-profile-sidebar-rank strong,
+html body .mmic-profile-sidebar-line strong,
+html body .mmic-profile-contact-content,
+html body .mmic-profile-admin-comment-title strong,
+html body .mmic-profile-section-title h2,
+html body .mmic-profile-visit-highlight div strong,
+html body .mmic-profile-business-name strong,
+html body .mmic-profile-business-header h2,
+html body .mmic-profile-business-presence-line strong {
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   LIENS ET GROUPES
+   ========================================================= */
+
+html body .mmic-profile-breadcrumb a,
+html body .mmic-profile-group-list a,
+html body .mmic-profile-business-groups a,
+html body .mmic-profile-page
+.mmic-profile-admin-links a,
+html body .mmic-profile-page
+.mmic-profile-rpg-administration a {
+    color: #75433F !important;
+}
+
+html body .mmic-profile-breadcrumb a:hover,
+html body .mmic-profile-group-list a:hover,
+html body .mmic-profile-business-groups a:hover {
+    color: #A96F68 !important;
+}
+
+
+/* =========================================================
+   PETITE ICÔNE DERNIÈRE VISITE
+   ========================================================= */
+
+html body .mmic-profile-visit-icon {
+    background: #8F5D58 !important;
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   AUTRES ANCIENS BANDEAUX DU PROFIL
+   au cas où ils réapparaissent
+   ========================================================= */
+
+html body .mmic-profile-card-heading,
+html body .mmic-profile-rpg-header {
+    background:
+        linear-gradient(
+            135deg,
+            #8F5D58,
+            #A96F68
+        ) !important;
+}
+
+html body .mmic-profile-card-heading h2,
+html body .mmic-profile-rpg-header h2 {
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-heading-icon {
+    border-color: #E3AD9A !important;
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   MARQUE DÉCORATIVE DE LA CARTE
+   ========================================================= */
+
+html body .mmic-profile-business-mark {
+    color: rgba(117, 67, 63, 0.055) !important;
+}
+.mmic-profile-stats {
+    margin-top: 18px;
+    padding-top: 4px;
+}
+
+.mmic-profile-stats-list {
+    margin-top: 10px;
+}
+
+.mmic-profile-stat-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #E7C2B5;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mmic-profile-stat-link span {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #92736D;
+}
+
+.mmic-profile-stat-link strong {
+    font-size: 11px;
+    color: #76504D;
+}
+
+.mmic-profile-stat-link:hover strong {
+    color: #D58D7A;
+}
+.mmic-profile-stat-detail {
+    padding: 3px 0;
+    font-size: 9px;
+    line-height: 1.4;
+    color: #92736D;
+}
+/* =========================================================
+   SUJETS SURVEILLÉS / FAVORIS
+   SUPPRESSION DU FOND DES PSEUDOS COLORÉS
+   ========================================================= */
+
+html body.mmic-profile-topic-list
+#page-body
+span.name,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name > a,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name > a > span,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name > a > span > strong,
+
+html body.mmic-profile-topic-list
+#page-body
+.usr_grp_clr,
+
+html body.mmic-profile-topic-list
+#page-body
+[class*="group-"].usr_grp_clr,
+
+html body.mmic-profile-topic-list
+#page-body
+span[class*="group-"] {
+
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    border: 0 !important;
+
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    padding: 0 !important;
+}
+html body.mmic-profile-topic-list
+#page-body
+span.name *::before,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name *::after {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}

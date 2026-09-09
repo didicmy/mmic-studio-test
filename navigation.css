@@ -1,0 +1,1304 @@
+/* =========================================================
+   NAVIGATION — MEET ME IN CHICAGO
+   Version nettoyée et vérifiée
+   ========================================================= */
+
+/* =========================================================
+   1. BARRE PRINCIPALE
+   ========================================================= */
+
+html body .mmic-main-navigation {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 99999 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 64px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    border-bottom: 2px solid #C97961 !important;
+    border-radius: 0 !important;
+
+background:
+    linear-gradient(
+        135deg,
+        #A97872 0%,
+        #B9857D 52%,
+        #A97872 100%
+    ) !important;
+
+    box-shadow:
+        0 5px 18px rgba(9, 24, 39, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+html body .mmic-main-navigation::after {
+    content: "";
+
+    position: absolute;
+    right: 12px;
+    bottom: -1px;
+    left: 12px;
+
+    height: 2px;
+
+ background: linear-gradient(
+    90deg,
+    transparent,
+    #C97961 18%,
+    #E9A58F 50%,
+    #C97961 82%,
+    transparent
+);
+
+    pointer-events: none;
+}
+
+/* Espace réservé à la barre fixe */
+html body {
+    padding-top: 64px !important;
+}
+
+/* Toolbar native Forumactif masquée */
+html body #fa_toolbar,
+html body #fa_toolbar_hidden,
+html body .fa_toolbar_XL_Sized,
+html body #fa_toolbar_container {
+    display: none !important;
+}
+
+
+/* =========================================================
+   2. STRUCTURE INTÉRIEURE
+   Membre | Navigation | Notifications | Recherche
+   ========================================================= */
+
+html body .mmic-navigation-inner {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns:
+        310px
+        minmax(0, 1fr)
+        auto
+        190px !important;
+
+    align-items: center !important;
+    gap: 12px !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 64px !important;
+
+    margin: 0 auto !important;
+    padding: 7px 24px !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+/* Placement explicite : empêche Forumactif / Grid de les empiler */
+html body .mmic-navigation-member {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+}
+
+html body .mmic-navigation-links {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+}
+
+html body .mmic-navigation-notifications {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+}
+
+html body .mmic-navigation-search {
+    grid-column: 4 !important;
+    grid-row: 1 !important;
+}
+
+
+/* =========================================================
+   3. ZONE MEMBRE
+   ========================================================= */
+
+html body .mmic-navigation-member {
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-width: 310px !important;
+    height: 64px !important;
+
+    padding: 0 !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+html body .mmic-navigation-account {
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-width: 310px !important;
+    height: 64px !important;
+
+    margin: 0 !important;
+    padding: 0 20px 0 150px !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+    color: #fffaf4 !important;
+
+    font: inherit !important;
+    text-align: left !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+
+    cursor: pointer !important;
+}
+
+
+/* =========================================================
+   4. AVATAR EN LOSANGE
+   ========================================================= */
+
+html body .mmic-navigation-avatar {
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 42px !important;
+    z-index: 30 !important;
+
+    display: block !important;
+    flex: none !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 !important;
+    padding: 4px !important;
+
+    border: 2px solid #d8b08c !important;
+    border-radius: 5px !important;
+
+    background: #102438 !important;
+
+    box-shadow:
+        0 8px 18px rgba(5, 18, 31, 0.38),
+        0 0 0 2px #b97a56,
+        inset 0 0 0 2px #fffaf4 !important;
+
+    transform:
+        translateY(-50%)
+        rotate(45deg)
+        scale(1) !important;
+
+    transform-origin: center !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease !important;
+}
+
+html body .mmic-navigation-avatar::after {
+    content: "";
+
+    position: absolute;
+    inset: 3px;
+
+    border: 1px solid rgba(16, 36, 56, 0.35);
+
+    pointer-events: none;
+}
+
+html body .mmic-navigation-avatar img {
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 50% !important;
+
+    display: block !important;
+
+    width: 75px !important;
+    height: 75px !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-45deg)
+        scale(1.04) !important;
+
+    transition: transform 0.28s ease !important;
+}
+
+html body .mmic-navigation-avatar-guest {
+    color: #102438 !important;
+
+    font-family: Georgia, serif !important;
+    font-size: 24px !important;
+}
+
+html body .mmic-navigation-avatar-guest span {
+    transform: rotate(-45deg) !important;
+}
+
+html body .mmic-navigation-account:hover .mmic-navigation-avatar {
+    transform:
+        translateY(-50%)
+        rotate(45deg)
+        scale(1.1) !important;
+
+    box-shadow:
+        0 12px 25px rgba(5, 18, 31, 0.48),
+        0 0 0 3px #b97a56,
+        inset 0 0 0 2px #fffaf4 !important;
+}
+
+html body .mmic-navigation-account:hover .mmic-navigation-avatar img {
+    transform:
+        translate(-50%, -50%)
+        rotate(-45deg)
+        scale(1.1) !important;
+}
+
+
+/* =========================================================
+   5. BIENVENUE + PSEUDO
+   ========================================================= */
+
+html body .mmic-navigation-welcome {
+    position: relative !important;
+    z-index: 40 !important;
+
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #f6efe7 !important;
+    text-align: left !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .mmic-navigation-welcome-small {
+    display: block !important;
+
+    margin: 0 0 3px !important;
+
+    color: #d8b08c !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 1.8px !important;
+    text-transform: uppercase !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body .mmic-navigation-username {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 120px !important;
+
+    margin-top: 3px !important;
+
+    overflow: hidden !important;
+
+    color: #fffaf4 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
+    transition: color 0.2s ease !important;
+}
+
+html body .mmic-navigation-account:hover .mmic-navigation-username {
+    color: #d8b08c !important;
+}
+
+html body .mmic-navigation-chevron {
+    display: block !important;
+    flex: 0 0 auto !important;
+
+    margin-right: auto !important;
+    margin-left: 10px !important;
+
+    color: #d8b08c !important;
+
+    font-size: 11px !important;
+    line-height: 1 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: transform 0.25s ease !important;
+}
+
+html body .mmic-navigation-account[aria-expanded="true"]
+.mmic-navigation-chevron {
+    transform: rotate(180deg) !important;
+}
+
+
+/* =========================================================
+   6. MENU MEMBRE DÉROULANT
+   ========================================================= */
+
+html body #mmic-member-menu {
+    position: absolute !important;
+
+    top: calc(100% + 14px) !important;
+    left: 0 !important;
+    z-index: 10000 !important;
+
+    display: none !important;
+
+    width: 250px !important;
+    padding: 8px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.62) !important;
+    border-radius: 9px !important;
+
+    background: #fbf8f3 !important;
+
+    box-shadow:
+        0 14px 32px rgba(9, 24, 39, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+
+    box-sizing: border-box !important;
+}
+
+html body #mmic-member-menu.is-open,
+html body #mmic-member-menu.mmic-menu-open {
+    display: block !important;
+}
+
+html body #mmic-member-menu::before {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    left: 54px;
+
+    width: 10px;
+    height: 10px;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.62);
+    border-left: 1px solid rgba(216, 176, 140, 0.62);
+
+    background: #fbf8f3;
+
+    transform: rotate(45deg);
+}
+
+html body .mmic-navigation-menu-heading {
+    padding: 8px 10px 10px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.35);
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+html body .mmic-navigation-member-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin-top: 3px;
+    padding: 9px 10px;
+
+    border-radius: 6px;
+
+    color: #102438 !important;
+
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+html body .mmic-navigation-member-menu a:hover {
+    padding-left: 14px;
+
+    background: #f2e7dc;
+    color: #b66f4e !important;
+}
+
+html body .mmic-navigation-message-info {
+    color: #b97a56;
+
+    font-size: 7px;
+    text-align: right;
+}
+
+html body .mmic-navigation-menu-separator {
+    height: 1px;
+    margin: 7px 5px;
+
+    background: rgba(216, 176, 140, 0.4);
+}
+
+html body .mmic-navigation-member-menu .mmic-navigation-logout {
+    color: #9a4b42 !important;
+}
+
+
+/* =========================================================
+   7. LIENS PRINCIPAUX FORUMACTIF
+   ========================================================= */
+
+html body .mmic-navigation-links {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+
+    min-width: 0 !important;
+
+    text-align: center !important;
+
+    overflow: hidden !important;
+}
+
+html body .mmic-navigation-links a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 34px;
+    padding: 0 8px;
+
+    border-radius: 6px;
+
+    color: #fffaf4 !important;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+html body .mmic-navigation-links a:hover {
+    background: rgba(216, 176, 140, 0.14);
+    color: #d8b08c !important;
+
+    transform: translateY(-1px);
+}
+
+html body .mmic-navigation-links a::after {
+    content: "";
+
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+    left: 8px;
+
+    height: 1px;
+
+    background: #d8b08c;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.2s ease;
+}
+
+html body .mmic-navigation-links a:hover::after {
+    transform: scaleX(1);
+}
+
+html body .mmic-navigation-links img {
+    display: none !important;
+}
+
+
+/* =========================================================
+   8. NOTIFICATIONS
+   ========================================================= */
+
+html body .mmic-navigation-notifications {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+
+    width: auto !important;
+    min-width: 108px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+
+    margin: 0 !important;
+    padding: 0 9px !important;
+
+    /* Neutralise le style natif du bouton */
+    border: 0 !important;
+    outline: 0 !important;
+    border-radius: 6px !important;
+
+    background: transparent !important;
+    color: #fffaf4 !important;
+
+    font-family: inherit !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.05em !important;
+    line-height: 1 !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+
+    align-self: center !important;
+    justify-self: end !important;
+
+    box-shadow: none !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    box-sizing: border-box !important;
+
+    cursor: pointer !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease !important;
+}
+
+
+/* SURVOL */
+
+html body .mmic-navigation-notifications:hover,
+html body .mmic-navigation-notifications:focus {
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: rgba(216, 176, 140, 0.14) !important;
+    color: #d8b08c !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ICÔNE */
+
+html body .mmic-navigation-notifications-icon {
+    display: inline-flex !important;
+    flex: 0 0 18px !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 18px !important;
+    height: 18px !important;
+
+    border: 1px solid #d2a27e !important;
+    border-radius: 50% !important;
+
+    background: transparent !important;
+    color: #d2a27e !important;
+
+    font-size: 10px !important;
+    line-height: 1 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* TEXTE */
+
+html body .mmic-navigation-notifications-label {
+    display: inline-block !important;
+    line-height: 1 !important;
+}
+
+
+/* COMPTEUR */
+
+html body .mmic-navigation-notifications-count {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 16px;
+    height: 16px;
+
+    padding: 0 4px;
+
+    border-radius: 10px;
+
+    background: #d2a27e;
+    color: #513D3B;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 16px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* NOTIFICATIONS NON LUES */
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications
+.mmic-navigation-notifications-count {
+    display: inline-flex;
+}
+
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications
+.mmic-navigation-notifications-icon {
+    background: #d2a27e !important;
+    color: #513D3B !important;
+}
+
+
+/* PETIT POINT */
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications::after {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    left: 24px;
+
+    width: 5px;
+    height: 5px;
+
+    border: 1px solid #d2a27e;
+    border-radius: 50%;
+
+    background: #fffaf4;
+}
+
+/* =========================================================
+   9. RECHERCHE
+   ========================================================= */
+
+html body .mmic-navigation-search {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 190px !important;
+    margin: 0 !important;
+
+    align-self: center !important;
+    justify-self: end !important;
+}
+
+html body .mmic-navigation-search-label,
+html body label[for="mmic-navigation-search-input"] {
+    position: absolute !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    margin: -1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+
+    white-space: nowrap !important;
+}
+
+html body .mmic-navigation-search-field {
+    display: flex !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    height: 36px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.6) !important;
+    border-radius: 7px !important;
+
+    background: rgba(255, 250, 244, 0.08) !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease !important;
+}
+
+html body .mmic-navigation-search-field:focus-within {
+    border-color: #d8b08c !important;
+    background: rgba(255, 250, 244, 0.13) !important;
+}
+
+html body .mmic-navigation-search-field input {
+    display: block !important;
+    flex: 1 1 auto !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    height: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 8px 0 11px !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: transparent !important;
+    color: #fffaf4 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 8px !important;
+
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+html body .mmic-navigation-search-field input::placeholder {
+    color: rgba(255, 250, 244, 0.62) !important;
+}
+
+html body .mmic-navigation-search-field button {
+    display: flex !important;
+    flex: 0 0 36px !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 36px !important;
+    height: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    border-left: 1px solid rgba(216, 176, 140, 0.38) !important;
+
+    background: transparent !important;
+    color: #d8b08c !important;
+
+    font-family: Georgia, serif !important;
+    font-size: 20px !important;
+
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+
+    cursor: pointer !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease !important;
+}
+
+html body .mmic-navigation-search-field button:hover {
+    background: #d8b08c !important;
+    color: #102438 !important;
+}
+
+
+/* =========================================================
+   10. VISITEUR
+   ========================================================= */
+
+html body .mmic-navigation-guest {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+html body .mmic-navigation-guest-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+}
+
+html body .mmic-navigation-guest-links div {
+    display: flex;
+    gap: 9px;
+}
+
+html body .mmic-navigation-guest-links a {
+    color: #d8b08c !important;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   11. COMPATIBILITÉ PSEUDO NATIF FORUMACTIF
+   ========================================================= */
+
+#fa_usermenu,
+#fa_usermenu a,
+#fa_usermenu .usr_grp_clr,
+#fa_usermenu strong,
+#fa_usermenu span {
+    color: #f4e6d6 !important;
+    text-decoration: none !important;
+}
+
+#fa_usermenu a:hover,
+#fa_usermenu .usr_grp_clr:hover {
+    color: #d8b08c !important;
+}
+
+
+/* =========================================================
+   12. RESPONSIVE
+   ========================================================= */
+
+/* Écrans intermédiaires : on compacte les liens sans casser la grille */
+@media (max-width: 1250px) {
+
+    html body .mmic-navigation-inner {
+        grid-template-columns:
+            280px
+            minmax(0, 1fr)
+            auto
+            170px !important;
+
+        gap: 8px !important;
+        padding-right: 14px !important;
+        padding-left: 14px !important;
+    }
+
+    html body .mmic-navigation-member,
+    html body .mmic-navigation-account {
+        min-width: 280px !important;
+    }
+
+    html body .mmic-navigation-account {
+        padding-left: 132px !important;
+    }
+
+    html body .mmic-navigation-avatar {
+        left: 34px !important;
+        width: 64px !important;
+        height: 64px !important;
+    }
+
+    html body .mmic-navigation-links {
+        gap: 1px !important;
+    }
+
+    html body .mmic-navigation-links a {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        font-size: 7px !important;
+        letter-spacing: 0.03em !important;
+    }
+
+    html body .mmic-navigation-notifications {
+        min-width: 92px !important;
+        padding-right: 6px !important;
+        padding-left: 6px !important;
+        font-size: 7px !important;
+    }
+
+    html body .mmic-navigation-search {
+        width: 170px !important;
+    }
+}
+
+
+/* Tablettes / petite largeur : recherche sur une deuxième ligne */
+@media (max-width: 1050px) {
+
+    html body .mmic-main-navigation {
+        min-height: 112px !important;
+    }
+
+    html body {
+        padding-top: 112px !important;
+    }
+
+    html body .mmic-navigation-inner {
+        grid-template-columns:
+            270px
+            minmax(0, 1fr)
+            auto !important;
+
+        grid-template-rows:
+            64px
+            40px !important;
+
+        gap: 4px 8px !important;
+    }
+
+    html body .mmic-navigation-member {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+
+    html body .mmic-navigation-links {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+    }
+
+html body .mmic-navigation-notifications-wrap {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+}
+
+    html body .mmic-navigation-search {
+        grid-column: 1 / -1 !important;
+        grid-row: 2 !important;
+
+        width: 100% !important;
+
+        justify-self: stretch !important;
+    }
+}
+
+
+/* =========================================================
+   NAVIGATION — DÉFILEMENT PETITES LARGEURS
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    html body .mmic-navigation-links {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+
+        min-width: 0 !important;
+        width: 100% !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        white-space: nowrap !important;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    html body .mmic-navigation-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    html body .mmic-navigation-links a {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+    }
+}
+/* =========================================================
+   MENU DÉROULANT — NOTIFICATIONS
+   ========================================================= */
+
+html body .mmic-navigation-notifications-wrap {
+    position: relative !important;
+
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    width: auto !important;
+}
+
+
+/*
+ * Le bouton garde exactement le style
+ * actuel des notifications.
+ */
+html body .mmic-navigation-notifications-wrap
+.mmic-navigation-notifications {
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
+
+
+/* MENU */
+
+html body .mmic-notifications-menu {
+    position: absolute !important;
+
+    top: calc(100% + 14px) !important;
+    right: 0 !important;
+    z-index: 100000 !important;
+
+    display: none !important;
+
+    width: 330px !important;
+    max-height: 430px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.62) !important;
+    border-radius: 9px !important;
+
+    background: #fbf8f3 !important;
+
+    box-shadow:
+        0 14px 32px rgba(9, 24, 39, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+
+html body .mmic-notifications-menu.mmic-notifications-open {
+    display: block !important;
+}
+
+
+/* PETITE FLÈCHE */
+
+html body .mmic-notifications-menu::before {
+    content: "";
+
+    position: absolute;
+
+    top: -6px;
+    right: 50px;
+
+    width: 10px;
+    height: 10px;
+
+    border-top:
+        1px solid rgba(216, 176, 140, 0.62);
+
+    border-left:
+        1px solid rgba(216, 176, 140, 0.62);
+
+    background: #fbf8f3;
+
+    transform: rotate(45deg);
+}
+
+
+/* EN-TÊTE */
+
+html body .mmic-notifications-menu-head {
+    padding: 14px 16px 12px !important;
+
+    border-bottom:
+        1px solid rgba(216, 176, 140, 0.35) !important;
+}
+
+
+html body .mmic-notifications-menu-head span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-notifications-menu-head strong {
+    display: block;
+
+    color: #76504D;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* LISTE */
+
+html body .mmic-notifications-list {
+    max-height: 310px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+html body .mmic-notifications-list li {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 11px 14px !important;
+
+    border-bottom:
+        1px solid rgba(216, 176, 140, 0.28) !important;
+
+    background: transparent !important;
+    color: #513D3B !important;
+
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+
+    list-style: none !important;
+}
+
+
+html body .mmic-notifications-list li.unread {
+    background: #F8E9DF !important;
+}
+
+
+html body .mmic-notifications-list li:hover {
+    background: #FFF3ED !important;
+}
+
+
+html body .mmic-notifications-list .content,
+html body .mmic-notifications-list .contentText {
+    display: block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    overflow: visible !important;
+
+    float: none !important;
+}
+
+
+html body .mmic-notifications-list a {
+    color: #8C615D !important;
+
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+
+html body .mmic-notifications-list a:hover {
+    color: #D58D7A !important;
+}
+
+
+html body .mmic-notifications-empty,
+html body .mmic-notifications-loading {
+    padding: 24px 15px;
+
+    color: #92736D;
+
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* VOIR TOUT */
+
+html body .mmic-notifications-all {
+    display: block !important;
+
+    padding: 11px 15px !important;
+
+    border-top:
+        1px solid rgba(216, 176, 140, 0.35) !important;
+
+    background: #F8E9DF !important;
+    color: #8C615D !important;
+
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+}
+
+
+html body .mmic-notifications-all:hover {
+    background: #EFD9CD !important;
+    color: #76504D !important;
+}

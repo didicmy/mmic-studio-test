@@ -1,0 +1,205 @@
+/* =========================================================
+   MEET ME IN CHICAGO — SUJETS LIBRES LATÉRAUX
+   ========================================================= */
+
+.mmic-free-topics {
+  position: fixed;
+  top: 195px;
+  right: 24px;
+
+  width: 215px;
+
+  background: #FFF8F4;
+
+  border: 1px solid rgba(213, 141, 122, 0.45);
+  border-radius: 10px;
+
+  box-shadow: 0 8px 24px rgba(127, 88, 85, 0.14);
+
+  overflow: hidden;
+
+  z-index: 900;
+}
+
+
+/* ---------- en-tête ---------- */
+
+.mmic-free-topics-head {
+  position: relative;
+
+  padding: 15px 18px 14px;
+
+  background: #B9827C;
+
+  text-align: center;
+}
+
+.mmic-free-topics-head::after {
+  content: "";
+
+  display: block;
+
+  width: 30px;
+  height: 2px;
+
+  margin: 9px auto 0;
+
+  background: #D58D7A;
+}
+
+.mmic-free-topics-kicker {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-family: Georgia, serif;
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  color: #F0C2AE;
+}
+
+.mmic-free-topics-head strong {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
+  color: #FFF8F4;
+}
+
+
+/* ---------- liste ---------- */
+
+.mmic-free-topics-list {
+  padding: 8px 14px 4px;
+  max-height: 285px;
+  overflow-y: auto;
+}
+
+.mmic-free-topic {
+  position: relative;
+
+  display: block;
+
+  padding: 11px 5px 10px 13px;
+
+  border-bottom: 1px solid rgba(127, 88, 85, 0.10);
+
+  text-decoration: none;
+
+  transition:
+    padding-left 0.2s ease,
+    background 0.2s ease;
+}
+
+.mmic-free-topic:last-child {
+  border-bottom: 0;
+}
+
+.mmic-free-topic::before {
+  content: "";
+
+  position: absolute;
+
+  left: 1px;
+  top: 16px;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #D58D7A;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-free-topic:hover {
+  padding-left: 17px;
+
+  background: rgba(213, 141, 122, 0.08);
+}
+
+.mmic-free-topic:hover::before {
+  background: #C98270;
+  transform: scale(1.25);
+}
+
+
+/* ---------- texte ---------- */
+
+.mmic-free-topic-title {
+  display: block;
+
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  color: #7F5855;
+}
+
+.mmic-free-topic-meta {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 8px;
+
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  color: #92736D;
+}
+
+
+/* ---------- lien final ---------- */
+
+.mmic-free-topics-more {
+  display: block;
+
+  padding: 10px 14px;
+
+  border-top: 1px solid rgba(213, 141, 122, 0.20);
+
+  background: rgba(213, 141, 122, 0.06);
+
+  font-family: Georgia, serif;
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #C98270;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.mmic-free-topics-more:hover {
+  background: #B9827C;
+  color: #FFF8F4;
+}
+
+
+/* ---------- sécurité petits écrans ---------- */
+
+@media (max-width: 1250px) {
+
+  .mmic-free-topics {
+    display: none;
+  }
+
+}
