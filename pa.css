@@ -327,20 +327,16 @@ background-image:
   margin: 4px 0 14px;
 }
 
-/* =========================================
+/* =========================================================
    STAFF — CADRE CHAUVESOURIS AUTOMNE
-   ========================================= */
+   ========================================================= */
 
 .mmic-staff-member {
   position: relative;
   display: block;
-  padding-top: 8px;
+  min-height: 128px;
+  padding-top: 4px;
   color: var(--text) !important;
-}
-
-/* On retire l'ancien pumpkin */
-.mmic-staff-member::after {
-  display: none !important;
 }
 
 /* Cadre chauve-souris + feuilles */
@@ -349,41 +345,53 @@ background-image:
   position: absolute;
   z-index: 3;
 
-  top: -2px;
+  top: -4px;
   left: 50%;
 
-  width: 125px;
-  height: 125px;
+  width: 92px;
+  height: 92px;
 
   transform: translateX(-50%);
 
-  background: url("TON_URL_DU_PNG") center center / contain no-repeat;
+  background: url("https://i28.servimg.com/u/f28/15/72/31/14/masque10.jpg")
+    center center / contain no-repeat;
+
+  /*
+     L'image est en JPG :
+     le blanc se fond donc avec le fond de la PA
+     et laisse apparaître l'avatar dessous.
+  */
+  mix-blend-mode: multiply;
 
   pointer-events: none;
 }
 
-/* Avatar */
+/* Avatar au centre du cadre */
 .mmic-staff-member img {
   position: relative;
   z-index: 2;
 
-  width: 68px;
-  height: 68px;
+  width: 50px;
+  height: 50px;
+  max-width: 100%;
 
-  margin: 20px auto 0;
+  margin: 17px auto 0;
 
   object-fit: cover;
 
   border: 3px solid var(--paper);
   outline: 1px solid rgba(184,115,85,0.65);
+
   border-radius: 50%;
 
   display: block;
-}
-.mmic-staff-member:hover img {
-  transform: translateY(-3px);
+
+  transition:
+    transform 0.2s ease,
+    outline-color 0.2s ease;
 }
 
+/* Petit mouvement au survol */
 .mmic-staff-member:hover img {
   transform: translateY(-3px);
 }
