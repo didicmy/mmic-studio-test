@@ -331,15 +331,105 @@ background-image:
   color: var(--text) !important;
 }
 
+.mmic-staff-member {
+  position: relative;
+  display: block;
+  color: var(--text) !important;
+  padding-top: 5px;
+}
+
+/* 🎃 Corps de la citrouille */
+.mmic-staff-member::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+
+  top: 7px;
+  left: 50%;
+  width: 76px;
+  height: 72px;
+
+  transform: translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255,255,255,0.10) 18%,
+      transparent 22%,
+      transparent 38%,
+      rgba(255,255,255,0.10) 42%,
+      transparent 46%,
+      transparent 58%,
+      rgba(110,55,35,0.10) 62%,
+      transparent 66%,
+      transparent 82%,
+      rgba(110,55,35,0.10) 86%,
+      transparent 90%
+    ),
+    #C97845;
+
+  border: 1px solid #B8663A;
+
+  border-radius:
+    48% 48% 45% 45%
+    /
+    58% 58% 44% 44%;
+
+  box-shadow:
+    inset 5px 0 5px rgba(255,255,255,0.10),
+    inset -5px 0 6px rgba(110,55,35,0.14),
+    0 2px 4px rgba(89,64,57,0.10);
+}
+
+/* 🌿 Petite tige */
+.mmic-staff-member::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+
+  top: 1px;
+  left: 50%;
+
+  width: 8px;
+  height: 9px;
+
+  transform: translateX(-50%) rotate(3deg);
+
+  background: #76584F;
+
+  border-radius:
+    3px 3px 4px 4px;
+
+  box-shadow:
+    2px -1px 0 rgba(118,88,79,0.45);
+}
+
+/* 👤 Photo au-dessus de la citrouille */
 .mmic-staff-member img {
-  width: 68px;
-  height: 68px;
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
   max-width: 100%;
+
+  margin: 10px auto 0;
+
   object-fit: cover;
+
   border: 3px solid var(--paper);
-  outline: 1px solid var(--copper);
+  outline: 1px solid rgba(184,115,85,0.65);
+
   border-radius: 50%;
-  transition: 0.2s;
+
+  transition:
+    transform 0.2s ease,
+    outline-color 0.2s ease;
+}
+
+.mmic-staff-member:hover img {
+  transform: translateY(-3px);
 }
 
 .mmic-staff-member:hover img {
