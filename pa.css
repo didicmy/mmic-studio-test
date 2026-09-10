@@ -178,8 +178,8 @@ background-image:
   place-items: center;
 
   width: 53px;
-  height: 34px;
-  min-height: 34px;
+  height: 38px;
+  min-height: 38px;
 
   margin-top: 2px;
 
@@ -204,7 +204,8 @@ background-image:
   color: #FFF7F0;
 
   border: 1px solid #B8663A;
-  border-radius: 46% 46% 42% 42% / 55% 55% 45% 45%;
+
+  border-radius: 50% 50% 47% 47% / 58% 58% 48% 48%;
 
   font-size: 9px;
   font-weight: 700;
@@ -213,11 +214,8 @@ background-image:
     inset 0 -3px 0 rgba(120, 65, 45, 0.12),
     0 2px 4px rgba(89, 64, 57, 0.10);
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 /* Petite tige */
 .mmic-news-date::before {
   content: "";
