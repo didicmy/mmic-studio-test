@@ -320,75 +320,50 @@ background-image:
   line-height: 1.45;
 }
 
-.mmic-staff-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin: 4px 0 14px;
-}
-
 /* =========================================================
-   STAFF — CADRE CHAUVESOURIS AUTOMNE
+   STAFF — AVATARS AVEC CADRE AUTOMNAL
    ========================================================= */
 
 .mmic-staff-member {
   position: relative;
   display: block;
-  min-height: 128px;
+  min-height: 125px;
   padding-top: 4px;
   color: var(--text) !important;
 }
 
-/* Cadre chauve-souris + feuilles */
+/* Cadre décoratif automnal */
 .mmic-staff-member::before {
   content: "";
   position: absolute;
   z-index: 3;
-
-  top: -4px;
+  top: 0;
   left: 50%;
-
-  width: 92px;
-  height: 92px;
-
+  width: 86px;
+  height: 72px;
   transform: translateX(-50%);
-
-  background: url("https://i28.servimg.com/u/f28/15/72/31/14/masque10.jpg")
+  background: url("https://i28.servimg.com/u/f28/15/72/31/14/sans_t39.png")
     center center / contain no-repeat;
-
-  /*
-     L'image est en JPG :
-     le blanc se fond donc avec le fond de la PA
-     et laisse apparaître l'avatar dessous.
-  */
-  mix-blend-mode: multiply;
-
   pointer-events: none;
 }
 
-/* Avatar au centre du cadre */
+/* Avatar */
 .mmic-staff-member img {
   position: relative;
   z-index: 2;
-
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   max-width: 100%;
-
-  margin: 17px auto 0;
-
+  margin: 12px auto 0;
+  display: block;
   object-fit: cover;
 
-  border: 3px solid var(--paper);
-  outline: 1px solid rgba(184,115,85,0.65);
-
+  /* Suppression de l'ancien cercle CSS */
+  border: none;
+  outline: none;
   border-radius: 50%;
 
-  display: block;
-
-  transition:
-    transform 0.2s ease,
-    outline-color 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 /* Petit mouvement au survol */
@@ -396,24 +371,51 @@ background-image:
   transform: translateY(-3px);
 }
 
-.mmic-staff-member span,
-.mmic-staff-member small {
-  display: block;
-}
-
+/* Nom */
 .mmic-staff-member span {
+  display: block;
   margin-top: 7px;
   color: var(--navy);
   font: 13px Georgia, "Times New Roman", serif;
 }
 
+/* Fonction */
 .mmic-staff-member small {
+  display: block;
   margin-top: 2px;
   color: var(--muted);
   font-size: 8px;
   text-transform: uppercase;
 }
 
+
+/* =========================================================
+   STAFF — MISE EN PAGE
+   ========================================================= */
+
+.mmic-staff-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   STAFF — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .mmic-staff-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mmic-staff-member {
+    min-height: 120px;
+  }
+
+}
 .mmic-wanted-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
