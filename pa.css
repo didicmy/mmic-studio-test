@@ -345,6 +345,7 @@ background-image:
   background: url("https://i28.servimg.com/u/f28/15/72/31/14/ddc38a10.jpg")
     center center / contain no-repeat;
   pointer-events: none;
+     mix-blend-mode: multiply;
 }
 
 /* Avatar */
