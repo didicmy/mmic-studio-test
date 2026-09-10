@@ -327,7 +327,7 @@ background-image:
 .mmic-staff-member {
   position: relative;
   display: block;
-  min-height: 125px;
+  min-height: 135px;
   padding-top: 4px;
   color: var(--text) !important;
 }
@@ -339,10 +339,10 @@ background-image:
   z-index: 3;
   top: 0;
   left: 50%;
-  width: 86px;
-  height: 72px;
+  width: 94px;
+  height: 79px;
   transform: translateX(-50%);
-  background: url("https://i28.servimg.com/u/f28/15/72/31/14/sans_t40.png")
+  background: url("https://i28.servimg.com/u/f28/15/72/31/14/sans_t39.png")
     center center / contain no-repeat;
   pointer-events: none;
 }
@@ -351,14 +351,13 @@ background-image:
 .mmic-staff-member img {
   position: relative;
   z-index: 2;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   max-width: 100%;
   margin: 6px auto 0;
   display: block;
   object-fit: cover;
 
-  /* Suppression de l'ancien cercle CSS */
   border: none;
   outline: none;
   border-radius: 50%;
@@ -374,7 +373,7 @@ background-image:
 /* Nom */
 .mmic-staff-member span {
   display: block;
-  margin-top: 7px;
+  margin-top: 8px;
   color: var(--navy);
   font: 13px Georgia, "Times New Roman", serif;
 }
@@ -396,7 +395,7 @@ background-image:
 .mmic-staff-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 12px;
   align-items: start;
 }
 
@@ -412,9 +411,10 @@ background-image:
   }
 
   .mmic-staff-member {
-    min-height: 120px;
+    min-height: 125px;
   }
 
+}
 }
 .mmic-wanted-list {
   display: grid;
