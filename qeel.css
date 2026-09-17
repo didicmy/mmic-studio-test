@@ -898,3 +898,83 @@
 .mmic-qeel-credits-thanks strong {
     color: #8f5d58;
 }
+/* =========================================================
+   QEEL — PALETTE MMIC ACTUELLE
+   ========================================================= */
+
+.mmic-qeel-header {
+    border-bottom-color: #d98f7c !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8f5d58 0%,
+            #a86f67 50%,
+            #8f5d58 100%
+        ) !important;
+}
+
+.mmic-qeel-eyebrow {
+    color: #efb69d !important;
+}
+
+.mmic-qeel-header h2 {
+    color: #fff8f4 !important;
+}
+
+.mmic-qeel-header p {
+    color: rgba(255, 248, 244, 0.78) !important;
+}
+
+.mmic-qeel-header::after {
+    opacity: 0.10 !important;
+}
+
+.mmic-qeel-card-title {
+    color: #75433f !important;
+    border-bottom-color: rgba(217, 143, 124, 0.32) !important;
+}
+
+.mmic-qeel-title-icon {
+    background: #9a625d !important;
+    border-color: #d98f7c !important;
+    color: #fff8f4 !important;
+}
+
+.mmic-qeel-stat-icon {
+    background: #9a625d !important;
+    color: #f2b59d !important;
+}
+
+.mmic-qeel-newest {
+    border-left-color: #d98f7c !important;
+    background: rgba(217, 143, 124, 0.08) !important;
+}
+
+.mmic-qeel-small-title {
+    color: #a76452 !important;
+}
+
+.mmic-qeel a {
+    color: #a76452 !important;
+}
+
+.mmic-qeel a:hover {
+    color: #75433f !important;
+}
+
+.mmic-qeel-group:hover {
+    background: #8f5d58 !important;
+}
+
+.mmic-qeel-city-mark {
+    color: rgba(143, 93, 88, 0.06) !important;
+}
+
+.mmic-qeel {
+    box-shadow: 0 7px 20px rgba(117, 67, 63, 0.10) !important;
+}
+
+.mmic-qeel-card {
+    box-shadow: 0 3px 9px rgba(117, 67, 63, 0.06) !important;
+}
