@@ -332,21 +332,6 @@ background-image:
   color: var(--text) !important;
 }
 
-/* Cadre décoratif automnal */
-.mmic-staff-member::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 50%;
-  width: 94px;
-  height: 79px;
-  transform: translateX(-50%);
-  background: url("https://i28.servimg.com/u/f28/15/72/31/14/ddc38a10.jpg")
-    center center / contain no-repeat;
-  pointer-events: none;
-     mix-blend-mode: multiply;
-}
 
 /* Avatar */
 .mmic-staff-member img {
