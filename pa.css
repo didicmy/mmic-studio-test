@@ -786,3 +786,16 @@ background-image:
   object-fit: cover;
   border-radius: 6px;
 }
+/* STAFF — Rapprocher les portraits */
+.mmic-staff-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 0;
+}
+
+.mmic-staff-member {
+  min-width: 0;
+}
+
+.mmic-staff-member img {
+  max-width: none;
+}
