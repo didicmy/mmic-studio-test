@@ -23,13 +23,20 @@
    ========================================================= */
 
 .mmic-pa {
-  --navy: #985C4D;
+  /* Palette automnale MMIC */
+  --navy: #59351C;
   --paper: #FFF7F0;
   --cream: #F2DED3;
-  --copper: #B87355;
-  --border: #D5A18B;
-  --text: #6B463C;
-  --muted: #927064;
+  --copper: #E26B0F;
+  --border: #D8B9A8;
+  --text: #59351C;
+  --muted: #8A6A5A;
+
+  /* Accents de la nouvelle palette */
+  --night: #101824;
+  --plum: #A55F91;
+  --sage: #97C8AB;
+  --amber: #F1A73A;
 
   box-sizing: border-box;
   width: 100%;
