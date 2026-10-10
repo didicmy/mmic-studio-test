@@ -38,10 +38,10 @@
   min-height: 34px;
   padding: 8px 15px;
 
-  border: 1px solid #C9822E;
+  border: 1px solid #B96F16;
   border-radius: 4px;
 
-  background: #D98B25;
+  background: #B96F16;
 
   color: #FFF7F0 !important;
 
@@ -60,8 +60,8 @@
 
 .mmic-main-links a:hover,
 .mmic-button:hover {
-  background: #C97832;
-  border-color: #A96335;
+  background: #D98B25;
+  border-color: #D98B25;
 
   color: #FFF7F0 !important;
 
