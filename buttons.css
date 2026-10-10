@@ -41,7 +41,7 @@
   border: 1px solid #C9822E;
   border-radius: 4px;
 
-  background: #C9822E;
+  background: #D98B25;
 
   color: #FFF7F0 !important;
 
@@ -60,7 +60,7 @@
 
 .mmic-main-links a:hover,
 .mmic-button:hover {
-  background: #A96335;
+  background: #C97832;
   border-color: #A96335;
 
   color: #FFF7F0 !important;
