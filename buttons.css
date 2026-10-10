@@ -23,6 +23,7 @@
    ========================================================= */
 
 
+```css
 /* =========================================================
    PA — BOUTONS PRINCIPAUX
    ========================================================= */
@@ -36,10 +37,10 @@
   min-height: 34px;
   padding: 8px 15px;
 
-  border: 1px solid rgba(201, 120, 69, 0.85);
+  border: 1px solid #C9822E;
   border-radius: 4px;
 
-  background: #985C4D;
+  background: #C9822E;
 
   color: #FFF7F0 !important;
 
@@ -58,8 +59,8 @@
 
 .mmic-main-links a:hover,
 .mmic-button:hover {
-  background: #B87355;
-  border-color: #D29A7A;
+  background: #A96335;
+  border-color: #A96335;
 
   color: #FFF7F0 !important;
 
@@ -67,7 +68,7 @@
 
   transform: translateY(-1px);
 }
-
+```
 
 /* =========================================================
    INDEX — OUTILS AU-DESSUS DU QEEL
