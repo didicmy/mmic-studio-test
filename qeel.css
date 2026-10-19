@@ -1,3 +1,4 @@
+
 /* =========================================================
    MEET ME IN CHICAGO — QEEL — VERSION NETTOYÉE ET VÉRIFIÉE
    =========================================================
@@ -28,10 +29,10 @@
 
   overflow: hidden;
 
-  border: 1px solid #d8cbbd;
+  border: 1px solid #C87545;
   border-radius: 13px;
 
-  background: #f4eee5;
+  background: #E8D3A0CC;
 
   box-shadow: 0 7px 20px rgba(12, 24, 39, 0.1);
 
@@ -137,6 +138,7 @@
   gap: 12px;
 
   padding: 12px;
+    background: #C87545;
 }
 
 
@@ -153,7 +155,7 @@
   border: 1px solid #d8cbbd;
   border-radius: 10px;
 
-  background: #fbf8f3;
+  background: #F1E5C6;
 
   box-shadow: 0 3px 9px rgba(12, 24, 39, 0.06);
 }
@@ -725,15 +727,13 @@
 /* ---------- grand en-tête ---------- */
 
 .mmic-qeel-header {
-  border-bottom-color: #d98f7c;
+  border-bottom: 3px solid #E26B0F;
 
-  background:
-    linear-gradient(
-      90deg,
-      #8f5d58 0%,
-      #a86f67 50%,
-      #8f5d58 100%
-    );
+  background-color: #C87545;
+  background-image: url("https://imgur.com/QvRTZlh.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* petite signature */
@@ -903,27 +903,27 @@
    ========================================================= */
 
 .mmic-qeel-header {
-    border-bottom-color: #d98f7c !important;
+    border-bottom: 3px solid #E26B0F !important;
 
-    background:
-        linear-gradient(
-            90deg,
-            #8f5d58 0%,
-            #a86f67 50%,
-            #8f5d58 100%
-        ) !important;
+    background-color: #C87545 !important;
+    background-image: url("https://imgur.com/QvRTZlh.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
-
 .mmic-qeel-eyebrow {
     color: #efb69d !important;
 }
 
 .mmic-qeel-header h2 {
-    color: #fff8f4 !important;
+    color: #79516F  !important;
+  font-weight: bold;
 }
 
 .mmic-qeel-header p {
-    color: rgba(255, 248, 244, 0.78) !important;
+    color: #59351C  !important;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .mmic-qeel-header::after {
@@ -959,7 +959,7 @@
     color: #a76452 !important;
 }
 
-.mmic-qeel a:hover {
+.mmic-qeel a hover {
     color: #75433f !important;
 }
 
