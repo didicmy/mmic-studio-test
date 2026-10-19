@@ -1,3 +1,4 @@
+
 /* =========================================================
    MEET ME IN CHICAGO — CATÉGORIES + LIEUX + BAS DU FORUM — VERSION NETTOYÉE ET VÉRIFIÉE
    =========================================================
@@ -73,19 +74,18 @@
   padding: 15px 30px;
   overflow: hidden;
 
-  border: 1px solid rgba(213, 141, 122, 0.70);
-  border-bottom: 3px solid #D58D7A;
+  border: 0;
+  border-bottom: 3px solid #E26B0F;
   border-radius: 13px 13px 0 0;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(12, 24, 39, 0.98),
-      rgba(22, 42, 63, 0.96),
-      rgba(12, 24, 39, 0.98)
-    );
+  background-color: #E8D3A0;
+background-image: url("https://imgur.com/QvRTZlh.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  background-clip: padding-box;
 
-  color: #FFF8F4;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
 }
@@ -114,7 +114,7 @@
   justify-content: center;
   gap: 14px;
 
-  color: #FFF8F4;
+  color: #79516F;
   font: 21px Georgia, "Times New Roman", serif;
   letter-spacing: 2px;
 }
@@ -123,8 +123,8 @@
 .mmic-category .titreCate span:after {
   content: "";
   width: 45px;
-  height: 1px;
-  background: #D58D7A;
+  height: 3px;
+  background: #E26B0F;
 }
 
 
@@ -132,10 +132,10 @@
 
 .mmic-category .blocForum {
   padding: 12px;
-  border: 1px solid #E7C2B5;
+  border: 1px solid #D8B9A8;
   border-top: 0;
   border-radius: 0 0 13px 13px;
-  background: #F8E9DF;
+  background: #C97845;
 }
 
 
@@ -152,11 +152,11 @@
   margin-bottom: 10px;
   padding: 15px;
 
-  border: 1px solid #E7C2B5;
+  border: 1px solid #D8B9A8;
   border-radius: 10px;
 
-  background: #FFF8F4;
-  box-shadow: 0 3px 9px rgba(81, 61, 59, 0.06);
+  background: #F1E5C6d9;
+ 
 
   transition:
     transform 0.2s ease,
@@ -681,7 +681,7 @@
 }
 
 .mmic-category .titreForum .forumlink {
-  color: #513D3B !important;
+  color: #59351C !important;
   font: 19px Georgia, "Times New Roman", serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -705,6 +705,7 @@
 .mmic-category .descriptionForum img {
   max-width: 100%;
 }
+
 
 
 /* SOUS-FORUMS */
@@ -734,8 +735,8 @@
   border: 1px solid #E7C2B5;
   border-radius: 4px;
 
-  background: #F8E9DF;
-  color: #513D3B !important;
+  background: #B77F68;
+  color: #FFF7F0  !important;
 
   font-size: 8px;
   font-weight: bold;
@@ -750,10 +751,11 @@
 }
 
 .mmic-category .sousForums a:hover {
-  border-color: #D58D7A;
-  background: #D58D7A;
-  color: #ffffff !important;
+  border-color: #E26B0F;
+  background: #E26B0F;
+  color: #FFFFFF !important;
 }
+
 
 
 /* COMPTEURS */
@@ -1934,24 +1936,19 @@
 
 .mmic-category .titreCate {
   background:
-    linear-gradient(
-      90deg,
-      #76504D 0%,
-      #8C615D 50%,
-      #76504D 100%
-    ) !important;
+
 
   border-color: rgba(213, 141, 122, 0.70) !important;
   border-bottom-color: #D58D7A !important;
 }
 
 .mmic-category .titreCate span {
-  color: #FFF8F4 !important;
+  color: #79516F !important;
 }
 
 .mmic-category .titreCate span::before,
 .mmic-category .titreCate span::after {
-  background: #D58D7A !important;
+  background: #E26B0F !important;
 }
 /* =========================================================
    TITRES DES GRANDES CATÉGORIES — CORRECTION H2
@@ -1959,7 +1956,7 @@
 
 .mmic-category .titreCate h2 {
   margin: 0 !important;
-  color: #FFF8F4 !important;
+  color: #79516F !important;
 }
 /* =========================================================
    TITRES DES GRANDES CATÉGORIES
@@ -1969,7 +1966,7 @@
 .mmic-category .titreCate span,
 .mmic-category .titreCate h2,
 .mmic-category .titreCate a {
-  color: #FFF8F4 !important;
+  color: #79516F !important;
 }
 /* =========================================================
    ILS SONT RECHERCHÉS — SANS MINI-LIEUX
@@ -2095,3 +2092,10 @@ form#form_register th.thCornerR {
     border-color: #E7C2B5 !important;
     text-shadow: none !important;
 }
+
+.mmic-category .titreCate {
+  background-color: #C87545 !important;
+  border-radius: 13px 13px 0 0;
+  overflow: hidden;
+}
+
