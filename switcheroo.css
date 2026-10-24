@@ -1125,7 +1125,7 @@ html body .mmic-switcheroo .switcheroo__delete {
 /* overlay */
 
 html body .monomer-overlay {
-    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
+    background: transparent !important;
 }
 
 
@@ -1134,7 +1134,7 @@ html body .monomer-overlay {
 html body .monomer-modal {
     border-color: #e3ad9a !important;
 
-    background: ;
+    background: #F1E5C6;
 
     color: #75433f !important;
 
