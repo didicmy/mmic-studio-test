@@ -1287,7 +1287,7 @@ html body .mmic-notifications-all {
     border-top:
         1px solid rgba(216, 176, 140, 0.35) !important;
 
-    background: #C97845 !important;
+    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important; !important;
     color: #8C615D !important;
 
     font-size: 8px !important;
