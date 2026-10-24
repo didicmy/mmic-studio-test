@@ -838,13 +838,7 @@
 .mmic-groups-page table.forumline th.thHead {
   border-bottom-color: #D58D7A !important;
 
-  background:
-    linear-gradient(
-      90deg,
-      #8F5D58 0%,
-      #A96F68 50%,
-      #8F5D58 100%
-    ) !important;
+  background: #C97845 !important;
 
   color: #FFF8F4 !important;
 }
@@ -852,13 +846,14 @@
 
 .mmic-groups-page table.forumline th.thHead,
 .mmic-groups-page table.forumline th.thHead * {
-  color: #FFF8F4 !important;
+  color: #79516F !important;
 }
 
 
 .mmic-groups-page table.forumline th.thHead::before,
 .mmic-groups-page table.forumline th.thHead::after {
-  background: #D58D7A;
+  background: #E26B0F;
+       height: 2px;
 }
 
 
@@ -870,7 +865,7 @@
 .mmic-groups-page table.forumline td {
   border-color: #F0DDD4 !important;
 
-  background: #FFF8F4 !important;
+  background: #F8EDE7 !important;
 
   color: #7F6761;
 }
@@ -907,7 +902,7 @@
 .mmic-groups-page input[type="button"] {
   border-color: #D58D7A;
 
-  background: #A96F68;
+  background: #C97845;
   color: #FFF8F4;
 }
 
