@@ -783,13 +783,13 @@ html body .mmic-viewforum-users h3::before{
   background: #102438;
   color: #d19168;
 
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .mmic-viewforum-users-list {
   color: #687681;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -809,7 +809,7 @@ html body .mmic-viewforum-users h3::before{
 .mmic-viewforum-permissions-list {
   color: #766a61;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.6;
   text-align: center;
 }
@@ -1134,7 +1134,7 @@ html body .mmic-viewforum-users h3::before{
 
   color: #a06d50;
 
-  font-size: 6px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.7px;
   text-transform: uppercase;
@@ -1164,7 +1164,7 @@ html body .mmic-viewforum-users h3::before{
 .mmic-topic-number span {
   display: inline;
 
-  font-size: 6px;
+  font-size: 10px;
 }
 
 .mmic-topic-number strong {
@@ -1226,7 +1226,7 @@ html body .mmic-viewforum-users h3::before{
 
   color: #766a61;
 
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -1235,6 +1235,7 @@ html body .mmic-viewforum-users h3::before{
 
   text-overflow: ellipsis;
   white-space: nowrap;
+   font-size: 10px;
 }
 
 
@@ -2395,7 +2396,7 @@ html body .mmic-viewforum-users-title,
 html body .mmic-viewforum-permissions-title {
     color: #b97a56 !important;
 
-    font-size: 8px !important;
+    font-size: 10px !important;
     font-weight: 700 !important;
 
     letter-spacing: 1.7px !important;
