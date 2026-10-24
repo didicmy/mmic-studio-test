@@ -6,7 +6,12 @@
 .mmic-discover-page #page-body {
   padding-top: 18px;
 }
-
+.cattitle {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #79516F !important;
+}
 
 /* =========================================================
    CONTENEUR PRINCIPAL
