@@ -1288,7 +1288,7 @@ html body .mmic-notifications-all {
         1px solid rgba(216, 176, 140, 0.35) !important;
 
     background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important; !important;
-    color: #8C615D !important;
+    color: #F8EDE7 !important;
 
     font-size: 8px !important;
     font-weight: 700 !important;
@@ -1302,5 +1302,5 @@ html body .mmic-notifications-all {
 
 html body .mmic-notifications-all:hover {
     background: #C97845 !important;
-    color: #76504D !important;
+    color: #F8EDE7 !important;
 }
