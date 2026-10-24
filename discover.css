@@ -42,13 +42,7 @@
   border: 0 !important;
   border-bottom: 2px solid #D58D7A !important;
 
-  background:
-    linear-gradient(
-      90deg,
-      #8F5D58 0%,
-      #A96F68 50%,
-      #8F5D58 100%
-    ) !important;
+  background: #9b0d3a;
 
   background-image: none;
 
