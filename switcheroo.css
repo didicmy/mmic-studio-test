@@ -111,7 +111,7 @@ html body .mmic-switcheroo .switcheroo__squircle {
     border: 1px solid #d8b08c !important;
     border-radius: 11px !important;
 
-    background: #102438 !important;
+    background: #F1E5C6 !important;
 
     overflow: visible !important;
 
@@ -130,7 +130,7 @@ html body .mmic-switcheroo .switcheroo__squircle {
 html body .mmic-switcheroo .switcheroo__squircle:hover {
     transform: translateY(-2px) scale(1.04) !important;
 
-    border-color: #e4b184 !important;
+    border-color: #F1E5C6 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.08),
@@ -1012,7 +1012,7 @@ html body .mmic-switcheroo {
 
 html body .mmic-switcheroo .switcheroo__squircle {
     border-color: #e3ad9a !important;
-    background: #9a625d !important;
+    background: #C97845 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.08),
@@ -1021,7 +1021,7 @@ html body .mmic-switcheroo .switcheroo__squircle {
 
 html body .mmic-switcheroo .switcheroo__squircle:hover {
     border-color: #efb69d !important;
-    background: #a96f68 !important;
+    background: #C97845 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.10),
@@ -1035,7 +1035,7 @@ html body .mmic-switcheroo .switcheroo__squircle--button,
 html body .mmic-switcheroo [data-action="open-login"],
 html body .mmic-switcheroo [data-action="add"] {
     border-color: #e3ad9a !important;
-    background: #9a625d !important;
+    background: #C97845 !important;
     color: #fff8f4 !important;
 }
 
