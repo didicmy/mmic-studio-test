@@ -456,12 +456,7 @@ html body .monomer-modal {
     border: 1px solid #d8b08c !important;
     border-radius: 10px !important;
 
-    background:
-        linear-gradient(
-            135deg,
-            #fffdf9 0%,
-            #faf5ee 100%
-        ) !important;
+    background: ;
 
     color: #102438 !important;
 
@@ -1139,8 +1134,7 @@ html body .monomer-overlay {
 html body .monomer-modal {
     border-color: #e3ad9a !important;
 
-    background:
-linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%)) !important;
+    background: ;
 
     color: #75433f !important;
 
@@ -1191,7 +1185,11 @@ html body .switcheroo__form-input:focus {
 html body .switcheroo__form-button {
     border-color: #d98f7c !important;
 
-    background: #9a625d !important;
+    background:        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #faf5ee 100%
+        ) !important;
     color: #fff8f4 !important;
 }
 
