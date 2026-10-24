@@ -31,7 +31,7 @@
     border: 3px solid #FFF8F4;
     border-radius: 50%;
 
-    background: #B6837B;
+    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
     color: #FFF8F4;
 
     /* Petit contour extérieur comme les éléments du forum */
@@ -84,7 +84,7 @@
 /* Quand le panneau est ouvert */
 
 #mmic-a11y-button[aria-expanded="true"] {
-    background: #76504D;
+    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 
     box-shadow:
         0 4px 14px rgba(81, 61, 59, .30),
