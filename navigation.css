@@ -1,3 +1,5 @@
+
+
 /* =========================================================
    NAVIGATION — MEET ME IN CHICAGO
    Version nettoyée et vérifiée
@@ -28,9 +30,9 @@ html body .mmic-main-navigation {
 background:
     linear-gradient(
         135deg,
-        #A97872 0%,
-        #B9857D 52%,
-        #A97872 100%
+    #BC805B 0%,
+    #A65F3B 52%,
+    #A65F3B 100%
     ) !important;
 
     box-shadow:
