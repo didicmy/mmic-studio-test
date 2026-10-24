@@ -35,9 +35,10 @@ html body .mmic-switcheroo {
 
     background:
         linear-gradient(
-            180deg,
-            #102438 0%,
-            #0c1d2f 100%
+            135deg,
+    #BC805B 0%,
+    #A65F3B 52%,
+    #A65F3B 100%
         ) !important;
 
     box-shadow:
