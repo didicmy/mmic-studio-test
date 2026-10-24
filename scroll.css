@@ -25,7 +25,12 @@
   border: 1px solid #d7a08f;
   border-radius: 9px;
 
-  background: #b98276;
+  background:         linear-gradient(
+            135deg,
+    #BC805B 0%,
+    #A65F3B 52%,
+    #A65F3B 100%
+        ) !important;
   color: #fff;
 
   font-size: 18px;
@@ -42,7 +47,7 @@
 }
 
 .mmic-scroll-buttons button:hover {
-  background: #a96f65;
+  background: #C97845;
   transform: translateY(-2px);
 }
 
