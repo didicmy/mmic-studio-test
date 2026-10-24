@@ -7,7 +7,7 @@
   width: 100%;
   margin: 16px auto 30px;
 
-  background: #FFF8F4;
+  background: #F1E5C6;
 
   border: 1px solid #E7C2B5;
   border-radius: 12px;
@@ -26,13 +26,7 @@
 .mmic-calendar-header {
   padding: 12px 16px 10px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #8F5D58 0%,
-      #A96F68 50%,
-      #8F5D58 100%
-    );
+  background: #C97845;
 
   border-bottom: 2px solid #D58D7A;
 }
@@ -128,7 +122,7 @@
 
 
 .mmic-calendar-submit:hover {
-  background: #A96F68;
+  background: #C97845;
   color: #FFF8F4;
 
   border-color: #D58D7A;
@@ -162,7 +156,7 @@
 
 
 .mmic-calendar-nav:hover {
-  background: #A96F68;
+  background: #C97845;
   border-color: #F0B29E;
 
   color: #FFF8F4;
