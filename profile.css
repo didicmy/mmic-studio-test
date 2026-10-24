@@ -3005,7 +3005,7 @@ html body .mmic-profile-edit-page td.row2 span.gen{
 /* La ligne contenant le texte et le bouton */
 html body .mmic-profile-edit-page tr:has(a[href*="rgpd.php"]) td{
     border:0 !important;
-    background:transparent !important;
+    background: #F8EDE7 !important;
     padding:0 !important;
 }
 
