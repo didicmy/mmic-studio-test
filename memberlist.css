@@ -1093,7 +1093,7 @@ html body .mmic-member-card:hover {
 html body .mmic-member-card-avatar {
     border-right-color: rgba(227,173,154,.48);
 
-    background: #EFD6C8 !important;
+    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 }
 
 
