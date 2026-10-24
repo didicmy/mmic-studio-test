@@ -1122,7 +1122,7 @@ html body .mmic-notifications-menu {
     border: 1px solid rgba(216, 176, 140, 0.62) !important;
     border-radius: 9px !important;
 
-    background: #fbf8f3 !important;
+    background: #F8EDE7 !important;
 
     box-shadow:
         0 14px 32px rgba(9, 24, 39, 0.24),
@@ -1190,7 +1190,7 @@ html body .mmic-notifications-menu-head span {
 html body .mmic-notifications-menu-head strong {
     display: block;
 
-    color: #76504D;
+    color: #79516F;
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
@@ -1287,7 +1287,7 @@ html body .mmic-notifications-all {
     border-top:
         1px solid rgba(216, 176, 140, 0.35) !important;
 
-    background: #F8E9DF !important;
+    background: #C97845 !important;
     color: #8C615D !important;
 
     font-size: 8px !important;
@@ -1301,6 +1301,6 @@ html body .mmic-notifications-all {
 
 
 html body .mmic-notifications-all:hover {
-    background: #EFD9CD !important;
+    background: #C97845 !important;
     color: #76504D !important;
 }
