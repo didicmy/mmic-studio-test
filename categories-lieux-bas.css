@@ -731,7 +731,7 @@ background-repeat: no-repeat;
   border: 1px solid #E7C2B5;
   border-radius: 4px;
 
-  background: #B77F68;
+  background: #e5c6f1;
   color: #FFF7F0  !important;
 
   font-size: 8px;
@@ -748,7 +748,7 @@ background-repeat: no-repeat;
 
 .mmic-category .sousForums a:hover {
   border-color: #E26B0F;
-  background: #E26B0F;
+  background: #d4c6f1;
   color: #FFFFFF !important;
 }
 
@@ -1463,7 +1463,7 @@ background-repeat: no-repeat;
   margin: 0 0 7px;
 
   color: #a06d50;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -1546,7 +1546,7 @@ background-repeat: no-repeat;
 
   color: #6f625a !important;
 
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.25px;
   line-height: 1.15;
