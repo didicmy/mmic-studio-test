@@ -81,13 +81,7 @@ body.mmic-login-page form[name="form_login"] .thHead{
     border:0 !important;
     border-bottom:1px solid #D58D7A !important;
 
-    background:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
+    background: #C97845 !important;
 
     color:#FFF8F4 !important;
 
@@ -273,7 +267,7 @@ body.mmic-login-page form[name="form_login"] .mainoption{
     border:1px solid #D58D7A !important;
     border-radius:5px !important;
 
-    background:#A96F68 !important;
+    background:#C97845 !important;
     color:#FFF8F4 !important;
 
     font-size:9px !important;
@@ -291,7 +285,7 @@ body.mmic-login-page form[name="form_login"] .mainoption{
 }
 
 body.mmic-login-page form[name="form_login"] .mainoption:hover{
-    background:#8F5D58 !important;
+    background:#C97845 !important;
 
     border-color:#F0B29E !important;
 
@@ -371,7 +365,7 @@ body.mmic-login-page form[name="form_login"] .gensmall{
 }
 
 body.mmic-login-page form[name="form_login"] .gensmall a{
-    color:#A76452 !important;
+    color:#C97845 !important;
 
     font-weight:600 !important;
 
@@ -381,7 +375,7 @@ body.mmic-login-page form[name="form_login"] .gensmall a{
 }
 
 body.mmic-login-page form[name="form_login"] .gensmall a:hover{
-    color:#75433F !important;
+    color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 }
 
 
