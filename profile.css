@@ -4554,17 +4554,11 @@ html body .mmic-profile-edit-page th.thSides {
     border-top: 1px solid #E3AD9A !important;
     border-bottom: 1px solid #D58D7A !important;
 
-    background:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
+    background: #C97845 !important;
 
     background-image: none;
 
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 
 
@@ -4574,7 +4568,7 @@ html body .mmic-profile-edit-page .thHead *,
 html body .mmic-profile-edit-page .thSides *,
 html body .mmic-profile-edit-page th.thHead *,
 html body .mmic-profile-edit-page th.thSides * {
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 
 
@@ -4595,7 +4589,7 @@ html body .mmic-profile-edit-page td.row2,
 html body .mmic-profile-edit-page td.row3 {
     border-bottom-color: #F0DDD4 !important;
 
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
 
     color: #7F6761 !important;
 }
