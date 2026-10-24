@@ -980,12 +980,7 @@ html body .mmic-memberlist-hero p {
 html body .mmic-memberlist-filter {
     border-color: #E7C2B5 !important;
 
-    background:
-        linear-gradient(
-            135deg,
-            #FFF8F4 0%,
-            #F8EDE7 100%
-        ) !important;
+    background: #F8EDE7 !important;
 
     box-shadow:
         0 4px 12px rgba(117,67,63,.06),
@@ -1074,12 +1069,7 @@ html body
 html body .mmic-member-card {
     border-color: #E7C2B5;
 
-    background:
-        linear-gradient(
-            135deg,
-            #FFF8F4 0%,
-            #F9EEE8 100%
-        );
+    background: #F8EDE7 !important;
 
     box-shadow:
         0 4px 11px rgba(117,67,63,.055),
@@ -1103,12 +1093,7 @@ html body .mmic-member-card:hover {
 html body .mmic-member-card-avatar {
     border-right-color: rgba(227,173,154,.48);
 
-    background:
-        linear-gradient(
-            180deg,
-            #F8E9DF 0%,
-            #FFF8F4 100%
-        );
+    background: #EFD6C8 !important;
 }
 
 
