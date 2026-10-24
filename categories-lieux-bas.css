@@ -732,7 +732,7 @@ background-repeat: no-repeat;
   border-radius: 4px;
 
   background: #e5dabf;
-  color: #FFF7F0  !important;
+  color: #b7570c  !important;
 
   font-size: 8px;
   font-weight: bold;
@@ -749,7 +749,7 @@ background-repeat: no-repeat;
 .mmic-category .sousForums a:hover {
   border-color: #E26B0F;
   background: #b3aa92;
-  color: #FFFFFF !important;
+  color: #b7570c !important;
 }
 
 
