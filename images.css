@@ -32,13 +32,7 @@
   border-bottom: 2px solid #D58D7A;
   border-radius: 12px 12px 0 0;
 
-  background:
-    linear-gradient(
-      90deg,
-      #8F5D58 0%,
-      #A96F68 50%,
-      #8F5D58 100%
-    );
+  background: #C97845;
 
   color: #FFF8F4;
 
