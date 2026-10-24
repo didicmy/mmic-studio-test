@@ -2551,7 +2551,7 @@ html body .mmic-topic:hover .mmic-topic-last-avatar {
 
 html body .mmic-viewforum-navigation {
     border-color: #E7C2B5 !important;
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
     color: #8F7A73 !important;
 }
 
@@ -2603,12 +2603,7 @@ html body .mmic-topics-header .mmic-topics-pagination a {
 html body .mmic-topic {
     border-color: #E7C2B5 !important;
 
-    background:
-        linear-gradient(
-            135deg,
-            #FFFDFB 0%,
-            #FFF8F4 100%
-        ) !important;
+    background: #F8EDE7;
 
     box-shadow:
         0 2px 7px rgba(117,67,63,.04) !important;
@@ -2646,12 +2641,7 @@ html body .mmic-topic-status,
 html body .mmic-topic-status-icon {
     border-color: #D58D7A !important;
 
-    background:
-        linear-gradient(
-            145deg,
-            #8F5D58 0%,
-            #A96F68 100%
-        ) !important;
+    background: #C97845;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.10),
@@ -2684,18 +2674,18 @@ html body .mmic-topic[data-folder-state="Nouveaux messages"]
    --------------------------------------------------------- */
 
 html body .mmic-topic-title {
-    color: #75433F !important;
+    color: #E26B0F !important;
 }
 
 html body .mmic-topic-title:hover {
-    color: #A96F68 !important;
+    color: #f18633 !important;
 }
 
 html body .mmic-topic-title::after {
     background:
         linear-gradient(
             90deg,
-            #A96F68,
+            #d8782d,
             transparent
         ) !important;
 }
@@ -2704,7 +2694,7 @@ html body .mmic-topic-title::after {
 /* Type éventuel : annonce / note / etc. */
 
 html body .mmic-topic-type:not(:empty) {
-    background: #A96F68 !important;
+    background: #d8782d !important;
     color: #FFF8F4 !important;
 }
 
@@ -2815,7 +2805,7 @@ html body .mmic-viewforum-users,
 html body .mmic-viewforum-permissions {
     border-color: #E7C2B5 !important;
 
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.8),
