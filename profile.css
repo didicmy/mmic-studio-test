@@ -4683,7 +4683,7 @@ html body .mmic-profile-edit-page .mainoption,
 html body .mmic-profile-edit-page input.mainoption {
     border-color: #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 
@@ -4696,7 +4696,7 @@ html body .mmic-profile-edit-page .mainoption:hover,
 html body .mmic-profile-edit-page input.mainoption:hover {
     border-color: #F0B29E !important;
 
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
@@ -4706,7 +4706,7 @@ html body .mmic-profile-edit-page .liteoption,
 html body .mmic-profile-edit-page input.liteoption {
     border-color: #E7C2B5 !important;
 
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
 
     color: #75433F !important;
 }
@@ -4725,7 +4725,7 @@ html body .mmic-profile-edit-page input.liteoption:hover {
 /* zone contenant les boutons */
 
 html body .mmic-profile-edit-page .catBottom {
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
 }
 
 
@@ -4736,14 +4736,14 @@ html body .mmic-profile-edit-page .catBottom {
 html body .mmic-profile-edit-page a[href*="rgpd.php"] {
     border-color: #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
 
 
 html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover {
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
