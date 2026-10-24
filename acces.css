@@ -269,7 +269,7 @@
     border: 0;
 
     background: transparent;
-    color: #F1E5C6;
+    color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 
     font-family: Arial, Verdana, sans-serif;
     font-size: 13px;
@@ -288,7 +288,7 @@
 
     border-radius: 20px;
 
-    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
+    background: #F1E5C6;
 
     box-shadow: inset 0 0 0 1px rgba(118,80,77,.10);
 
@@ -296,7 +296,7 @@
 }
 
 .mmic-a11y-toggle[aria-pressed="true"]::after {
-    background: #B6837B;
+    background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 }
 
 .mmic-a11y-toggle:hover {
