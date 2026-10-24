@@ -2570,16 +2570,16 @@ html body .mmic-viewforum-more-label {
    --------------------------------------------------------- */
 
 html body .mmic-topics-divider {
-    color: #A96F68 !important;
+    color: #79516F !important;
 }
 
 html body .mmic-topics-divider::before,
 html body .mmic-topics-divider::after {
-    background: #E7C2B5 !important;
+    background: #E26B0F !important;
 }
 
 html body .mmic-topics-divider span {
-    color: #A96F68 !important;
+    color: #79516F !important;
 }
 
 html body .mmic-topics-title,
@@ -2603,7 +2603,7 @@ html body .mmic-topics-header .mmic-topics-pagination a {
 html body .mmic-topic {
     border-color: #E7C2B5 !important;
 
-    background: #F8EDE7;
+    background: #F8EDE7 !important;
 
     box-shadow:
         0 2px 7px rgba(117,67,63,.04) !important;
@@ -2641,7 +2641,7 @@ html body .mmic-topic-status,
 html body .mmic-topic-status-icon {
     border-color: #D58D7A !important;
 
-    background: #C97845;
+    background: #C97845 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.10),
@@ -2821,7 +2821,7 @@ html body .mmic-viewforum-permissions-title,
 html body .mmic-viewforum-moderators > strong:first-child,
 html body .mmic-viewforum-users > strong:first-child,
 html body .mmic-viewforum-permissions > strong:first-child {
-    color: #A76452 !important;
+    color: #C97845 !important;
 }
 
 
@@ -2833,7 +2833,7 @@ html body .mmic-viewforum-users h3 {
 
 html body .mmic-viewforum-users h3::before,
 html body .mmic-viewforum-users-icon {
-    background: #A96F68 !important;
+    background: #C97845 !important;
     color: #FFF8F4 !important;
 }
 
