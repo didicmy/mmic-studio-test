@@ -1209,7 +1209,7 @@ html body .mmic-member-card-profile > span {
 
 
 html body .mmic-member-card-profile:hover {
-    background: #8F5D58 !important;
+    background: #C9784 !important;
 
     border-color: #F0B29E !important;
 
@@ -1235,7 +1235,7 @@ html body .mmic-member-card-action a {
 
 html body .mmic-member-card-action > a::before,
 html body .mmic-member-card-action a::before {
-    background: #C97845 !important;
+    background: #FFF8F4 !important;
 }
 
 
