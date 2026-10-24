@@ -3680,7 +3680,7 @@ body.mmic-profile-notifications #page-body td.catBottom{
 body.mmic-profile-notifications #page-body td.row1,
 body.mmic-profile-notifications #page-body td.row2,
 body.mmic-profile-notifications #page-body table.forumline td{
-    background: #EFD6C8 !important;
+    background: #F8EDE7 !important;
 
     color:#13263d !important;
 
@@ -3695,7 +3695,7 @@ body.mmic-profile-notifications #page-body table.forumline td{
 /* alternance légère, sans faire tableau Excel */
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row1,
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row2{
-    background:#F8EDE7 !important;
+    background:#EFD6C8 !important;
 }
 
 /* ----------------------------------------------------------
@@ -3928,7 +3928,7 @@ body.mmic-profile-topic-list #page-body tr:last-child td{
 
 body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row1,
 body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row2{
-    background:#fffdf9 !important;
+    background:#F8EDE7 !important;
 }
 
 /* ----------------------------------------------------------
@@ -5083,16 +5083,9 @@ body.mmic-profile-followers #page-body th,
 body.mmic-profile-followers #page-body .thHead,
 body.mmic-profile-followers #page-body .thSides,
 body.mmic-profile-followers #page-body .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
 
+    background-color: #C97845;
     border-color: #D58D7A !important;
 
     color: #FFF8F4 !important;
@@ -5172,15 +5165,8 @@ body.mmic-profile-topic-list #page-body th,
 body.mmic-profile-topic-list #page-body .thHead,
 body.mmic-profile-topic-list #page-body .thSides,
 body.mmic-profile-topic-list #page-body .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
+    background-color: #C97845 !important;
 
     border-color: #D58D7A !important;
 
