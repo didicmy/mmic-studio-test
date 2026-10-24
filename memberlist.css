@@ -943,13 +943,7 @@ html body .mmic-memberlist-page {
 html body .mmic-memberlist-hero {
     border-color: rgba(227, 173, 154, .62);
 
-    background:
-        linear-gradient(
-            135deg,
-            #8F5D58 0%,
-            #A96F68 52%,
-            #8F5D58 100%
-        );
+    background: #C97845;
 
     color: #FFF8F4;
 
@@ -970,7 +964,7 @@ html body .mmic-memberlist-hero-kicker {
 
 
 html body .mmic-memberlist-hero h1 {
-    color: #FFF8F4;
+    color: #79516F;
 }
 
 
@@ -1046,7 +1040,7 @@ html body
 .mmic-memberlist-submit {
     border-color: #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
     color: #FFF8F4 !important;
 
     box-shadow:
@@ -1131,7 +1125,7 @@ html body .mmic-member-card-avatar img {
 html body .mmic-member-card-number {
     border-color: #E3AD9A;
 
-    background: #8F5D58;
+    background: #C97845;
     color: #FFF8F4;
 }
 
@@ -1195,7 +1189,7 @@ html body .mmic-member-card-actions {
 html body .mmic-member-card-profile {
     border-color: #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
     color: #FFF8F4 !important;
 
     box-shadow:
@@ -1229,9 +1223,9 @@ html body .mmic-member-card-profile:hover {
 
 html body .mmic-member-card-action > a,
 html body .mmic-member-card-action a {
-    border-color: #D58D7A !important;
+    border-color: #C97845 !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.10),
@@ -1241,13 +1235,13 @@ html body .mmic-member-card-action a {
 
 html body .mmic-member-card-action > a::before,
 html body .mmic-member-card-action a::before {
-    background: #FFF8F4 !important;
+    background: #C97845 !important;
 }
 
 
 html body .mmic-member-card-action > a:hover,
 html body .mmic-member-card-action a:hover {
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.11),
