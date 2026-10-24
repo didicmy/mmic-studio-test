@@ -152,7 +152,7 @@ html body .mmic-pm-toolbar {
     border: 1px solid #dfcdbc;
     border-radius: 10px;
 
-    background: #fffaf4;
+    background: #F8EDE7;
 
     box-shadow:
         0 4px 13px rgba(16,36,56,.05);
@@ -187,7 +187,7 @@ html body .mmic-pm-folder {
     border: 1px solid #e5d5c6;
     border-radius: 7px;
 
-    background: #fbf6f0;
+    background: #EFD6C8;
 
     transition:
         transform .16s ease,
@@ -199,7 +199,7 @@ html body .mmic-pm-folder {
 html body .mmic-pm-folder:hover {
     transform: translateY(-1px);
 
-    border-color: #d8b08c;
+    border-color: #E26B0F;
 
     box-shadow:
         0 4px 9px rgba(16,36,56,.08);
@@ -778,7 +778,7 @@ html body .mmic-pm-empty {
     border: 1px solid #dfcdbc;
     border-radius: 9px;
 
-    background: #fffaf4;
+    background: #F8EDE7;
 
     color: #756a61;
 
@@ -814,7 +814,7 @@ html body .mmic-pm-selection {
     border: 1px solid #dfcdbc;
     border-radius: 9px;
 
-    background: #fffaf4;
+    background: #F8EDE7;
 }
 
 
@@ -860,7 +860,7 @@ html body .mmic-pm-action-button {
     border: 1px solid #d8b08c;
     border-radius: 6px;
 
-    background: #fffaf4;
+    background: #F8EDE7;
     color: #102438;
 
     font-family: Verdana, Arial, sans-serif;
@@ -883,13 +883,13 @@ html body .mmic-pm-action-button {
 html body .mmic-pm-action-button:hover {
     transform: translateY(-1px);
 
-    background: #102438;
+    background: #C97845;
     color: #fffaf4;
 }
 
 
 html body .mmic-pm-action-button--danger:hover {
-    background: #7d4545;
+    background: #C97845;
 }
 
 
@@ -3446,7 +3446,7 @@ html body .mmic-pm-preview-message .postbody{
    --------------------------------------------------------- */
 
 html body .mmic-pm-hero {
-    background: #b6837b !important;
+    background: #C97845 !important;
     background-image: none !important;
 
     border-color: #d8a17e !important;
@@ -3461,7 +3461,7 @@ html body .mmic-pm-hero-kicker {
 }
 
 html body .mmic-pm-hero-title {
-    color: #fffaf4 !important;
+    color: #79516F !important;
 }
 
 html body .mmic-pm-hero-text {
@@ -3522,7 +3522,7 @@ html body .mmic-pm-storage-progress {
 html body .mmic-pm-new-button {
     border-color: #d8a17e !important;
 
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 
     box-shadow:
@@ -3530,7 +3530,7 @@ html body .mmic-pm-new-button {
 }
 
 html body .mmic-pm-new-button:hover {
-    background: #a66f67 !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
@@ -3554,12 +3554,12 @@ html body .mmic-pm-filter select {
 html body .mmic-pm-filter-button {
     border-color: #d8a17e !important;
 
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
 html body .mmic-pm-filter-button:hover {
-    background: #a66f67 !important;
+    background: #C97845 !important;
 }
 
 
