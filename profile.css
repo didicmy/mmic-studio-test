@@ -3345,14 +3345,9 @@ body.mmic-profile-followers #page-body table.forumline .catHead {
     border-top:1px solid #d2a27e !important;
     border-bottom:1px solid #d2a27e !important;
 
-    background: linear-gradient(
-    90deg,
-    #8F5D58 0%,
-    #A96F68 50%,
-    #8F5D58 100%
-) !important;
+    background: #C97845 !important;
 
-    color:#fff !important;
+    color:#79516F !important;
 
     text-align:center !important;
 
@@ -3685,7 +3680,7 @@ body.mmic-profile-notifications #page-body td.catBottom{
 body.mmic-profile-notifications #page-body td.row1,
 body.mmic-profile-notifications #page-body td.row2,
 body.mmic-profile-notifications #page-body table.forumline td{
-    background:#fffaf4 !important;
+    background: #EFD6C8 !important;
 
     color:#13263d !important;
 
@@ -3700,7 +3695,7 @@ body.mmic-profile-notifications #page-body table.forumline td{
 /* alternance légère, sans faire tableau Excel */
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row1,
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row2{
-    background:#fffdf9 !important;
+    background:#F8EDE7 !important;
 }
 
 /* ----------------------------------------------------------
@@ -3919,7 +3914,7 @@ body.mmic-profile-topic-list #page-body table.forumline td{
     border:0 !important;
     border-bottom:1px solid #f0e4d8 !important;
 
-    background:#fffaf4 !important;
+    background:#F8EDE7 !important;
     color:#13263d !important;
 
     vertical-align:middle !important;
@@ -4133,7 +4128,7 @@ body.mmic-profile-signature #page-body .catHead::before{
 body.mmic-profile-signature #page-body td.row1,
 body.mmic-profile-signature #page-body td.row2,
 body.mmic-profile-signature #page-body table.forumline td{
-    background:#fffaf4 !important;
+    background:#F8EDE7 !important;
 
     color:#13263d !important;
 
@@ -4194,7 +4189,7 @@ body.mmic-profile-signature #page-body .sceditor-toolbar{
     border:0 !important;
     border-bottom:1px solid #dfcdbc !important;
 
-    background:#f5ece2 !important;
+    background:#EFD6C8 !important;
 
     box-sizing:border-box !important;
 }
@@ -4839,7 +4834,7 @@ body.mmic-profile-signature #page-body input[type="submit"],
 body.mmic-profile-signature #page-body .mainoption {
     border-color: #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
@@ -4850,7 +4845,7 @@ body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
 body.mmic-profile-followers #page-body input[type="submit"]:hover,
 body.mmic-profile-topic-list #page-body input[type="submit"]:hover,
 body.mmic-profile-signature #page-body input[type="submit"]:hover {
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
@@ -4863,7 +4858,7 @@ body.mmic-profile-signature #page-body input[type="submit"]:hover {
 body.mmic-profile-notifications input[type="checkbox"],
 body.mmic-profile-topic-list input[type="checkbox"],
 body.mmic-profile-friendsfoes input[type="checkbox"] {
-    accent-color: #A96F68 !important;
+    accent-color: #C97845 !important;
 }
 /* =========================================================
    MEET ME IN CHICAGO — AMIS & IGNORÉS
@@ -4936,7 +4931,7 @@ body.mmic-profile-friendsfoes #page-body table.forumline {
 body.mmic-profile-friendsfoes #page-body table.forumline td {
     border-color: #F0DDD4 !important;
 
-    background: #FFF8F4 !important;
+    background: #F8EDE7 !important;
 
     color: #75433F !important;
 }
@@ -4994,7 +4989,7 @@ body.mmic-profile-friendsfoes #page-body input.mainoption,
 body.mmic-profile-friendsfoes #page-body input.liteoption {
     border: 1px solid #D58D7A !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 
@@ -5008,7 +5003,7 @@ body.mmic-profile-friendsfoes #page-body input.mainoption:hover,
 body.mmic-profile-friendsfoes #page-body input.liteoption:hover {
     border-color: #F0B29E !important;
 
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 }
@@ -5038,17 +5033,11 @@ body.mmic-profile-friendsfoes #page-body table.forumline th,
 body.mmic-profile-friendsfoes #page-body table.forumline .thHead,
 body.mmic-profile-friendsfoes #page-body table.forumline .thSides,
 body.mmic-profile-friendsfoes #page-body table.forumline .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
 
-    color: #FFF8F4 !important;
+    background-color: #C97845 !important;
+
+    color: #79516F !important;
 }
 
 
@@ -5056,7 +5045,7 @@ body.mmic-profile-friendsfoes #page-body table.forumline th *,
 body.mmic-profile-friendsfoes #page-body table.forumline .thHead *,
 body.mmic-profile-friendsfoes #page-body table.forumline .thSides *,
 body.mmic-profile-friendsfoes #page-body table.forumline .catHead * {
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 
 
@@ -5066,17 +5055,11 @@ body.mmic-profile-signature #page-body table.forumline th,
 body.mmic-profile-signature #page-body table.forumline .thHead,
 body.mmic-profile-signature #page-body table.forumline .thSides,
 body.mmic-profile-signature #page-body table.forumline .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
 
-    color: #FFF8F4 !important;
+    background-color: #C97845 !important;
+
+    color: #79516F !important;
 }
 
 
@@ -5084,7 +5067,7 @@ body.mmic-profile-signature #page-body table.forumline th *,
 body.mmic-profile-signature #page-body table.forumline .thHead *,
 body.mmic-profile-signature #page-body table.forumline .thSides *,
 body.mmic-profile-signature #page-body table.forumline .catHead * {
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 /* =========================================================
    CORRECTIF FINAL — BANDEAUX PROFIL
@@ -5149,26 +5132,20 @@ body.mmic-profile-notifications #page-body th,
 body.mmic-profile-notifications #page-body .thHead,
 body.mmic-profile-notifications #page-body .thSides,
 body.mmic-profile-notifications #page-body .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
+
+    background-color: #C97845 !important;
 
     border-color: #D58D7A !important;
 
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 
 body.mmic-profile-notifications #page-body th *,
 body.mmic-profile-notifications #page-body .thHead *,
 body.mmic-profile-notifications #page-body .thSides *,
 body.mmic-profile-notifications #page-body .catHead * {
-    color: #FFF8F4 !important;
+    color: #79516F !important;
 }
 
 
@@ -5176,14 +5153,14 @@ body.mmic-profile-notifications #page-body .catHead * {
 
 body.mmic-profile-notifications #page-body input[type="submit"],
 body.mmic-profile-notifications #page-body .mainoption {
-    background: #A96F68 !important;
+    background: #C97845 !important;
     border-color: #D58D7A !important;
     color: #FFF8F4 !important;
 }
 
 body.mmic-profile-notifications #page-body input[type="submit"]:hover,
 body.mmic-profile-notifications #page-body .mainoption:hover {
-    background: #8F5D58 !important;
+    background: #C97845 !important;
 }
 
 
@@ -5226,15 +5203,8 @@ body.mmic-profile-favourites #page-body th,
 body.mmic-profile-favourites #page-body .thHead,
 body.mmic-profile-favourites #page-body .thSides,
 body.mmic-profile-favourites #page-body .catHead {
-    background-image:
-        linear-gradient(
-            90deg,
-            #8F5D58 0%,
-            #A96F68 50%,
-            #8F5D58 100%
-        ) !important;
 
-    background-color: #A96F68 !important;
+    background-color: #C97845 !important;
 
     border-color: #D58D7A !important;
 
