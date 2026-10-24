@@ -1241,7 +1241,7 @@ html body .mmic-viewforum-users h3::before{
 
 /* ÉLÉMENTS SECONDAIRES */
 
-.mmic-topic-special-icon,
+
 .mmic-topic-selection,
 .mmic-topic-multiselect {
   position: absolute;
@@ -2143,34 +2143,6 @@ html body .mmic-topic:hover .mmic-topic-status-icon {
    SUJETS SPÉCIAUX
    Post-it / Annonce / Annonce globale
    ========================================================= */
-
-html body .mmic-topic-special-icon {
-    display: none !important;
-}
-
-
-/* Quand data-topic-type n'est pas vide, on réactive le badge */
-
-html body .mmic-topic[data-topic-type]:not([data-topic-type=""])
-.mmic-topic-special-icon {
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 20px !important;
-    height: 20px !important;
-
-    margin-right: 5px !important;
-
-    border: 1px solid rgba(216,176,140,.58) !important;
-    border-radius: 50% !important;
-
-    background: #fffaf4 !important;
-
-    box-shadow:
-        0 2px 5px rgba(16,36,56,.07) !important;
-}
 
 
 /* Icône commune du badge spécial */
