@@ -1,4 +1,6 @@
 
+
+
 /* =========================================================
    MEET ME IN CHICAGO — CATÉGORIES + LIEUX + BAS DU FORUM — VERSION NETTOYÉE ET VÉRIFIÉE
    =========================================================
@@ -155,7 +157,7 @@ background-repeat: no-repeat;
   border: 1px solid #D8B9A8;
   border-radius: 10px;
 
-  background: #F1E5C6 ;
+  background: #F1E5C6f2 ;
  
 
   transition:
@@ -222,16 +224,10 @@ background-repeat: no-repeat;
   width: 54px;
   height: 58px;
 
-  border: 1px solid #D58D7A;
+  border: 1px solid #E26B0F;
   border-radius: 12px;
 
-  background:
-    linear-gradient(
-      145deg,
-      #8C615D 0%,
-      #513D3B 55%,
-      #5F403D 100%
-    );
+  background: #A65F3B !important;
 
   box-shadow:
     0 0 0 3px #FFF8F4,
@@ -261,13 +257,13 @@ background-repeat: no-repeat;
 .mmic-custom-icon:before {
   top: -6px;
   left: -6px;
-  border-right: 1px solid #D58D7A;
+  border-right: 1px solid #E26B0F;
 }
 
 .mmic-custom-icon:after {
   right: -6px;
   bottom: -6px;
-  border-left: 1px solid #D58D7A;
+  border-left: 1px solid #E26B0F;
 }
 
 /* Dessin blanc central */
@@ -301,11 +297,11 @@ background-repeat: no-repeat;
 /* Effet lumineux au survol */
 
 .mmic-category .blocCate:hover .mmic-custom-icon {
-  border-color: #E0A08B;
+  border-color: #E26B0F;
 
   box-shadow:
     0 0 0 3px #FFF8F4,
-    0 0 0 4px #D58D7A,
+    0 0 0 4px #E26B0F,
     0 0 13px rgba(224, 160, 139, 0.72),
     0 7px 14px rgba(81, 61, 59, 0.22);
 
@@ -2098,4 +2094,3 @@ form#form_register th.thCornerR {
   border-radius: 13px 13px 0 0;
   overflow: hidden;
 }
-
