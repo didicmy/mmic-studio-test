@@ -2325,7 +2325,7 @@ html body .mmic-posting-page #optionsitems_show td {
   height: auto !important;
 
   border: 0 !important;
-  background: transparent !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   box-shadow: none !important;
 }
 
