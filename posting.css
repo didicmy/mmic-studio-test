@@ -3150,8 +3150,8 @@ html body .mmic-posting-page #optionsitems_show .thHead a:hover {
 /* La table entière */
 html body .mmic-posting-page #optionsitems > table.forumline,
 html body .mmic-posting-page #optionsitems_show > table.forumline {
-  background: #b6837b !important;
-  background-color: #b6837b !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
+  background-color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 
   border: 1px solid #d8a17e !important;
