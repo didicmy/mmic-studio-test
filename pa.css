@@ -833,7 +833,7 @@ background-image:
 }
 .mmic-pa .mmic-card.mmic-useful {
   background: var(--paper) !important;
-  border: none;
+  border: 1px solid var(--border);
   box-shadow: none;
 }
 .mmic-pa .mmic-useful > .mmic-card.mmic-useful {
