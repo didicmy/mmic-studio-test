@@ -201,7 +201,7 @@
 
   color: #877b72;
 
-  font-size: 8px;
+  font-size: 9px;
   font-style: italic;
   line-height: 1.5;
   text-align: center;
@@ -225,7 +225,7 @@
 
   color: #71675f;
 
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.45;
 }
 
@@ -256,7 +256,7 @@
 
   color: #71675f;
 
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.5;
 }
 
@@ -266,7 +266,7 @@
 
   color: #a06d50;
 
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -277,7 +277,7 @@
 
   color: #7d7269;
 
-  font-size: 7.5px;
+  font-size: 9px;
   line-height: 1.5;
 }
 
@@ -437,7 +437,7 @@
 
 .mmic-qeel-recent-list .gensmall {
   color: #776c64;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.7;
 }
 
@@ -936,13 +936,13 @@
 }
 
 .mmic-qeel-title-icon {
-    background: #9a625d !important;
+    background: #E26B0F !important;
     border-color: #d98f7c !important;
     color: #fff8f4 !important;
 }
 
 .mmic-qeel-stat-icon {
-    background: #9a625d !important;
+    background: #E26B0F !important;
     color: #f2b59d !important;
 }
 
