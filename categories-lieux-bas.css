@@ -793,7 +793,7 @@ background-repeat: no-repeat;
   margin: 0;
   padding: 4px;
 
-  border: 2px solid #E26B0F ;
+  border: 2px dashed #E26B0F ;
   border-radius: 7px;
 
   background: #79516F;
