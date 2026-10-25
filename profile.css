@@ -3433,6 +3433,7 @@ body.mmic-profile-followers .followers_block {
     gap:14px !important;
 
     padding:18px !important;
+    background: #F8EDE7;
 }
 
 /* Carte membre */
@@ -3498,7 +3499,7 @@ body.mmic-profile-followers .followBtn {
     border: 1px solid #D58D7A !important;
     border-radius: 5px !important;
 
-    background: #A96F68 !important;
+    background: #C97845 !important;
 
     color: #FFF8F4 !important;
 
@@ -3516,7 +3517,7 @@ body.mmic-profile-followers .followBtn {
 }
 
 body.mmic-profile-followers .followBtn:hover {
-    background: #8F5D58 !important;
+    background: #C97845 !important;
     border-color: #F0B29E !important;
 
     box-shadow:
