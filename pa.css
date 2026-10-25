@@ -369,10 +369,16 @@ background-image:
 .mmic-staff-member span {
   display: block;
   margin-top: 8px;
-  color: var(--navy);
+  color: #E26B0F;
   font: 13px Georgia, "Times New Roman", serif;
 }
 
+.mmic-staff-member h1 {
+  display: block;
+  margin-top: 8px;
+  color: #79516F;
+  font: 13px Georgia, "Times New Roman", serif;
+}
 /* Fonction */
 .mmic-staff-member small {
   display: block;
