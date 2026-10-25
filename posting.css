@@ -103,7 +103,7 @@ html body .mmic-posting-editor-card {
   overflow: hidden !important;
   border: 1px solid rgba(216, 176, 140, 0.42) !important;
   border-radius: 10px !important;
-  background: #fbf8f3 !important;
+  background: #F1E5C6  !important;
   box-shadow: 0 6px 18px rgba(16, 36, 56, 0.055), inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
   border-spacing: 0 !important;
 }
@@ -142,7 +142,7 @@ html body .mmic-posting-editor-card .row1 {
 
 html body .mmic-posting-editor-card .row2 {
   padding: 10px 13px !important;
-  background: rgba(255, 255, 255, 0.32) !important;
+  background: #F1E5C6  !important;
 }
 
 html body .mmic-posting-subject-row > td, html body .mmic-posting-description-row > td {
@@ -1103,7 +1103,7 @@ html body .mmic-posting-page .sceditor-container {
   width: 100% !important;
   border: 1px solid rgba(216, 176, 140, 0.44) !important;
   border-radius: 8px !important;
-  background: #fffdf9 !important;
+  background: #EFD6C8 !important;
   box-shadow: 0 5px 14px rgba(16, 36, 56, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -1541,7 +1541,7 @@ html body .mmic-posting-page #topicreview {
   border: 1px solid rgba(216, 176, 140, 0.42) !important;
   border-radius: 9px !important;
 
-  background: #F1E5C6 !important
+  background: #F1E5C6 !important;
 
   box-shadow:
     0 5px 14px rgba(16, 36, 56, 0.045),
