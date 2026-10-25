@@ -597,7 +597,7 @@ background-image:
   border: 1px solid #D8B9A8;
   border-radius: 8px;
 
-  background: #F5E7DE;
+  background: var(--paper) !important;
   box-shadow: 0 5px 14px rgba(89, 64, 57, 0.08);
 
   animation: mmicPartnersOpen 0.22s ease;
