@@ -224,7 +224,7 @@
   border: 1px solid #B87355 !important;
   border-radius: 6px !important;
 
-  background: #985C4D !important;
+  background: #C97845 !important;
   color: #FFF7F0 !important;
 
   box-shadow: 0 3px 8px rgba(89, 64, 57, 0.12) !important;
@@ -259,7 +259,7 @@
 
   border-radius: 50% !important;
 
-  background: #B87355 !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   color: #FFF7F0 !important;
 
   font-size: 12px !important;
