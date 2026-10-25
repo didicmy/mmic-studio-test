@@ -3094,7 +3094,7 @@ html body .mmic-posting-page input[type="radio"] {
 
 html body .mmic-posting-page #optionsitems .thHead,
 html body .mmic-posting-page #optionsitems_show .thHead {
-  background: #b6837b !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 
   border: 0 !important;
@@ -3114,7 +3114,7 @@ html body .mmic-posting-page #optionsitems .thHead > table tr,
 html body .mmic-posting-page #optionsitems_show .thHead > table tr,
 html body .mmic-posting-page #optionsitems .thHead > table td,
 html body .mmic-posting-page #optionsitems_show .thHead > table td {
-  background: transparent !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 }
 
