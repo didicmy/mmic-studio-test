@@ -9,14 +9,14 @@
     width: 550px;
     display: flex;
     margin: auto;
-    border-left: solid 3px #D8A08C;
-    border-right: solid 3px #D8A08C;
+    border-left: solid 3px #C97845;
+    border-right: solid 3px #C97845;
 }
 
 .plname {
     height: 65px;
     width: 550px;
-    background-color: #BC887D;
+    background-color: #C97845;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .plgtitre {
-    color: #FFF9F4;
+    color: #79516F;
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
 }
@@ -37,10 +37,10 @@
 /* -------- Fond général -------- */
 
 .plbackground {
-    background-color: #FFF9F4;
+    background-color: #F8EDE7;
     width: 490px;
-    border-left: solid 3px #D8A08C;
-    border-right: solid 3px #D8A08C;
+    border-left: solid 3px #C97845;
+    border-right: solid 3px #C97845;
     margin: auto;
     padding: 30px;
 }
@@ -50,7 +50,7 @@
 
 .plcontenu {
     margin-top: 20px;
-    background-color: #F7E8E1;
+    background-color: #EFD6C8;
     padding: 10px;
     max-height: 250px;
     overflow-y: auto;
@@ -58,7 +58,7 @@
 }
 
 .plh2 {
-    color: #A96F68;
+    color: #79516F;
     font-size: 18px;
     font-family: 'Unica One', cursive;
     text-align: center;
