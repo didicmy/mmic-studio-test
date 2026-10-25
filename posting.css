@@ -128,7 +128,7 @@ html body .mmic-posting-editor-title span {
 
 html body .mmic-posting-editor-card > tbody > tr > td {
   border: 0 !important;
-  background: transparent !important;
+  background: #F1E5C6 !important;
   box-sizing: border-box !important;
 }
 
@@ -201,7 +201,7 @@ html body .mmic-posting-submit-card .catBottom {
   padding: 12px !important;
   border: 1px solid rgba(216, 176, 140, 0.35) !important;
   border-radius: 8px !important;
-  background: #f7f1e9 !important;
+  background: #F1E5C6 !important;
 }
 
 html body .mmic-posting-submit-card input[type="submit"] {
@@ -673,7 +673,7 @@ html body .mmic-posting-smileys .row1, html body .mmic-posting-smileys .row2, ht
 html body .mmic-posting-editor-row > td:last-child {
   width: auto !important;
   padding: 18px 14px !important;
-  background: linear-gradient( 180deg, #fbf8f3 0%, #f9f4ee 100% ) !important;
+  background: #F1E5C6 !important;
   vertical-align: stretch !important;
 }
 
@@ -1541,12 +1541,7 @@ html body .mmic-posting-page #topicreview {
   border: 1px solid rgba(216, 176, 140, 0.42) !important;
   border-radius: 9px !important;
 
-  background:
-    linear-gradient(
-      180deg,
-      #fffdf9 0%,
-      #faf5ef 100%
-    ) !important;
+  background: #F1E5C6 !important
 
   box-shadow:
     0 5px 14px rgba(16, 36, 56, 0.045),
@@ -2232,7 +2227,7 @@ html body .mmic-posting-page
   height: auto !important;
 
   border: 0 !important;
-  background: transparent !important;
+  background: #F1E5C6 !important;
   box-shadow: none !important;
 }
 
@@ -2247,7 +2242,7 @@ html body .mmic-posting-page
   padding: 9px 10px !important;
 
   border: 0 !important;
-  background: transparent !important;
+  background: #F1E5C6 !important;
   box-shadow: none !important;
 
   vertical-align: middle !important;
@@ -2868,7 +2863,7 @@ html body .mmic-posting-page #seotools_show th.thHead > table {
   border: 0 !important;
   border-spacing: 0 !important;
 
-  background: transparent !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 }
 
 
@@ -3007,7 +3002,7 @@ html body .mmic-posting-page .mmic-posting-panel-card .thHead,
 html body .mmic-posting-page .mmic-posting-topic-review th,
 html body .mmic-posting-page .mmic-posting-topic-review .thHead,
 html body .mmic-posting-page .mmic-posting-topic-review .catHead {
-  background: var(--mmic-post-rose) !important;
+  background: #C97845 !important;
   background-image: none !important;
   color: #fffaf6 !important;
   border-color: var(--mmic-post-accent) !important;
@@ -3034,7 +3029,7 @@ html body .mmic-posting-page input[name="post"],
 html body .mmic-posting-page .mmic-posting-submit-button,
 html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"],
 html body .mmic-posting-page .mmic-posting-jumpbox input[type="button"] {
-  background: var(--mmic-post-rose) !important;
+  background: #C97845 !important;
   background-image: none !important;
 
   border-color: var(--mmic-post-rose-dark) !important;
@@ -3050,7 +3045,7 @@ html body .mmic-posting-page input[name="post"]:hover,
 html body .mmic-posting-page .mmic-posting-submit-button:hover,
 html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"]:hover,
 html body .mmic-posting-page .mmic-posting-jumpbox input[type="button"]:hover {
-  background: var(--mmic-post-rose-hover) !important;
+  background: #C97845 !important;
   border-color: var(--mmic-post-rose-dark) !important;
   color: #fff !important;
 }
@@ -3170,7 +3165,7 @@ html body .mmic-posting-page #optionsitems_show > table.forumline {
 html body .mmic-posting-page #optionsitems > table.forumline > tbody > tr > th.thHead,
 html body .mmic-posting-page #optionsitems_show > table.forumline > tbody > tr > th.thHead {
   background: #b6837b !important;
-  background-color: #b6837b !important;
+  background-color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 
   border: 0 !important;
