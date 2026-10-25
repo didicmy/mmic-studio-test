@@ -1,3 +1,4 @@
+
 /* =========================================================
    MEET ME IN CHICAGO — VUE D’UN SUJET + PROFIL DE MESSAGE
    =========================================================
@@ -101,7 +102,7 @@
 
   color: #b97a56;
 
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
@@ -466,7 +467,7 @@
 }
 
 
-/* On enterre les images Forumactif 🪦 */
+/* On enterre les images Forumactif ???? */
 
 .mmic-vt-profile-links .mmic-vt-profile-link > a > img {
   display: none !important;
@@ -534,21 +535,7 @@
   letter-spacing: 0.3px;
 }
 
-.mmic-vt-post-date-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 19px;
-  height: 19px;
-
-  border-radius: 50%;
-
-  background: #102438;
-  color: #d19168;
-
-  font-size: 8px;
-}
 
 
 
@@ -635,7 +622,7 @@
 
   border-top: 1px solid #e2d7cd;
 
-  background: #f7f1e9;
+  background: #F8EDE7;
 }
 
 .mmic-vt-post-anchor {
@@ -790,7 +777,7 @@
 
   color: #766a61;
 
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -831,7 +818,7 @@
 
   color: #766a61;
 
-  font-size: 7px;
+  font-size: 9px;
 }
 
 .mmic-vt-jumpbox select {
@@ -844,9 +831,37 @@
   background: #f7f1e9;
   color: #625951;
 
-  font-size: 7px;
+  font-size: 9px;
 }
 
+.mmic-vt-submit {
+      min-height: 28px;
+    padding: 0 14px !important;
+    border: 1px solid #D58D7A !important;
+    border-radius: 5px !important;
+    background: #C97845 !important;
+    background-image: none !important;
+    color: #FFF8F4 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(117 67 63 / .10) !important;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  
+  .mmic-vt-submit:hover {
+  border-color: #102438 !important;
+
+  background: #C97845 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17);
+
+  transform: translateY(-2px);
+}
+}
 
 /* =========================================================
    MODÉRATION
@@ -860,7 +875,7 @@
   border: 1px solid #ddd1c6;
   border-radius: 8px;
 
-  background: #f7f1e9;
+  background: #C97845;
 
   color: #766a61;
 
@@ -1028,19 +1043,7 @@
 
 /* Petit point décoratif devant la date */
 
-.mmic-vt-post-date::before {
-  content: "";
 
-  flex: 0 0 7px;
-
-  width: 7px;
-  height: 7px;
-
-  border: 2px solid #b97a56;
-  border-radius: 50%;
-
-  background: #102438;
-}
 
 /* =========================================================
    BOUTONS DU VIEWTOPIC — VERSION DÉFINITIVE
@@ -1157,7 +1160,7 @@ html body .mmic-vt-post-actions .mmic-vt-action {
   border: 1px solid #ddc9b8 !important;
   border-radius: 6px !important;
 
-  background: #fbf8f3 !important;
+  background: transparent !important;
   color: #102438 !important;
 
   box-shadow: 0 1px 3px rgba(16, 36, 56, 0.08) !important;
@@ -1223,7 +1226,7 @@ html body .mmic-vt-action::before {
 
   border-radius: 50% !important;
 
-  background: #102438 !important;
+  background: #C97845 !important;
   color: #d8b08c !important;
 
   font: 700 9px Arial, sans-serif !important;
@@ -1232,7 +1235,7 @@ html body .mmic-vt-action::before {
 
 
 /* Citation multiple — Forumactif utilise directement une image,
-   pas forcément un lien <a>. Le sélecteur ci-dessus gère les deux. */
+   pas forcément un lien a>. Le sélecteur ci-dessus gère les deux. */
 
 .mmic-vt-action-multiquote::before {
   content: "+";
@@ -1327,7 +1330,7 @@ html body .mmic-vt-action-ip {
 html body .mmic-vt-action:hover {
   border-color: #b97a56 !important;
 
-  background: #102438 !important;
+  background: #C97845 !important;
   color: #fbf8f3 !important;
 
   box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14) !important;
@@ -1388,15 +1391,9 @@ html body .mmic-vt-profile {
   display: flex;
   flex-direction: column;
 
-  border-right-color: #D58D7A;
+  border-right-color: #E26B0F;
 
-  background:
-    linear-gradient(
-      165deg,
-      #A96F68 0%,
-      #98635F 58%,
-      #895652 100%
-    );
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 
   color: #FFF8F4;
 }
@@ -1544,7 +1541,7 @@ html body
 html body .mmic-vt-navigation {
   border-color: #E7C2B5;
 
-  background: #FFF8F4;
+  background: #F8EDE7;
 }
 
 
@@ -1561,7 +1558,7 @@ html body .mmic-vt-breadcrumb a:hover {
 html body .mmic-vt-heading-line,
 html body .mmic-vt-section-title,
 html body .mmic-vt-signature-line {
-  color: #A96F68;
+  color: #79516F;
 }
 
 
@@ -1571,7 +1568,7 @@ html body .mmic-vt-section-title::before,
 html body .mmic-vt-section-title::after,
 html body .mmic-vt-signature-line::before,
 html body .mmic-vt-signature-line::after {
-  background: #E2B3A3;
+  background: #E26B0F;
 }
 
 
@@ -1587,31 +1584,21 @@ html body .mmic-vt-topic-heading h1 {
 html body .mmic-vt-post-header {
   border-bottom-color: #EED8CF;
 
-  background: #FFF7F2;
+  background: #F8EDE7;
 }
 
-
 html body .mmic-vt-post-date {
-  color: #8F7A73;
+    color: #8F7A73;
 }
 
 
 /* vieux rond bleu devant la date */
 
-html body .mmic-vt-post-date::before {
-  border-color: #D58D7A;
 
-  background: #A96F68;
-}
 
 
 /* ancienne icône éventuelle */
 
-html body .mmic-vt-post-date-icon {
-  background: #A96F68;
-
-  color: #FFF8F4;
-}
 
 
 /* =========================================================
@@ -1622,7 +1609,7 @@ html body .mmic-vt-post-date-icon {
 html body .mmic-vt-post-actions .mmic-vt-action {
   border-color: #E7C2B5 !important;
 
-  background: #FFF8F4 !important;
+  background: transparent !important;
 
   color: #75433F !important;
 
@@ -1632,7 +1619,7 @@ html body .mmic-vt-post-actions .mmic-vt-action {
 
 
 html body .mmic-vt-action::before {
-  background: #A96F68 !important;
+  background: #C97845 !important;
 
   color: #FFF8F4 !important;
 }
@@ -1641,7 +1628,7 @@ html body .mmic-vt-action::before {
 html body .mmic-vt-action:hover {
   border-color: #D58D7A !important;
 
-  background: #A96F68 !important;
+  background: #EFD6C8 !important;
 
   color: #FFF8F4 !important;
 
@@ -1665,7 +1652,7 @@ html body .mmic-vt-main-button,
 html body .mmic-vt-small-button {
   border-color: #D58D7A !important;
 
-  background: #A96F68 !important;
+  background: #C97845 !important;
 
   color: #FFF8F4 !important;
 
@@ -1675,7 +1662,7 @@ html body .mmic-vt-small-button {
 
 
 html body .mmic-vt-main-button-icon {
-  background: #8F5D58;
+  background: #C97845;
 
   color: #FFF8F4;
 }
@@ -1685,7 +1672,7 @@ html body .mmic-vt-main-button:hover,
 html body .mmic-vt-small-button:hover {
   border-color: #F0B29E !important;
 
-  background: #8F5D58 !important;
+  background: #C97845 !important;
 
   color: #FFF8F4 !important;
 
@@ -1752,7 +1739,7 @@ html body .mmic-vt-hidden-post,
 html body .mmic-vt-no-post {
   border-color: #E7C2B5;
 
-  background: #FFF8F4;
+  background: #F8EDE7;
 }
 
 
@@ -1994,7 +1981,7 @@ html body .mmic-vt-quick-reply input.mainoption {
   border: 1px solid #D58D7A !important;
   border-radius: 5px !important;
 
-  background: #A96F68 !important;
+  background: #C97845 !important;
   background-image: none !important;
 
   color: #FFF8F4 !important;
@@ -2022,7 +2009,7 @@ html body .mmic-vt-quick-reply input.mainoption {
 /* Prévisualisation un peu plus légère */
 
 html body .mmic-vt-quick-reply input.liteoption {
-  background: #FFF8F4 !important;
+  background: #F8EDE7 !important;
 
   color: #8F5D58 !important;
 }
@@ -2034,7 +2021,7 @@ html body .mmic-vt-quick-reply input.liteoption:hover,
 html body .mmic-vt-quick-reply input.mainoption:hover {
   border-color: #F0B29E !important;
 
-  background: #8F5D58 !important;
+  background: ##EFD6C8 !important;
 
   color: #FFF8F4 !important;
 
@@ -2105,8 +2092,8 @@ html body .mmic-vt-likes button.rep-button.mmic-vt-like-button:focus {
     border-radius: 6px !important;
     outline: none !important;
 
-    background: #fff8f4 !important;
-    color: #9c6557 !important;
+    background: #C97845 !important;
+    color: #E26B0F !important;
 
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 8px !important;
@@ -2120,6 +2107,41 @@ html body .mmic-vt-likes button.rep-button.mmic-vt-like-button:focus {
     cursor: pointer !important;
 }
 
+/***bouton j'aime pas***/
+
+html body .rep-button,.rep-button:active {
+      border-color: #b8786c !important;
+
+    background: #b8786c !important;
+    color: #F8EDE7 !important;
+
+    transform: translateY(-1px);
+appearance: none !important;
+    -webkit-appearance: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 25px !important;
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    border: 1px solid #e7c2b5 !important;
+    border-radius: 6px !important;
+    outline: none !important;
+    background: #C97845 !important;
+    
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+}
+  
 html body .mmic-vt-likes button.rep-button.mmic-vt-like-button:hover {
     border-color: #b8786c !important;
 
@@ -2142,8 +2164,8 @@ html body .mmic-vt-likes .mmic-vt-like-icon {
 html body .mmic-vt-likes button.rep-button.mmic-vt-like-button.fa_like {
     border-color: #b8786c !important;
 
-    background: #f6dfd7 !important;
-    color: #9c6557 !important;
+    background: #C97845 !important;
+    color: #F8EDE7 !important;
 }
 
 /* Liste des membres ayant aimé */
@@ -2181,7 +2203,7 @@ html body .fa_like_list {
     border: 1px solid #B6837B;
     border-radius: 12px;
 
-    background: #76504D;
+    background: transparent;
     color: #FFF8F4;
 
     font-family: Georgia, serif;
@@ -2198,7 +2220,7 @@ html body .fa_like_list {
 }
 
 .mmic-tag-button:hover {
-    background: #8C615D;
+    background: #EFD6C8;
     transform: translateY(-1px);
 
     box-shadow:
@@ -2229,7 +2251,7 @@ html body .mmic-vt-post-actions .mmic-tag-button {
     border: 1px solid #D58D7A !important;
     border-radius: 6px !important;
 
-    background: #F8E9DF !important;
+    background: tansparent !important;
     color: #8C615D !important;
 
     font-family: Georgia, "Times New Roman", serif !important;
@@ -2252,7 +2274,7 @@ html body .mmic-vt-post-actions .mmic-tag-button {
 }
 
 html body .mmic-vt-post-actions .mmic-tag-button:hover {
-    background: #D58D7A !important;
+    background: #EFD6C8 !important;
     border-color: #D58D7A !important;
     color: #FFF8F4 !important;
 
@@ -2273,4 +2295,22 @@ html body .mmic-vt-post-actions .mmic-tag-button:focus-visible {
 
 html body .mmic-vt-profile-links .mmic-vt-profile-link:nth-child(n+4) {
     display: none !important;
+}
+
+.sceditor-toolbar {
+    -moz-background-clip: padding;
+    -moz-border-radius: 3px 3px 0 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 3px 3px 0 0;
+    -webkit-user-select: none;
+    background: #EFD6C8 !important;
+    background-clip: padding-box;
+    border-bottom: 1px solid silver;
+    border-radius: 3px 3px 0 0;
+    line-height: 0;
+    overflow: hidden;
+    padding: 3px 5px 2px;
+    user-select: none;
 }
