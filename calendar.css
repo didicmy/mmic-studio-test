@@ -16,6 +16,32 @@
 
   box-shadow:
     0 8px 24px rgba(117, 67, 63, 0.08);
+   /* Correction du débordement des événements */
+.mmic-calendar,
+.mmic-calendar * {
+  box-sizing: border-box;
+}
+
+.mmic-calendar-grid,
+.mmic-calendar-weeks,
+.mmic-calendar-week {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.mmic-calendar-event,
+.mmic-calendar-event-row {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.mmic-calendar-event img {
+  max-width: 100%;
+  height: auto;
+}
 }
 
 
