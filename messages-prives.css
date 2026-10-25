@@ -3330,7 +3330,7 @@ html body .mmic-pm-preview-message .postbody{
 .mmic-message-header {
     padding: 17px 20px 15px;
 
-    background: #b98278 !important;
+    background: #C97845 !important;
     border-bottom: 1px solid #d2a27e;
 
     text-align: center;
@@ -3416,7 +3416,7 @@ html body .mmic-pm-preview-message .postbody{
     border: 1px solid #b98278;
     border-radius: 5px;
 
-    background: #b98278 !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 
     font-size: 9px;
@@ -3432,7 +3432,7 @@ html body .mmic-pm-preview-message .postbody{
 }
 
 .mmic-message-button:hover {
-    background: #fffaf4 !important;
+    background: #C97845 !important;
     color: #b77868 !important;
     border-color: #d2a27e;
 }
