@@ -3164,7 +3164,7 @@ html body .mmic-posting-page #optionsitems_show > table.forumline {
 /* Le TH qui contient "OPTIONS" */
 html body .mmic-posting-page #optionsitems > table.forumline > tbody > tr > th.thHead,
 html body .mmic-posting-page #optionsitems_show > table.forumline > tbody > tr > th.thHead {
-  background: #b6837b !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 
@@ -3184,8 +3184,8 @@ html body .mmic-posting-page #optionsitems_show th.thHead table,
 html body .mmic-posting-page #optionsitems_show th.thHead tbody,
 html body .mmic-posting-page #optionsitems_show th.thHead tr,
 html body .mmic-posting-page #optionsitems_show th.thHead td {
-  background: #b6837b !important;
-  background-color: #b6837b !important;
+  background: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
+  background-color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
   background-image: none !important;
 
   border: 0 !important;
