@@ -201,7 +201,7 @@
 
   color: #877b72;
 
-  font-size: 9px;
+  font-size: 11px;
   font-style: italic;
   line-height: 1.5;
   text-align: center;
@@ -225,7 +225,7 @@
 
   color: #71675f;
 
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.45;
 }
 
@@ -437,7 +437,7 @@
 
 .mmic-qeel-recent-list .gensmall {
   color: #776c64;
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.7;
 }
 
@@ -938,7 +938,7 @@
 .mmic-qeel-title-icon {
     background: #E26B0F !important;
     border-color: #d98f7c !important;
-    color: #fff8f4 !important;
+    color: linear-gradient(135deg, #BC805B 0%, #A65F3B 52%, #A65F3B 100%) !important;
 }
 
 .mmic-qeel-stat-icon {
@@ -952,7 +952,7 @@
 }
 
 .mmic-qeel-small-title {
-    color: #a76452 !important;
+    color: #79516F !important;
 }
 
 .mmic-qeel a {
