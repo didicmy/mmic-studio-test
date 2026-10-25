@@ -1802,12 +1802,7 @@ html body .mmic-posting-page .error-message {
   border-left: 4px solid #b97a56 !important;
   border-radius: 8px !important;
 
-  background:
-    linear-gradient(
-      180deg,
-      #fff8f1 0%,
-      #f8eee5 100%
-    ) !important;
+  background: #C97845 !important;
 
   color: #694e3e !important;
 
