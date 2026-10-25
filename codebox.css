@@ -53,7 +53,7 @@
   display: inline-flex;
   align-items: center;
 
-  color: #A96F68;
+  color: #79516F;
 
   font-family: Georgia, serif;
   font-size: 10px;
@@ -85,7 +85,7 @@
 
   background: #F8EDE7;
 
-  color: #fbf8f3;
+  color: #79516F;
 
   cursor: pointer;
 
@@ -145,7 +145,7 @@
 
   background: #F8EDE7;
 
-  color: #fbf8f3;
+  color: #000000;
 
   font-family:
     Consolas,
