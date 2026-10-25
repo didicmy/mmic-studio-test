@@ -74,7 +74,7 @@
   border-left: 1px solid #E7C2B5;
   border-right: 1px solid #E7C2B5;
 
-  background: #FFF8F4;
+  background: #F8EDE7;
 
   color: #7F6761;
 
@@ -187,7 +187,7 @@
 .mmic-images-page table.forumline .row3 {
   padding: 12px !important;
 
-  background: #FFF8F4 !important;
+  background: #F8EDE7 !important;
 }
 
 
@@ -216,5 +216,18 @@
   .mmic-images-page .imagelist_desc {
     padding: 14px;
   }
+   .container-imgs-list .image_item {
+    position: relative;
+    width: var(--image-item-width);
+    height: fit-content;
+    padding: 0;
+    opacity: 1;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+   border: 0px solid #333; 
+    overflow: hidden;
+    break-inside: avoid;
+    transition: filter .2s, opacity .2s;
+}
 
 }
