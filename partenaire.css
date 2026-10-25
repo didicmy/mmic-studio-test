@@ -9,14 +9,14 @@
     width: 550px;
     display: flex;
     margin: auto;
-    border-left: solid 3px #D8A08C;
-    border-right: solid 3px #D8A08C;
+    border-left: solid 3px #C97845;
+    border-right: solid 3px #C97845;
 }
 
 .partenairename {
     height: 65px;
     width: 550px;
-    background-color: #BC887D;
+    background-color: #C97845;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .partenairegtitre {
-    color: #FFF9F4;
+    color: #79516F ;
     font-size: 30px;
     font-family: 'Julius Sans One', sans-serif;
 }
@@ -37,10 +37,10 @@
 /* -------- Fond général -------- */
 
 .partenairebackground {
-    background-color: #FFF9F4;
+    background-color: #F1E5C6;
     width: 490px;
-    border-left: solid 3px #D8A08C;
-    border-right: solid 3px #D8A08C;
+    border-left: solid 3px #C97845;
+    border-right: solid 3px #C97845;
     margin: auto;
     padding: 30px;
 }
@@ -87,7 +87,7 @@
     width: 100%;
     margin-bottom: 8px;
 
-    color: #A96F68;
+    color: #79516F ;
     font-family: 'Unica One', cursive;
     font-size: 18px;
     text-align: center;
@@ -101,7 +101,7 @@
     height: 1px;
     margin: 6px auto 0;
 
-    background: #D8A08C;
+    background: #E26B0F ;
 }
 
 .partenairetexte3 {
