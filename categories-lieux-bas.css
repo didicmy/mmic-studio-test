@@ -787,23 +787,23 @@ background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
 
-  width: 76px;
-  min-width: 76px;
-  height: 96px;
+  width: 86px;
+  min-width: 86px;
+  height: 110px;
   margin: 0;
   padding: 4px;
 
-  border: 1px solid #D58D7A;
+  border: 2px solid #E26B0F ;
   border-radius: 7px;
 
-  background: #ffffff;
+  background: #79516F;
   box-shadow: 0 3px 8px rgba(81, 61, 59, 0.11);
 }
 
 .mmic-category .avatarCate img {
   display: block;
-  width: 66px;
-  height: 86px;
+  width: 86px;
+  height: 110px;
   max-width: none;
   object-fit: cover;
   object-position: center;
