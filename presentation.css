@@ -16,7 +16,7 @@
 .name {
     height: 65px;
     width: 550px;
-    background-color: #C97845;
+    background-color: transparent !important;
     text-align: center;
 }
 
