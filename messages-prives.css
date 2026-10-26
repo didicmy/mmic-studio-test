@@ -215,7 +215,7 @@ html body .mmic-pm-folder-link {
     min-width: 0;
 
     font-family: Verdana, Arial, sans-serif;
-    font-size: 7px;
+    font-size: 9px;
     font-weight: 700;
 
     letter-spacing: .45px;
@@ -3688,7 +3688,7 @@ html body .mmic-pm-read-native-action a:hover {
 
 html body .mmic-pm-read-reply
 .mmic-pm-read-native-action a {
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
@@ -4153,7 +4153,7 @@ html body .mmic-pm-read-shortcut--primary {
     color: #fffaf4 !important;
 
     box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
-   font-size: 11px !important;
+   font-size: 9px !important;
 }
 
 html body .mmic-pm-read-shortcut--primary * {
