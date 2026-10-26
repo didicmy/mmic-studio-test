@@ -2609,7 +2609,7 @@ html body .mmic-pm-compose-toolbar .mmic-pm-folder-link {
     min-width: 0;
     color: #102438;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 6.5px;
+    font-size: 8.5px;
     font-weight: 700;
     letter-spacing: .45px;
     text-transform: uppercase;
@@ -2649,10 +2649,10 @@ html body .mmic-pm-compose-return {
     padding: 0 13px;
     border: 1px solid #d8b08c;
     border-radius: 6px;
-    background: #102438 !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 6px;
+    font-size: 8px;
     font-weight: 700;
     letter-spacing: .7px;
     text-decoration: none !important;
@@ -2663,13 +2663,13 @@ html body .mmic-pm-compose-return {
 
 html body .mmic-pm-compose-return:hover {
     transform: translateY(-1px);
-    background: #173149 !important;
+    background: #C97845 !important;
 }
 
 html body .mmic-pm-compose-return-icon {
     width: 12px;
     height: 12px;
-    background: #e4b184 !important;
+    background: #C97845 !important;
     -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
@@ -2732,7 +2732,7 @@ html body .mmic-pm-compose-card > tbody > tr:not(:first-child) {
 html body .mmic-pm-compose-card td.row1,
 html body .mmic-pm-compose-card td.row2 {
     border: 0 !important;
-    background: #f1E5C6 !important;
+    background: #F8EDE7 !important;
 }
 
 html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child {
@@ -3008,7 +3008,7 @@ html body .mmic-pm-compose-actions {
 html body .mmic-pm-compose-actions td {
     padding: 14px !important;
     border: 0 !important;
-    background: transparent !important;
+    background: #F1E5C6 !important;
     text-align: center !important;
 }
 
@@ -3072,7 +3072,7 @@ html body .mmic-pm-compose-page #optionsitems_show th {
 html body .mmic-pm-compose-page #optionsitems_show td {
     padding: 10px 14px !important;
     border: 0 !important;
-    background: #fffaf4 !important;
+    background: #F8EDE7 !important;
 }
 
 html body .mmic-pm-compose-page #optionsitems_show input[type="checkbox"] {
@@ -3086,7 +3086,7 @@ html body .mmic-pm-compose-page #optionsitems_show .gen,
 html body .mmic-pm-compose-page #optionsitems_show .gensmall {
     color: #102438 !important;
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 8px !important;
+    font-size: 10px !important;
     line-height: 1.6;
 }
 
@@ -3193,7 +3193,7 @@ html body .mmic-pm-preview{
 
 html body .mmic-pm-preview-header{
 
-    background:#13263d;
+    background:#C97845;
 
     padding:14px;
 
@@ -3217,9 +3217,9 @@ html body .mmic-pm-preview-kicker{
 
 html body .mmic-pm-preview-header h2{
 
-    color:#fff;
+    color:#79516F !important;
 font-size: 20px;
-    font-weight:700;
+    font-weight:600;
     line-height:1.2;
     margin:0;
 
@@ -3228,6 +3228,7 @@ font-size: 20px;
 html body .mmic-pm-preview-body{
 
     padding:18px;
+   background: #F8EDE7 !important;
 
 }
 
@@ -3862,12 +3863,12 @@ html body .mmic-pm-compose-page #find_user:hover {
 html body .mmic-pm-compose-return {
     border-color: #d8a17e !important;
 
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
 html body .mmic-pm-compose-return:hover {
-    background: #a66f67 !important;
+    background: #C97845 !important;
 }
 
 
@@ -3878,14 +3879,14 @@ html body .mmic-pm-compose-return:hover {
 html body .mmic-pm-compose-actions input[type="submit"] {
     border-color: #d8a17e !important;
 
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
 html body .mmic-pm-compose-actions input[type="submit"]:hover {
     border-color: #c98b78 !important;
 
-    background: #a66f67 !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
@@ -3959,7 +3960,7 @@ html body .mmic-pm-compose-page .mmic-pm-preview-label {
 
 html body .mmic-pm-compose-page #optionsitems th,
 html body .mmic-pm-compose-page #optionsitems_show th {
-    background: #b6837b !important;
+    background: #C97845 !important;
     background-image: none !important;
 
     border-color: #d8a17e !important;
