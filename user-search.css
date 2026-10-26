@@ -303,7 +303,7 @@ body {
 #find_username tr,
 #find_username td {
   border: 0 !important;
-  background: transparent !important;
+  background: #F1E5C6 !important;
   box-shadow: none !important;
 }
 
@@ -345,12 +345,7 @@ body {
 
   border: 0 !important;
 
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
+  background: #C97845 !important;
 
   color: #fbf8f3 !important;
 
@@ -443,12 +438,12 @@ body {
   border: 1px solid #b97a56 !important;
   border-radius: 6px !important;
 
-  background: #102438 !important;
+  background: #C97845 !important;
 
   color: #fbf8f3 !important;
 
   font-family: Verdana, Arial, sans-serif !important;
-  font-size: 7px !important;
+  font-size: 9px !important;
   font-weight: 700 !important;
 
   letter-spacing: 0.08em !important;
@@ -464,7 +459,7 @@ body {
 
 #find_username input[type="submit"]:hover,
 #find_username input[type="button"]:hover {
-  background: #b97a56 !important;
+  background: #C97845 !important;
   border-color: #b97a56 !important;
 }
 
@@ -478,9 +473,9 @@ body {
 
   margin: 7px 0 10px !important;
 
-  color: #766a61 !important;
+  color: #000 !important;
 
-  font-size: 7px !important;
+  font-size: 10px !important;
   line-height: 1.45 !important;
 }
 
