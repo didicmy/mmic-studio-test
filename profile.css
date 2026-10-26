@@ -5422,7 +5422,7 @@ html body .mmic-profile-business-contact a:hover {
 
 html body .mmic-profile-contact-content a::before,
 html body .mmic-profile-business-contact a::before {
-    color: #F2C79D !important;
+    color: #79516F !important;
 }
 
 
@@ -5531,7 +5531,7 @@ html body .mmic-profile-business-mark {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: .08em;
-    color: #92736D;
+    color: #000;
 }
 
 .mmic-profile-stat-link strong {
