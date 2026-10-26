@@ -2715,7 +2715,7 @@ html body .mmic-pm-compose-card > tbody > tr:first-child > th::before {
     margin-bottom: 6px;
     color: #e4b184;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 5.5px;
+    font-size: 7.5px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -2732,7 +2732,7 @@ html body .mmic-pm-compose-card > tbody > tr:not(:first-child) {
 html body .mmic-pm-compose-card td.row1,
 html body .mmic-pm-compose-card td.row2 {
     border: 0 !important;
-    background: transparent !important;
+    background: #f1E5C6 !important;
 }
 
 html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child {
@@ -2745,7 +2745,7 @@ html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:fir
 html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child .genmed {
     color: #b97a56 !important;
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
+    font-size: 8px !important;
     font-weight: 700 !important;
     letter-spacing: .8px;
     text-transform: uppercase;
@@ -2830,7 +2830,7 @@ html body .mmic-pm-compose-page
 
     border-right: 1px solid #ead8c8 !important;
 
-    background: #fbf5ed !important;
+    background: #f1E5C6 !important;
 }
 
 
@@ -2863,7 +2863,7 @@ html body .mmic-pm-compose-page
 
     border: 0 !important;
 
-    background: transparent !important;
+    background: #f1E5C6 !important;
 }
 
 html body .mmic-pm-compose-page .mmic-pm-compose-editor {
@@ -3773,13 +3773,13 @@ html body .mmic-pm-compose-page
 html body .mmic-pm-compose-page .thHead,
 html body .mmic-pm-compose-page th.thHead,
 html body .mmic-pm-compose-page table.forumline > tbody > tr:first-child > th {
-    background: #b6837b !important;
+    background: #C97845 !important;
     background-image: none !important;
 
     border-color: #d8a17e !important;
     border-bottom-color: #d8a17e !important;
 
-    color: #fffaf4 !important;
+    color: #79516F  !important;
 }
 
 
@@ -3843,8 +3843,9 @@ html body .mmic-pm-compose-page
 html body .mmic-pm-compose-page #find_user {
     border-color: #d8a17e !important;
 
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
+   font-size: 8px !important;
 }
 
 html body .mmic-pm-compose-page #find_user:hover {
