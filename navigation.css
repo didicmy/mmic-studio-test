@@ -1116,7 +1116,7 @@ html body .mmic-notifications-menu {
 
     display: none !important;
 
-    width: 330px !important;
+    width: 380px !important;
     max-height: 430px !important;
 
     border: 1px solid rgba(216, 176, 140, 0.62) !important;
@@ -1180,7 +1180,7 @@ html body .mmic-notifications-menu-head span {
 
     color: #b97a56;
 
-    font-size: 7px;
+    font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -1220,7 +1220,7 @@ html body .mmic-notifications-list li {
     background: transparent !important;
     color: #513D3B !important;
 
-    font-size: 10px !important;
+    font-size: 13px !important;
     line-height: 1.45 !important;
 
     list-style: none !important;
