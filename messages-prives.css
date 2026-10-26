@@ -1612,7 +1612,7 @@ html body .mmic-pm-read-native-action a {
     color: #102438 !important;
 
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
+    font-size: 9px !important;
     font-weight: 700 !important;
 
     letter-spacing: .6px !important;
@@ -2210,11 +2210,11 @@ input[type="submit"].mmic-pm-read-button {
     border: 1px solid #d8b08c !important;
     border-radius: 6px !important;
 
-    background: #fffaf4 !important;
+    background: #C97845 !important;
     color: #102438 !important;
 
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
+    font-size: 9px !important;
     font-weight: 700 !important;
 
     letter-spacing: .6px !important;
@@ -2244,7 +2244,7 @@ input[type="submit"].mmic-pm-read-button:hover {
 
     border-color: #c78d68 !important;
 
-    background: #102438 !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
@@ -2459,7 +2459,7 @@ html body .mmic-pm-history-meta-item strong {
     color: #102438;
 
     font-family: Verdana, Arial, sans-serif;
-    font-size: 7px;
+    font-size: 11px;
     font-weight: 600;
 
     line-height: 1.35;
@@ -2480,7 +2480,7 @@ html body .mmic-pm-history-message {
     color: #34383c;
 
     font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
 
     line-height: 1.65;
 
@@ -3682,7 +3682,7 @@ html body .mmic-pm-read-native-action a {
 }
 
 html body .mmic-pm-read-native-action a:hover {
-    background: #b6837b !important;
+    background: #C97845 !important;
     color: #fffaf4 !important;
 }
 
@@ -3707,7 +3707,7 @@ html body .mmic-pm-read-button:hover {
    --------------------------------------------------------- */
 
 html body .mmic-pm-review-header {
-    background: #b6837b !important;
+    background: #C97845 !important;
     background-image: none !important;
 
     border-bottom-color: #d8a17e !important;
@@ -4145,7 +4145,7 @@ body.mmic-pm-info-page input[type="submit"]:hover {
    ========================================================= */
 
 html body .mmic-pm-read-shortcut--primary {
-    background: #b6837b !important;
+    background: #C97845 !important;
     background-image: none !important;
 
     border: 1px solid #d8a17e !important;
@@ -4153,6 +4153,7 @@ html body .mmic-pm-read-shortcut--primary {
     color: #fffaf4 !important;
 
     box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
+   font-size: 11px !important;
 }
 
 html body .mmic-pm-read-shortcut--primary * {
