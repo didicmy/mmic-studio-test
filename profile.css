@@ -1339,7 +1339,7 @@ html body .mmic-profile-business-name span {
 
     margin-bottom: 5px;
 
-    color: #E26B0F;
+    color: #79516F;
 
     font-size: 7px;
     font-weight: 700;
@@ -1392,7 +1392,7 @@ html body .mmic-profile-business-presence-line {
 
 html body .mmic-profile-business-presence-line span,
 html body .mmic-profile-business-groups > span {
-    color: #E26B0F;
+    color: #000;
 
     font-size: 9px;
     font-weight: 700;
@@ -1431,7 +1431,7 @@ html body .mmic-profile-business-groups a {
     border: 1px solid rgba(216, 176, 140, 0.45);
     border-radius: 5px;
 
-    background: #fffaf4;
+    background: #EFD6C8;
     color: #102438 !important;
 
     font-size: 8.5px;
@@ -2091,7 +2091,7 @@ html body .mmic-profile-contact-item:hover {
 html body .mmic-profile-contact-label {
     flex: 1 1 auto !important;
 
-    color: #E26B0F !important;
+    color: #79516F !important;
 
     font-size: 9px !important;
     font-weight: 700 !important;
@@ -4385,7 +4385,7 @@ html body .mmic-profile-business-left
     border: 1px solid rgba(216, 176, 140, 0.28) !important;
     border-radius: 5px !important;
 
-    background: rgba(255, 250, 244, 0.48) !important;
+    background: #EFD6C8 !important;
 
     box-sizing: border-box !important;
 }
@@ -4395,7 +4395,7 @@ html body .mmic-profile-business-left
 
 html body .mmic-profile-business-left
 .mmic-profile-contact-label {
-    font-size: 5px !important;
+    font-size: 7.5px !important;
     letter-spacing: 0.08em !important;
 }
 
@@ -5360,9 +5360,9 @@ html body .mmic-profile-avatar-diamond:hover {
 
 html body .mmic-profile-follow,
 html body .mmic-profile-business-actions .mmic-profile-follow {
-    background: #F8EDE7 !important;
+    background: #EFD6C8 !important;
     border-color: #E3AD9A !important;
-    color: #FFF8F4 !important;
+    color: #000 !important;
    font-size: 8.5px;
 }
 
@@ -5546,7 +5546,7 @@ html body .mmic-profile-business-mark {
     padding: 3px 0;
     font-size: 9px;
     line-height: 1.4;
-    color: #92736D;
+    color: #000;
 }
 /* =========================================================
    SUJETS SURVEILLÉS / FAVORIS
