@@ -532,7 +532,7 @@ html body .mmic-navigation-links a {
     min-height: 34px;
 
     border-radius: 6px;
-
+     padding: 0 8px;
     color: #fffaf4 !important;
 
     font-size: 10px;
