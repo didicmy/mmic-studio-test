@@ -1303,3 +1303,9 @@ html body .mmic-notifications-all:hover {
     background: #C97845 !important;
     color: #F8EDE7 !important;
 }
+/* Masquer les doublons dans la navigation personnalisée */
+.mmic-navigation-links a.mainmenu[href="/images"],
+.mmic-navigation-links a.mainmenu[href="/discover"],
+.mmic-navigation-links a.mainmenu[href="/search"] {
+  display: none !important;
+}
