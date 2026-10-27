@@ -530,7 +530,6 @@ html body .mmic-navigation-links a {
     justify-content: center;
 
     min-height: 34px;
-    padding: 0 8px;
 
     border-radius: 6px;
 
@@ -538,7 +537,7 @@ html body .mmic-navigation-links a {
 
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     line-height: 1.2;
     text-decoration: none !important;
     text-transform: uppercase;
