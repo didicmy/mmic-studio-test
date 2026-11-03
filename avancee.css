@@ -10,7 +10,9 @@
     color: #59351C;
 }
 
-/* Tableaux des résultats */
+/* =========================================================
+   TABLEAUX DES RÉSULTATS
+   ========================================================= */
 
 .mmic-search-results table.forumline {
     width: 100%;
@@ -19,35 +21,88 @@
     background: #F8EDE7;
 }
 
-/* En-têtes */
+/* =========================================================
+   BANDEAU DU NOMBRE DE RÉSULTATS
+   ========================================================= */
+
+.mmic-search-results table.forumline:first-of-type td {
+    background: #C97845 !important;
+    color: #FFF8F4 !important;
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+    padding: 11px;
+    text-align: center;
+}
+
+/* =========================================================
+   EN-TÊTES DES COLONNES
+   ========================================================= */
 
 .mmic-search-results .thHead,
 .mmic-search-results .thCornerR,
 .mmic-search-results th {
     background: #C97845 !important;
     color: #FFF8F4 !important;
+
     border: 1px solid #E7C2B5;
-    padding: 8px;
+    padding: 9px;
+
     font-size: 11px;
+    font-weight: 700;
 }
 
-/* Résultats */
+/* =========================================================
+   CELLULES ET CONTENU
+   ========================================================= */
 
 .mmic-search-results td {
     background: #F8EDE7;
     color: #59351C;
+
     border: 1px solid #E7C2B5;
-    padding: 8px;
+    padding: 10px;
+
+    line-height: 1.5;
+    vertical-align: top;
 }
 
-/* Liens */
+/* =========================================================
+   LIENS
+   ========================================================= */
 
 .mmic-search-results a {
     color: #A65F3B;
     text-decoration: none;
+    transition: color .2s ease;
 }
 
 .mmic-search-results a:hover {
     color: #79516F;
     text-decoration: underline;
+}
+
+/* =========================================================
+   TITRES DES SUJETS
+   ========================================================= */
+
+.mmic-search-results .topictitle {
+    color: #59351C;
+    font-weight: 700;
+}
+
+.mmic-search-results .topictitle:hover {
+    color: #A65F3B;
+}
+
+/* =========================================================
+   IMAGES DANS LES RÉSULTATS
+   ========================================================= */
+
+.mmic-search-results img {
+    max-width: 100%;
+    height: auto;
 }
