@@ -108,3 +108,12 @@
 .mmic-search-results td:first-child {
     border-right: 1px solid #E26B0F;
 }
+/* =========================================================
+   RECHERCHE AVANCÉE — LISTE DES SUJETS
+   ========================================================= */
+
+.mmic-search-results.mmic-search-topics table.forumline td {
+    background: #F8EDE7 !important;
+    color: #59351C !important;
+    border-color: #E7C2B5 !important;
+}
