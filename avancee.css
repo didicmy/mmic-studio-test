@@ -1,0 +1,53 @@
+
+/* =========================================================
+   MMIC — RECHERCHE AVANCÉE
+   ========================================================= */
+
+.mmic-search-results {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto 30px;
+    color: #59351C;
+}
+
+/* Tableaux des résultats */
+
+.mmic-search-results table.forumline {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #E7C2B5;
+    background: #F8EDE7;
+}
+
+/* En-têtes */
+
+.mmic-search-results .thHead,
+.mmic-search-results .thCornerR,
+.mmic-search-results th {
+    background: #C97845 !important;
+    color: #FFF8F4 !important;
+    border: 1px solid #E7C2B5;
+    padding: 8px;
+    font-size: 11px;
+}
+
+/* Résultats */
+
+.mmic-search-results td {
+    background: #F8EDE7;
+    color: #59351C;
+    border: 1px solid #E7C2B5;
+    padding: 8px;
+}
+
+/* Liens */
+
+.mmic-search-results a {
+    color: #A65F3B;
+    text-decoration: none;
+}
+
+.mmic-search-results a:hover {
+    color: #79516F;
+    text-decoration: underline;
+}
